@@ -1,0 +1,130 @@
+/* Ronda 3 (18-nov): el celular como pantalla propia (referencias Poliform y Atelier Lumina de Pinterest)
+   y tres piezas de 21st.dev adaptadas: botón con ficha de flecha (29292), cifras en mosaico (25311)
+   y menú a pantalla completa con cortina (27229). */
+
+/* Botón con ficha de flecha redonda que se alarga al pasar el mouse */
+.button:has(.flecha){gap:16px;padding:6px 6px 6px 26px}
+.button .flecha{display:grid;place-items:center;width:42px;height:42px;border-radius:var(--r-pildora);background:var(--roble);color:var(--lino);transition:width .5s var(--curva),background .4s}
+.button:hover .flecha,a.button:hover .flecha{transform:none;width:58px;background:var(--tinta)}
+.cta .button:hover .flecha{background:var(--lino);color:var(--tinta)}
+
+.atajos,.ir-redondo{display:none}
+.gh-texto,.gh-tipo,.gh-nombre{display:block}
+
+/* Cifras en mosaico */
+.bento{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:14px;margin-bottom:20px}
+.bento>div{display:flex;flex-direction:column;justify-content:flex-end;gap:10px;min-width:0;padding:clamp(22px,2.6vw,36px);border-radius:var(--r-tarjeta);background:var(--papel)}
+.bento strong{font-family:var(--titulos);font-weight:200;font-size:clamp(2.4rem,4.4vw,4.4rem);line-height:1;letter-spacing:-.03em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.bento span{font-size:.95rem;line-height:1.45;color:var(--suave)}
+.bento .b-rotulo{font-size:.85rem;font-weight:600;color:var(--roble-texto)}
+.b-grande{grid-row:span 2;position:relative;overflow:hidden;min-height:clamp(300px,30vw,420px);background:var(--noche)!important;color:var(--sobre-noche)}
+.b-grande strong{font-size:clamp(3rem,6.6vw,6.2rem)}
+.b-grande span{color:var(--sobre-noche-suave)}
+.b-grande .b-rotulo{color:var(--piedra)}
+.b-cota{position:absolute;top:clamp(26px,3vw,40px);left:clamp(22px,2.6vw,36px);width:calc(100% - 2*clamp(22px,2.6vw,36px));height:16px;overflow:visible;fill:none;stroke:var(--roble);stroke-width:1.2}
+.b-cota line{vector-effect:non-scaling-stroke}
+.b-roble{background:var(--roble)!important;color:var(--lino)}
+.b-roble span,.b-roble .b-rotulo{color:rgb(245 242 236 / .86)}
+.b-linea{grid-column:2/4;flex-direction:row!important;align-items:center;justify-content:space-between!important}
+.b-linea span:last-child{max-width:22em;text-align:right}
+
+@media(max-width:860px){
+  /* Portada: foto primero, titular, botón de ancho completo y atajos en píldoras */
+  .portada{display:flex;flex-direction:column}
+  .portada .heroe-foto{order:-1;padding-top:84px;margin-bottom:0}
+  .heroe-foto .project-image{aspect-ratio:5/4;width:100%;object-fit:cover}
+  .heroe-foto .marco{width:100%}
+  .heroe-foto figcaption{font-size:.8rem;margin-top:8px}
+  .portada .heroe{padding-top:26px;padding-bottom:8px}
+  .heroe h1{font-size:clamp(2.3rem,10.4vw,3.2rem);margin-bottom:18px}
+  .heroe h1 .renglon+.renglon{padding-left:0}
+  .heroe .intro{font-size:1rem;line-height:1.6}
+  .heroe-nota,.heroe .actions>a:not(.button){display:none}
+  .heroe .actions{display:grid}
+  .heroe .actions .button,.cta .button,.menu-pie .button{width:100%;justify-content:space-between}
+  .atajos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+  .atajos a{display:grid;place-items:center;min-height:48px;border-radius:var(--r-pildora);background:var(--papel);font-size:.92rem;font-weight:600;text-decoration:none}
+
+  /* Botón redondo con flecha sobre las tarjetas de foto */
+  .ir-redondo{position:absolute;right:16px;bottom:16px;z-index:2;display:grid;place-items:center;width:46px;height:46px;border-radius:var(--r-pildora);background:var(--lino);color:var(--tinta);font-size:1.05rem}
+
+  .dos-caras{gap:14px}
+  .cara{min-height:330px;padding:22px}
+  .cara>span:not(.velo):not(.ir-redondo){padding-right:58px}
+  .cara .cara-nombre{font-size:1.75rem}
+  .cara .cara-texto{font-size:.95rem}
+  .cara .cara-ir{display:none}
+  .cara .velo{background:linear-gradient(to top,rgb(20 18 16 / .9),rgb(20 18 16 / .62) 55%,rgb(20 18 16 / .12))}
+  .cara.producto .ir-redondo{background:var(--tinta);color:var(--lino)}
+  .cara.producto{min-height:0;padding-top:250px}
+  .cara.producto img{inset:0 0 auto;height:240px;padding:22px 0 0}
+
+  /* El zoom de fotos queda solo en escritorio: en celular se veía como un collage */
+  .recorre{display:none}
+  .manifiesto{padding-block:72px}
+  .texto-revela{font-size:1.6rem;margin-bottom:28px}
+
+  /* Servicios: tarjetas de foto con rótulo y flecha, sin párrafo largo */
+  .pe{gap:14px}
+  .pe-panel{height:auto;aspect-ratio:6/5}
+  .pe-panel .pe-detalle,.pe-panel .pe-ir{display:none}
+  .pe-texto{padding:20px 76px 22px 20px}
+  .pe-titulo{font-size:1.35rem}
+
+  /* Proyectos: lista vertical de 4 tarjetas en vez de carrusel */
+  .gh:not(.gh-activa) .gh-pista{display:grid;gap:14px;overflow:visible;width:auto;padding-bottom:0;scroll-snap-type:none}
+  .gh-item{position:relative;width:auto}
+  .gh-item:nth-child(n+5){display:none}
+  .gh-foto .project-image{width:100%;aspect-ratio:6/5;object-fit:cover}
+  .gh-foto .cota{top:9%;bottom:auto}
+  .gh-texto{position:absolute;left:0;right:0;bottom:0;display:grid;gap:2px;padding:56px 76px 20px 20px;border-radius:0 0 var(--r-foto) var(--r-foto);background:linear-gradient(to top,rgb(20 18 16 / .85),rgb(20 18 16 / 0));color:var(--lino)}
+  .gh-tipo{margin:0;font-size:.8rem}
+  .gh-item h3{font-size:1.55rem}
+  .gh-nombre{font-size:.88rem;color:rgb(245 242 236 / .8)}
+  .galeria-cabeza{margin-bottom:24px}
+
+  .section-heading>a{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border:0;border-radius:var(--r-pildora);background:var(--papel);color:var(--tinta)}
+  .banda-noche .section-heading>a{background:rgb(245 242 236 / .1);color:var(--sobre-noche)}
+
+  /* Cifras: la grande arriba, dos medias y una franja */
+  .bento{grid-template-columns:1fr 1fr;gap:10px}
+  .b-grande{grid-column:1/-1;grid-row:auto;min-height:250px}
+  .bento>div{padding:20px}
+  .bento strong{font-size:2.3rem}
+  .b-grande strong{font-size:3.4rem}
+  .bento span{font-size:.88rem}
+  .b-linea{grid-column:1/-1;flex-direction:column!important;align-items:flex-start;justify-content:flex-start!important;gap:4px}
+  .b-linea span:last-child{text-align:left}
+
+  .paola{gap:20px}
+  .paola-firma{max-width:150px}
+
+  /* Productos de a dos por fila, con un solo botón */
+  .grid:has(.product-card){grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 12px}
+  .product-card .product-visual{height:200px;padding:14px}
+  .product-card .product-image{max-height:170px}
+  .product-card h3{margin-top:12px;font-size:1.05rem}
+  .product-card p{font-size:.82rem}
+  .product-card .precio{font-size:1.2rem}
+  .product-card .precio-ejemplo{display:table;margin:4px 0 0}
+  .product-card .actions{display:grid;margin-top:12px}
+  .product-card .actions .button.secondary{display:none}
+  .product-card .button{width:100%;min-height:44px;padding:8px 12px;font-size:.86rem}
+
+  /* Menú a pantalla completa con cortina y enlaces escalonados */
+  .mobile-nav .m-cerrar,.mobile-nav[open] .m-abrir{display:none}
+  .mobile-nav[open] .m-cerrar{display:inline}
+  .mobile-nav nav{inset:68px 0 auto;height:calc(100dvh - 68px);display:flex;flex-direction:column;padding:12px var(--margen) calc(24px + env(safe-area-inset-bottom,0px));overflow-y:auto;border-radius:0;box-shadow:none}
+  .mobile-nav[open] nav{animation:cortina .7s var(--curva) both}
+  .mobile-nav nav>a{display:flex;justify-content:space-between;align-items:center;padding:15px 0;font-size:clamp(1.6rem,7.6vw,2.1rem);font-weight:300;animation:sube .7s var(--curva) both;animation-delay:calc(.12s + var(--i) * .06s)}
+  .mobile-nav nav>a span{font-size:1.1rem;color:var(--roble)}
+  .mobile-nav nav>a[aria-current=page]{color:var(--roble-texto)}
+  .menu-pie{margin-top:auto;padding-top:28px;display:grid;gap:12px;animation:sube .7s var(--curva) both;animation-delay:calc(.12s + var(--i) * .06s)}
+  .mobile-nav .menu-pie a.button{padding:6px 6px 6px 24px;font-family:var(--cuerpo);font-size:.95rem;font-weight:600;border-bottom:0;color:var(--lino)}
+  .menu-pie p{margin:0;font-size:.85rem;color:var(--suave);text-align:center}
+  html:has(.mobile-nav[open]){overflow:hidden}
+  body:has(.mobile-nav[open]) .maqueta-aviso{display:none}
+}
+@keyframes cortina{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes sube{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.mobile-nav[open] nav,.mobile-nav nav>a,.menu-pie{animation:none}}

@@ -2,9 +2,10 @@
   "nombre": "PZ Design",
   "razonSocial": "Paola Zaid Design SpA",
   "rut": "77.107.165-1",
-  "fundacion": 2006,
+  "fundacion": 2019,
+  "experienciaDesde": 1996,
   "direccion": {
-    "calle": "General Holley 2294",
+    "calle": "General Holley 2294, piso 3",
     "comuna": "Providencia",
     "ciudad": "Santiago",
     "region": "Región Metropolitana",

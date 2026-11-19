@@ -1,6 +1,8 @@
 ---
 import Imagen from './Imagen.astro';
 import {cotizar} from '../lib/negocio';
+import {tienda, precio, clp} from '../lib/tienda';
 const {producto:p}=Astro.props;
+const valor=tienda?precio(p.slug):undefined;
 ---
-<article class="product-card"><a class="product-visual" href={`/mobiliario-de-oficina/${p.slug}/`} aria-label={`Ver ficha de ${p.modelo}`}><Imagen src={p.imagen} tipo="producto" alt={`${p.modelo}, ${p.variantes[0].toLowerCase()}`}/></a><h3><a href={`/mobiliario-de-oficina/${p.slug}/`}>{p.modelo}</a></h3><p>{p.categoria} · Garantía de {p.garantia} años</p><div class="actions"><a class="button secondary" href={`/mobiliario-de-oficina/${p.slug}/`}>Ver ficha</a><a class="button" href={cotizar(p.modelo)}>Cotizar</a></div></article>
+<article class="product-card"><a class="product-visual" href={`/mobiliario-de-oficina/${p.slug}/`} aria-label={`Ver ficha de ${p.modelo}`}><Imagen src={p.imagen} tipo="producto" alt={`${p.modelo}, ${p.variantes[0].toLowerCase()}`}/></a><h3><a href={`/mobiliario-de-oficina/${p.slug}/`}>{p.modelo}</a></h3><p>{p.categoria} · Garantía de {p.garantia} años</p>{valor?<><p class="precio">{clp(valor)} <span class="precio-ejemplo">precio de ejemplo</span></p><div class="actions"><a class="button secondary" href={`/mobiliario-de-oficina/${p.slug}/`}>Ver ficha</a><button type="button" class="button" data-agregar={JSON.stringify({slug:p.slug,modelo:p.modelo,precio:valor,imagen:p.imagen})}>Agregar al carro</button></div></>:<div class="actions"><a class="button secondary" href={`/mobiliario-de-oficina/${p.slug}/`}>Ver ficha</a><a class="button" href={cotizar(p.modelo)}>Cotizar</a></div>}</article>

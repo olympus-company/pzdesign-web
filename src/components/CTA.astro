@@ -1,4 +1,5 @@
 ---
+import firma from '../../public/img/marca/firma-pz.svg?raw';
 const {titulo='Conversemos sobre tu espacio',texto='Cuéntanos qué necesita tu equipo. Revisamos contigo el alcance y el siguiente paso.'}=Astro.props;
 ---
-<section class="container section"><div class="cta"><div><h2>{titulo}</h2><p>{texto}</p></div><a class="button" href="/contacto/">Cuéntanos tu proyecto <span aria-hidden="true">↗</span></a></div></section>
+<section class="container section"><div class="cta" data-revela><span class="firma-fondo" aria-hidden="true" set:html={firma}/><div><h2>{titulo}</h2><p>{texto}</p></div><a class="button" href="/contacto/">Cuéntanos tu proyecto <span class="flecha" aria-hidden="true">↗</span></a></div></section>

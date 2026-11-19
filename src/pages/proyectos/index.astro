@@ -5,5 +5,5 @@ const tipos=[...new Set(proyectos.map(p=>p.tipo))];
 <Base title="Proyectos de oficinas, radios y locales | PZ Design" description="Conoce nuestros proyectos de oficinas, radios y locales comerciales: Küpfer, Pesco, Panini, La Folie y más. Arquitectura interior y mobiliario a medida." migas={[{nombre:'Proyectos',ruta:'/proyectos/'}]}>
 <Intro titulo="Proyectos con identidad" respuesta="Diseñamos y habilitamos espacios para empresas de distintos sectores: oficinas, radios, salas de ventas y áreas de apoyo para sus equipos. Aquí puedes conocer proyectos de nuestro book, con el alcance de cada intervención y las cifras disponibles. Cada solución combina las necesidades del cliente con las condiciones del espacio."/>
 <div class="container category-links" aria-label="Tipos de proyectos">{tipos.map((t,i)=><a href={`#tipo-${i}`}>{t}</a>)}</div>
-{tipos.map((t,i)=><section id={`tipo-${i}`} class="container section"><h2>{t}</h2><div class="grid">{proyectos.filter(p=>p.tipo===t).map(p=><ProyectoCard proyecto={p}/>)}</div></section>)}<CTA/>
+{tipos.map((t,i)=><section id={`tipo-${i}`} class="container section"><h2>{t}</h2><div class="grid" data-revela>{proyectos.filter(p=>p.tipo===t).map(p=><ProyectoCard proyecto={p}/>)}</div></section>)}<CTA/>
 </Base>
