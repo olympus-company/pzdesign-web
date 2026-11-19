@@ -11,7 +11,13 @@
     "verificar:responsive": "node scripts/verificar-responsive.mjs"
   },
   "dependencies": {
+    "@astrojs/react": "^7.1.9",
     "@astrojs/sitemap": "^3.7.6",
-    "astro": "^7.4.13"
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "astro": "^7.4.13",
+    "motion": "^14.14.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   }
 }

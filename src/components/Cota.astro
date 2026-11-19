@@ -1,0 +1,5 @@
+---
+/** Cota de plano que se dibuja sobre una foto con los metros cuadrados reales del proyecto (book PZ 2024). */
+const {m2} = Astro.props;
+---
+{m2 && <div class="cota" aria-hidden="true"><svg viewBox="0 0 100 16" preserveAspectRatio="none"><line class="tope" x1="0" y1="2" x2="0" y2="14"/><line class="eje" pathLength="1" x1="0" y1="8" x2="100" y2="8"/><line class="tope" x1="100" y1="2" x2="100" y2="14"/></svg><span>{m2} m²</span></div>}
