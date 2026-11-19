@@ -1,0 +1,566 @@
+[
+  {
+    "slug": "logan-tapizada",
+    "modelo": "Logan tapizada",
+    "variantes": [
+      "Tapiz Elasticity o Verona, color a elección",
+      "Estructura cromada o negra",
+      "Brazos fijos adicionales"
+    ],
+    "categoria": "Sillas de visita",
+    "descripcionTecnica": [
+      "Silla con asiento y respaldo de espuma de alta densidad tapizado en tela color a elección.",
+      "Estructura cuatro patas de perfil redondo cromado o negro.",
+      "Asiento de espuma de alta densidad tapizado con Elasticity o Verona color a elección.",
+      "Brazos fijos adicionales.",
+      "V I S I T A"
+    ],
+    "garantia": 5,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/logan-tapizada.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 2
+    }
+  },
+  {
+    "slug": "logan-malla",
+    "modelo": "Logan malla",
+    "variantes": [
+      "Respaldo en malla"
+    ],
+    "categoria": "Sillas de visita",
+    "descripcionTecnica": [
+      "Silla de visita Logan de cuatro patas con respaldo en malla.",
+      "Tapices Elasticity, Verona y C-Soft indicados en la ficha; confirma la configuración al cotizar."
+    ],
+    "garantia": 5,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/logan-malla.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 3
+    }
+  },
+  {
+    "slug": "logan-respaldo-pp",
+    "modelo": "Logan respaldo PP",
+    "variantes": [
+      "Respaldo de polipropileno"
+    ],
+    "categoria": "Sillas de visita",
+    "descripcionTecnica": [
+      "Silla de visita Logan de cuatro patas con respaldo de polipropileno.",
+      "Tapices Elasticity, Verona y C-Soft indicados en la ficha; confirma la configuración al cotizar."
+    ],
+    "garantia": 5,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/logan-respaldo-pp.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 4
+    }
+  },
+  {
+    "slug": "logan-100-pp",
+    "modelo": "Logan 100 % PP",
+    "variantes": [
+      "Asiento y respaldo de polipropileno"
+    ],
+    "categoria": "Sillas de visita",
+    "descripcionTecnica": [
+      "Silla de visita Logan de cuatro patas, versión 100 % polipropileno.",
+      "Consulta los colores disponibles para tu proyecto."
+    ],
+    "garantia": 5,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/logan-100-pp.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 5
+    }
+  },
+  {
+    "slug": "yes",
+    "modelo": "Yes",
+    "variantes": [
+      "Malla y asiento negros"
+    ],
+    "categoria": "Sillas de visita",
+    "descripcionTecnica": [
+      "Silla de respaldo medio, posterior en polipropileno perforado tapizado en malla negra.",
+      "Estructura cuatro patas metálicas de perfil redondo cromado.",
+      "Asiento tapizado en tela color negro.",
+      "Apilable hasta 4 piezas.",
+      "Medidas caja (alto x ancho x largo): 61 x 75 x 106 cm.",
+      "Peso: 32,3 kg.",
+      "4 unidades por caja."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/yes.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 6
+    }
+  },
+  {
+    "slug": "cuba-rr",
+    "modelo": "Cuba RR",
+    "variantes": [
+      "Reclinable, brazos regulables"
+    ],
+    "categoria": "Sillas administrativas",
+    "descripcionTecnica": [
+      "Silla de respaldo medio en malla negra.",
+      "Mecanismo reclinable con regulación de tensión manual.",
+      "Asiento de espuma de alta densidad tapizado en tela negra.",
+      "Brazos regulables en altura con cubierta en PU.",
+      "Base nylon.",
+      "Ruedas desmopan.",
+      "Medidas caja (alto x ancho x largo): 56 x 26 x 60 cm.",
+      "Peso: 10,7 kg."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/cuba-rr.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 7
+    }
+  },
+  {
+    "slug": "cuba-rf",
+    "modelo": "Cuba RF",
+    "variantes": [
+      "Reclinable, brazos fijos"
+    ],
+    "categoria": "Sillas administrativas",
+    "descripcionTecnica": [
+      "Silla de respaldo medio en malla negra.",
+      "Mecanismo reclinable con regulación de tensión manual.",
+      "Asiento de espuma de alta densidad tapizado en tela negra.",
+      "Brazos fijos.",
+      "Base nylon.",
+      "Ruedas nylon.",
+      "Medidas caja (alto x ancho x largo): 56 x 26 x 60 cm.",
+      "Peso: 10,7 kg."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/cuba-rf.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 8
+    }
+  },
+  {
+    "slug": "cuba-ff",
+    "modelo": "Cuba FF",
+    "variantes": [
+      "Mecanismo y brazos fijos"
+    ],
+    "categoria": "Sillas administrativas",
+    "descripcionTecnica": [
+      "Silla de respaldo medio en malla negra.",
+      "Mecanismo fijo.",
+      "Asiento de espuma de alta densidad tapizado en tela negra.",
+      "Brazos fijos.",
+      "Base nylon.",
+      "Ruedas nylon.",
+      "Medidas caja (alto x ancho x largo): 56 x 26 x 60 cm.",
+      "Peso: 10,7 kg."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/cuba-ff.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 9
+    }
+  },
+  {
+    "slug": "tossy-blanca",
+    "modelo": "Tossy blanca",
+    "variantes": [
+      "Estructura blanca y tapiz gris",
+      "Cabecero adicional"
+    ],
+    "categoria": "Sillas administrativas",
+    "descripcionTecnica": [
+      "Silla estructura color blanco, respaldo tapizado en malla color gris.",
+      "Apoyo lumbar fijo de polipropileno.",
+      "Mecanismo sincrónico con regulación de tensión manual con una posición de bloqueo.",
+      "Asiento de espuma de alta densidad tapizado en tela color gris.",
+      "Brazos regulables en altura con cubierta en PU.",
+      "Base poliamida.",
+      "Ruedas desmopan.",
+      "Cabecero adicional.",
+      "Medidas caja (alto x ancho x largo): 65 X 29 X 60 cm.",
+      "Peso: 13,8 kg."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/tossy-blanca.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 10
+    }
+  },
+  {
+    "slug": "tossy-negra",
+    "modelo": "Tossy negra",
+    "variantes": [
+      "Estructura y tapiz negros",
+      "Cabecero adicional"
+    ],
+    "categoria": "Sillas administrativas",
+    "descripcionTecnica": [
+      "Silla estructura color negro, respaldo tapizado en malla color negro.",
+      "Apoyo lumbar fijo de polipropileno.",
+      "Mecanismo sincrónico con regulación de tensión manual con una posición de bloqueo.",
+      "Asiento de espuma de alta densidad tapizado en tela color negro.",
+      "Brazos regulables en altura con cubierta en PU.",
+      "Base poliamida.",
+      "Ruedas desmopan.",
+      "Cabecero adicional.",
+      "Medidas caja (alto x ancho x largo): 65 X 29 X 60 cm.",
+      "Peso: 13,8 kg."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/tossy-negra.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 11
+    }
+  },
+  {
+    "slug": "tossy-full",
+    "modelo": "Tossy Full",
+    "variantes": [
+      "Negra, con desplazador de asiento",
+      "Cabecero adicional"
+    ],
+    "categoria": "Sillas administrativas",
+    "descripcionTecnica": [
+      "Silla estructura color negro, respaldo tapizado en malla color negro.",
+      "Apoyo lumbar fijo de polipropileno.",
+      "Mecanismo multiblock con regulación de tensión manual.",
+      "Asiento de espuma de alta densidad tapizado en tela color negro con desplazador de asiento.",
+      "Brazos regulables en 3D con cubierta en PU.",
+      "Base poliamida.",
+      "Ruedas desmopan.",
+      "Cabecero adicional.",
+      "Medidas caja (alto x ancho x largo): 65 X 29 X 60 cm.",
+      "Peso: 13,8 kg."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/tossy-full.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 12
+    }
+  },
+  {
+    "slug": "big-boss-negra",
+    "modelo": "Big Boss negra",
+    "variantes": [
+      "Negra con desplazador"
+    ],
+    "categoria": "Sillas ejecutivas",
+    "descripcionTecnica": [
+      "Silla ejecutiva Big Boss negra con desplazador de asiento.",
+      "Confirma con nosotros los ajustes y accesorios de la configuración disponible."
+    ],
+    "garantia": 5,
+    "certificaciones": [
+      "BIFMA"
+    ],
+    "imagen": "/img/catalogo/big-boss-negra.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 13
+    }
+  },
+  {
+    "slug": "big-boss-blanca",
+    "modelo": "Big Boss blanca",
+    "variantes": [
+      "Blanca sin desplazador",
+      "Cabecero adicional regulable en altura"
+    ],
+    "categoria": "Sillas ejecutivas",
+    "descripcionTecnica": [
+      "Silla respaldo alto en malla color blanco.",
+      "Apoyo lumbar de polipropileno regulable en altura.",
+      "Mecanismo sincrónico autopesante multiblock.",
+      "Asiento de espuma de alta densidad tapizado en tela color gris.",
+      "Brazos regulables en 2D con cubierta en polipropileno de gran resistencia",
+      "Base poliamida.",
+      "Ruedas desmopan.",
+      "Cabecero regulable en altura (adicional)."
+    ],
+    "garantia": 5,
+    "certificaciones": [
+      "BIFMA"
+    ],
+    "imagen": "/img/catalogo/big-boss-blanca.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 14
+    }
+  },
+  {
+    "slug": "oxford-gris",
+    "modelo": "Oxford gris",
+    "variantes": [
+      "Gris, con o sin cabecero"
+    ],
+    "categoria": "Sillas ejecutivas",
+    "descripcionTecnica": [
+      "Respaldo nylon + fibra de vidrio color gris.",
+      "Respaldo en malla y tapiz de poliéster color gris.",
+      "Apoyo lumbar regulable",
+      "Asiento de espuma moldeada alta densidad.",
+      "Mecanismo Sincrónico con 1 posición de bloqueo con regulación de tensión manual.",
+      "Brazos con ajuste de altura en PU color gris.",
+      "Reclinación en 123 grados.",
+      "Gas Clase 3.",
+      "Base nylon con fibra de vidrio color gris.",
+      "Ruedas nylon color negro.",
+      "Disponible con o sin cabecero"
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/oxford-gris.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 15
+    }
+  },
+  {
+    "slug": "oxford-negra",
+    "modelo": "Oxford negra",
+    "variantes": [
+      "Negra, con o sin cabecero"
+    ],
+    "categoria": "Sillas ejecutivas",
+    "descripcionTecnica": [
+      "Respaldo de nylon + fibra de vidrio color negro o gris.",
+      "Malla y tapiz: poliéster color negro o gris.",
+      "Asiento: Espuma moldeada alta densidad.",
+      "Apoyo lumbar regulable",
+      "Brazos con ajuste de altura en PU color negro.",
+      "Reclinación en 123 grados.",
+      "Gas clase 3.",
+      "Base nylon con fibra de vidrio con ruedas nylon color negro.",
+      "Certificado Bifma.",
+      "Disponible con o sin cabecero.",
+      "Cabecero regulable en ángulo y altura."
+    ],
+    "garantia": 2,
+    "certificaciones": [
+      "BIFMA"
+    ],
+    "imagen": "/img/catalogo/oxford-negra.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 16
+    }
+  },
+  {
+    "slug": "ergohuman",
+    "modelo": "Ergohuman Ultra malla",
+    "variantes": [
+      "Malla y asiento negros"
+    ],
+    "categoria": "Sillas de alta gama",
+    "descripcionTecnica": [
+      "Respaldo en malla, con regulación de altura en 6 posiciones.",
+      "Mecanismo sincrónico multiblock.",
+      "Sistema de reclinación de respaldo con ángulo negativo.",
+      "Asiento anatómico en malla con desplazador de asiento.",
+      "Brazo regulable en 4D con cubierta en poliuretano.",
+      "Cabecero en malla regulable en altura y ángulo.",
+      "Perchero abatible.",
+      "Base aluminio.",
+      "Ruedas desmopan.",
+      "Malla y asiento en color negro.",
+      "Medidas caja (alto x ancho x largo): 65 x 56 x 82 cm.",
+      "Peso: 31,2 kg."
+    ],
+    "garantia": 5,
+    "certificaciones": [
+      "BIFMA"
+    ],
+    "imagen": "/img/catalogo/ergohuman.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 17
+    }
+  },
+  {
+    "slug": "ergoplus-negra",
+    "modelo": "Ergoplus negra",
+    "variantes": [
+      "Negra"
+    ],
+    "categoria": "Sillas de alta gama",
+    "descripcionTecnica": [
+      "Silla ergonómica Ergoplus en versión negra.",
+      "Peso soportado: 140 kg.",
+      "Altura total indicada: 1170–1270 mm; altura de asiento: 460–560 mm."
+    ],
+    "garantia": 5,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/ergoplus-negra.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 18
+    }
+  },
+  {
+    "slug": "ergoplus-blanca",
+    "modelo": "Ergoplus blanca",
+    "variantes": [
+      "Blanca"
+    ],
+    "categoria": "Sillas de alta gama",
+    "descripcionTecnica": [
+      "Silla ergonómica Ergoplus en versión blanca.",
+      "Peso soportado: 140 kg.",
+      "Altura total indicada: 1170–1270 mm; altura de asiento: 460–560 mm."
+    ],
+    "garantia": 5,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/ergoplus-blanca.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 19
+    }
+  },
+  {
+    "slug": "max-plus",
+    "modelo": "Max Plus",
+    "variantes": [
+      "Base eléctrica, cubierta no incluida"
+    ],
+    "categoria": "Escritorios regulables",
+    "descripcionTecnica": [
+      "Base eléctrica regulable en altura de 3 segmentos con 2 motores.",
+      "Posee un panel touch screen con 3 memorias de posiciones y visualizador de altura.",
+      "Función de anticolisión.",
+      "Rango de ancho: 100 - 170 cm.",
+      "Rango de altura: 62 - 128 cm.",
+      "Capacidad de peso: 125 kg.",
+      "Alarma para cambio de posiciones de trabajo.",
+      "Patines regulables de altura.",
+      "Canal pasa cables.",
+      "Consumo eléctrico 200 W",
+      "Medidas para cubierta (no incluida): 1100-2200 x 700-1000mm",
+      "Medidas caja (alto x ancho x largo): 22 x 30 x 101 cm.",
+      "Peso: 34,5 kg."
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/max-plus.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 21
+    }
+  },
+  {
+    "slug": "gold-up",
+    "modelo": "Gold Up",
+    "variantes": [
+      "Estructura y cubierta blancas"
+    ],
+    "categoria": "Escritorios regulables",
+    "descripcionTecnica": [
+      "Cubierta de melamina blanca 1200 × 600 × 15 mm",
+      "Estructura de acero electropintado blanco",
+      "Motor simple",
+      "Segmento: 2 etapas invertidas",
+      "Viga telescópica para cubierta de 1200-1400 mm largo",
+      "Control manual de 4 teclas (Subir + Bajar + 2 memorias)",
+      "Patas cuadrados con placa de acero",
+      "Velocidad: 18 mm/s",
+      "Rango de altura: 710 - 1160 mm",
+      "Capacidad de carga: 50 kg",
+      "Nivel de ruido: ≤48 dB"
+    ],
+    "garantia": 2,
+    "certificaciones": [],
+    "imagen": "/img/catalogo/gold-up.jpg",
+    "pendiente": false,
+    "fuente": {
+      "documento": "Fichas PZ Design, noviembre de 2026",
+      "pagina": 22
+    }
+  },
+  {
+    "slug": "tintoretto",
+    "modelo": "Tintoretto",
+    "variantes": [],
+    "categoria": "Butacas",
+    "descripcionTecnica": [],
+    "garantia": null,
+    "certificaciones": [],
+    "imagen": null,
+    "pendiente": true
+  },
+  {
+    "slug": "kyoto-s",
+    "modelo": "Kyoto S",
+    "variantes": [],
+    "categoria": "Butacas",
+    "descripcionTecnica": [],
+    "garantia": null,
+    "certificaciones": [],
+    "imagen": null,
+    "pendiente": true
+  },
+  {
+    "slug": "kyoto-m",
+    "modelo": "Kyoto M",
+    "variantes": [],
+    "categoria": "Butacas",
+    "descripcionTecnica": [],
+    "garantia": null,
+    "certificaciones": [],
+    "imagen": null,
+    "pendiente": true
+  },
+  {
+    "slug": "kyoto-l",
+    "modelo": "Kyoto L",
+    "variantes": [],
+    "categoria": "Butacas",
+    "descripcionTecnica": [],
+    "garantia": null,
+    "certificaciones": [],
+    "imagen": null,
+    "pendiente": true
+  }
+]

@@ -1,0 +1,3 @@
+@font-face{font-family:Jost;src:url('/fonts/jost-variable.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'Source Sans 3';src:url('/fonts/source-sans-3-variable.woff2') format('woff2');font-style:normal;font-weight:200 900;font-display:swap}
+:root{--negro:#111111;--grafito:#404040;--piedra:#8A8A8A;--gris:#EBEBEB;--blanco:#FFFFFF;--fondo:var(--blanco);--texto:var(--negro);--secundario:var(--grafito);--borde:var(--gris);--titulos:Jost,'Helvetica Neue',sans-serif;--cuerpo:'Source Sans 3',Arial,sans-serif;--radio:2px;--ancho:1200px;--margen:clamp(20px,5vw,72px);--seccion:clamp(48px,7vw,96px)}

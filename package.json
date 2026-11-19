@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "build": "astro build",
-    "preview": "astro preview --host 0.0.0.0"
+    "preview": "astro preview --host 0.0.0.0",
+    "verificar": "node scripts/verificar.mjs",
+    "verificar:dist": "node scripts/verificar-dist.mjs",
+    "verificar:responsive": "node scripts/verificar-responsive.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.6",

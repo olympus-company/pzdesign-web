@@ -1,3 +1,0 @@
-# En construcción: no indexar hasta el lanzamiento en pzdesign.cl
-User-agent: *
-Disallow: /

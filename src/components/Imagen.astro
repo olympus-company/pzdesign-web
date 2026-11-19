@@ -1,0 +1,6 @@
+---
+import imagenes from '../data/imagenes.json';
+const {src, alt, tipo = 'proyecto', posicion = '50% 60%'} = Astro.props;
+const {width,height} = imagenes[src as keyof typeof imagenes];
+---
+<img src={src} alt={alt} width={width} height={height} loading="lazy" decoding="async" class={tipo === 'producto' ? 'product-image' : 'project-image'} style={`object-position:${posicion};max-width:min(100%,${width}px);max-height:${height}px`} />
