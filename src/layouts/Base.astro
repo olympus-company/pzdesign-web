@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Marca from '../components/Marca.astro';
 import {negocio, telefonoE164, direccion, whatsapp, absoluto} from '../lib/negocio';
 import {lanzado} from '../lib/lanzamiento';
+import {tienda} from '../lib/tienda';
 const {title, description, ruta = Astro.url.pathname, migas = [], schema = [], redireccion} = Astro.props;
 const canonical = absoluto(ruta);
 const crumbs = [{nombre:'Inicio',ruta:'/'}, ...migas];
@@ -15,7 +16,7 @@ const graph = {
     ...schema
   ]
 };
-const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Proyectos',ruta:'/proyectos/'},{nombre:'Mobiliario',ruta:'/mobiliario-de-oficina/'},{nombre:'Cómo trabajamos',ruta:'/como-trabajamos/'},{nombre:'Paola Zaid',ruta:'/paola-zaid/'},{nombre:'Conversemos',ruta:'/contacto/'}];
+const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Proyectos',ruta:'/proyectos/'},{nombre:tienda?'Tienda':'Mobiliario',ruta:'/mobiliario-de-oficina/'},{nombre:'Cómo trabajamos',ruta:'/como-trabajamos/'},{nombre:'Paola Zaid',ruta:'/paola-zaid/'},{nombre:'Conversemos',ruta:'/contacto/'}];
 ---
 <!doctype html>
 <html lang="es-CL">
@@ -29,13 +30,20 @@ const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Pro
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="site-header" data-cabecera><div class="container header-inner"><Marca/><nav class="desktop-nav" aria-label="Principal">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav><details class="mobile-nav"><summary>Menú</summary><nav aria-label="Principal móvil">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav></details></div></header>
+<header class="site-header" data-cabecera><div class="container header-inner"><Marca/><nav class="desktop-nav" aria-label="Principal">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav><div class="cabecera-acciones">{tienda&&<a href="/tienda/carro/" class="carro-boton" aria-label="Ver carro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.1 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2L21 8H6.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.3" fill="currentColor"/><circle cx="17.5" cy="20" r="1.3" fill="currentColor"/></svg><span data-carro-cuenta>0</span></a>}<details class="mobile-nav"><summary>Menú</summary><nav aria-label="Principal móvil">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav></details></div></div></header>
+{tienda&&<p class="maqueta-aviso">Maqueta de la tienda · los precios son de ejemplo y el pago aún no está conectado</p>}
 <main id="contenido">
 {migas.length>0 && <nav class="container breadcrumbs" aria-label="Ruta de navegación"><ol>{crumbs.map((c,i)=><li>{i===crumbs.length-1?<span aria-current="page">{c.nombre}</span>:<a href={c.ruta}>{c.nombre}</a>}</li>)}</ol></nav>}
 <slot/>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-grid"><div><Marca/><p>Arquitectura + diseño de interior<br/>Soluciones a la medida desde {negocio.fundacion}</p><address>{direccion}</address></div><div><h2>Explora</h2><ul><li><a href="/habilitacion-de-oficinas/">Habilitación de oficinas</a></li><li><a href="/diseno-y-arquitectura-interior/">Diseño y arquitectura interior</a></li><li><a href="/proyectos-especiales/">Radios y estudios</a></li><li><a href="/locales-comerciales/">Locales comerciales</a></li><li><a href="/proyectos/">Proyectos</a></li><li><a href="/mobiliario-de-oficina/">Mobiliario de oficina</a></li></ul></div><div><h2>Conversemos</h2><ul><li><a href={whatsapp()}>WhatsApp</a></li><li><a href={`tel:${telefonoE164}`}>{negocio.telefono}</a></li><li><a href={`mailto:${negocio.correo}`}>{negocio.correo}</a></li><li><a href="/contacto/">Cuéntanos tu proyecto</a></li></ul></div></div><div class="footer-bottom"><span>© {new Date().getFullYear()} {negocio.razonSocial}</span><a href="/privacidad/">Privacidad</a></div></div></footer>
+<p class="toast" data-toast role="status" hidden></p>
 <script>
+import {agregar,unidades} from '../lib/carro';
+// Carro de la maqueta: contador y botones «Agregar al carro».
+const cuenta=document.querySelector('[data-carro-cuenta]');const toast=document.querySelector<HTMLElement>('[data-toast]');
+const pintar=()=>{if(cuenta)cuenta.textContent=String(unidades());};pintar();document.addEventListener('carro',pintar);
+document.addEventListener('click',ev=>{const b=(ev.target as HTMLElement).closest<HTMLElement>('[data-agregar]');if(!b)return;const x=JSON.parse(b.dataset.agregar!);const sel=b.dataset.cantidadDe;const inp=sel?document.querySelector<HTMLInputElement>(sel):null;const n=inp?Math.max(1,Math.floor(Number(inp.value)||1)):1;agregar(x,n);if(toast){toast.textContent=`${n} × ${x.modelo} agregado al carro`;toast.hidden=false;clearTimeout(Number(toast.dataset.t));toast.dataset.t=String(setTimeout(()=>toast.hidden=true,2600));}});
 // Cabecera compacta al bajar, aparición escalonada y cotas que se dibujan al entrar en pantalla.
 const cab=document.querySelector('[data-cabecera]');
 const marcar=()=>cab?.classList.toggle('baja',scrollY>24);marcar();addEventListener('scroll',marcar,{passive:true});

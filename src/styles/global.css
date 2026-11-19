@@ -316,3 +316,65 @@ textarea{resize:vertical;min-height:150px}
   .paola-firma{max-width:360px}
 }
 @media(prefers-reduced-motion:reduce){.cinta-pista{animation:none}.js .paola-firma>span{clip-path:none}}
+
+/* ===== Maqueta de tienda ===== */
+.cabecera-acciones{display:flex;align-items:center;gap:14px}
+.carro-boton{position:relative;display:grid;place-items:center;width:46px;height:46px;border:1px solid var(--linea);text-decoration:none;transition:background .4s,color .4s}
+.carro-boton:hover{background:var(--tinta);color:var(--lino)}
+.carro-boton svg{width:22px;height:22px}
+.carro-boton span{position:absolute;top:-7px;right:-7px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--roble);color:var(--lino);font-size:.72rem;font-weight:700;display:grid;place-items:center}
+.maqueta-aviso{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:40;margin:0;padding:8px 16px;background:var(--roble);color:var(--lino);font-size:.8rem;font-weight:600;text-align:center;width:max-content;max-width:calc(100% - 32px)}
+.toast{position:fixed;right:16px;top:96px;z-index:60;margin:0;padding:14px 20px;background:var(--tinta);color:var(--lino);font-weight:600;box-shadow:0 12px 30px rgb(0 0 0 / .18)}
+.precio{font-family:var(--titulos);font-size:1.5rem;font-weight:400;color:var(--tinta)!important;margin:6px 0 4px!important}
+.precio-ficha{font-size:clamp(2rem,3vw,2.8rem);font-weight:300;margin:0 0 18px!important}
+.precio-ejemplo{display:inline-block;vertical-align:middle;font-family:var(--cuerpo);font-size:.72rem;font-weight:700;color:var(--roble-texto);border:1px solid currentColor;padding:2px 7px;margin-left:6px}
+button.button{cursor:pointer}
+.quote-panel .button{margin:6px 10px 6px 0}
+.pasos-compra{display:flex;flex-wrap:wrap;gap:8px 28px;list-style:none;padding:0;margin:28px 0 0;font-size:.92rem;color:var(--suave);counter-reset:pc}
+.pasos-compra li{counter-increment:pc;margin:0;display:flex;gap:8px;align-items:center}
+.pasos-compra li::before{content:counter(pc);display:grid;place-items:center;width:26px;height:26px;border:1px solid var(--piedra);border-radius:50%;font-size:.8rem}
+.pasos-compra .actual{color:var(--tinta);font-weight:600}
+.pasos-compra .actual::before,.pasos-compra .hecho::before{background:var(--tinta);color:var(--lino);border-color:var(--tinta)}
+.compra{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start;padding-top:0}
+.lineas{list-style:none;margin:0;padding:0}
+.linea{display:grid;grid-template-columns:96px minmax(0,1fr) auto auto auto;gap:18px;align-items:center;padding:18px 0;border-top:1px solid var(--linea);margin:0}
+.linea img{width:96px;height:96px;object-fit:contain;background:var(--papel);mix-blend-mode:multiply}
+.linea h3{margin:0 0 4px;font-size:1.2rem}.linea h3 a{text-decoration:none}
+.linea p{margin:0}.linea .sub{font-family:var(--titulos);font-size:1.15rem}
+.cant{display:flex;align-items:center;border:1px solid var(--linea)}
+.cant button{width:36px;height:38px;border:0;background:none;font-size:1.1rem}
+.cant span{min-width:28px;text-align:center;font-weight:600}
+.quitar{border:0;background:none;color:var(--suave);text-decoration:underline;font-size:.85rem}
+.resumen{position:sticky;top:96px;background:var(--papel);border:1px solid var(--linea);padding:28px}
+.resumen h2{font-size:1.6rem}
+.resumen dl{display:grid;grid-template-columns:1fr auto;gap:10px;margin:0 0 24px}
+.resumen dd{margin:0;text-align:right}
+.resumen .total{font-family:var(--titulos);font-size:1.4rem;padding-top:12px;border-top:1px solid var(--linea)}
+.resumen .button{width:100%}
+.volumen{margin:20px 0 0;font-size:.92rem;color:var(--suave)}
+.mini{list-style:none;padding:0;margin:0 0 18px;color:var(--suave);font-size:.95rem}
+.pago fieldset{border:0;padding:0;margin:0}
+.pago legend{font-weight:600;margin-bottom:10px}
+.pago .dos{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.opcion{display:inline-flex!important;grid-auto-flow:column;align-items:center;gap:8px;margin-right:22px;font-weight:400!important}
+.opcion input,.medio input{width:18px;height:18px;margin:0;accent-color:var(--tinta);justify-self:start}
+.medios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.medio{border:1px solid var(--linea);padding:16px;display:grid!important;gap:4px;cursor:pointer;font-weight:600}
+.medio:has(input:checked){border-color:var(--tinta);background:var(--papel)}
+.medio small{color:var(--suave);font-weight:400}
+.pagar{justify-self:stretch!important}
+.maqueta-fin{border:1px solid var(--roble);background:var(--papel);padding:24px}
+.maqueta-fin h2{font-size:1.6rem}
+.dos-caras{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cara{position:relative;display:grid;align-content:end;min-height:clamp(420px,52vw,640px);padding:clamp(24px,3.4vw,48px);overflow:hidden;text-decoration:none;color:var(--lino);background:var(--noche)}
+.cara img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--curva)}
+.cara.producto{background:var(--papel);color:var(--tinta)}
+.cara.producto img{object-fit:contain;padding:6% 20% 38%;mix-blend-mode:multiply}
+.cara:hover img{transform:scale(1.04)}
+.cara .velo{position:absolute;inset:0;background:linear-gradient(to top,rgb(20 18 16 / .82),rgb(20 18 16 / .1) 60%)}
+.cara.producto .velo{display:none}
+.cara>span{position:relative;display:grid;gap:12px;max-width:26em}
+.cara .cara-nombre{font-family:var(--titulos);font-weight:300;font-size:clamp(1.9rem,3.6vw,3.2rem);line-height:1.05}
+.cara .cara-texto{opacity:.85}
+.cara .cara-ir{font-weight:600}
+@media(max-width:860px){.compra,.dos-caras,.pago .dos{grid-template-columns:1fr}.resumen{position:static}.linea{grid-template-columns:72px minmax(0,1fr) auto;grid-template-areas:'img info info' 'img cant sub' 'img quitar quitar'}.linea img{width:72px;height:72px;grid-area:img}.linea>div:nth-child(2){grid-area:info}.linea .cant{grid-area:cant;justify-self:start}.linea .sub{grid-area:sub;text-align:right}.linea .quitar{grid-area:quitar;justify-self:start}.medios{grid-template-columns:1fr}.carro-boton{width:42px;height:42px}}

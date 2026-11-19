@@ -1,0 +1,73 @@
+---
+// Maqueta de compra (carro y pago). Solo existe con PUBLIC_TIENDA=true; apagada, no se genera ninguna página.
+import Base from '../../layouts/Base.astro';
+import Intro from '../../components/Intro.astro';
+import {tienda, VOLUMEN} from '../../lib/tienda';
+import {whatsapp} from '../../lib/negocio';
+export function getStaticPaths(){
+  if(import.meta.env.PUBLIC_TIENDA!=='true')return [];
+  return [{params:{paso:'carro'}},{params:{paso:'pagar'}}];
+}
+const {paso}=Astro.params;
+const esCarro=paso==='carro';
+const pasos=['Carro','Tus datos y despacho','Pago'];
+const actual=esCarro?0:1;
+---
+{tienda&&<Base title={esCarro?'Tu carro de compra | PZ Design':'Datos de compra y pago | PZ Design'} description={esCarro?'Revisa los productos de tu carro antes de pagar. Para equipar a tu empresa desde 10 unidades, te preparamos una cotización por volumen.':'Completa los datos de facturación y despacho de tu compra de mobiliario de oficina y elige cómo pagar de forma segura.'} migas={[{nombre:'Tienda',ruta:'/mobiliario-de-oficina/'},{nombre:esCarro?'Carro':'Pago',ruta:`/tienda/${paso}/`}]}>
+<Intro titulo={esCarro?'Tu carro':'Datos y pago'} respuesta={esCarro?'Revisa los modelos y las cantidades antes de pasar al pago. Los precios de esta maqueta son de ejemplo. Si vas a equipar varios puestos de tu empresa, desde diez unidades te conviene pedir una cotización por volumen: revisamos contigo modelos, plazos y condiciones de entrega.':'Completa los datos de facturación y de despacho y elige cómo pagar. En esta maqueta el pago todavía no está conectado: la pasarela, que puede ser Webpay, Mercado Pago o Flow, se definirá con PZ Design. Despachamos en Santiago y coordinamos la entrega contigo.'}>
+<ol class="pasos-compra" aria-label="Pasos de la compra">{pasos.map((x,i)=><li class:list={[i<actual&&'hecho',i===actual&&'actual']}>{x}</li>)}</ol>
+</Intro>
+{esCarro?
+<section class="container section compra" data-carro>
+  <div>
+    <ul class="lineas" data-lineas></ul>
+    <div class="carro-vacio" data-vacio><p>Tu carro está vacío.</p><a class="button" href="/mobiliario-de-oficina/">Ir a la tienda <span class="flecha" aria-hidden="true">↗</span></a></div>
+  </div>
+  <aside class="resumen" data-resumen hidden>
+    <h2>Resumen</h2>
+    <dl><dt>Subtotal</dt><dd data-subtotal></dd><dt>Despacho en Santiago</dt><dd>Por confirmar</dd><dt class="total">Total</dt><dd class="total" data-total></dd></dl>
+    <a class="button" href="/tienda/pagar/">Continuar al pago <span class="flecha" aria-hidden="true">↗</span></a>
+    <p class="volumen" data-volumen hidden>Llevas <strong data-unidades></strong> unidades. Para empresas que compran desde {VOLUMEN} unidades preparamos una cotización por volumen. <a href={whatsapp('Hola, quiero una cotización por volumen para mi empresa.')}>Pedir cotización por volumen ↗</a></p>
+  </aside>
+</section>
+:
+<section class="container section compra">
+  <form class="form-grid pago" data-pago>
+    <fieldset><legend>¿Compras para una empresa?</legend><label class="opcion"><input type="radio" name="tipo" value="empresa" checked/> Sí, con factura</label><label class="opcion"><input type="radio" name="tipo" value="persona"/> No, con boleta</label></fieldset>
+    <div class="dos"><label>RUT<input name="rut" required autocomplete="off" placeholder="76.123.456-7"/></label><label>Razón social o nombre<input name="nombre" required autocomplete="organization"/></label></div>
+    <div class="dos"><label>Correo<input name="correo" type="email" required autocomplete="email"/></label><label>Teléfono<input name="telefono" type="tel" required autocomplete="tel"/></label></div>
+    <div class="dos"><label>Dirección de despacho<input name="direccion" required autocomplete="street-address"/></label><label>Comuna<input name="comuna" required placeholder="Providencia"/></label></div>
+    <fieldset><legend>Medio de pago</legend><div class="medios">{['Webpay','Mercado Pago','Flow'].map((m,i)=><label class="medio"><input type="radio" name="medio" value={m} checked={i===0}/><span>{m}</span><small>Por definir</small></label>)}</div></fieldset>
+    <button type="submit" class="button pagar">Pagar <span data-total></span></button>
+    <p class="small muted">Al pagar aceptas nuestra <a href="/privacidad/">política de privacidad</a>.</p>
+    <div class="maqueta-fin" data-fin role="status" hidden><h2>Aquí se conectará el pago</h2><p>Esta es una maqueta. Al elegir la pasarela, este botón te llevará a pagar y luego a la confirmación de tu pedido.</p></div>
+  </form>
+  <aside class="resumen"><h2>Tu pedido</h2><ul class="mini" data-mini></ul><dl><dt>Despacho en Santiago</dt><dd>Por confirmar</dd><dt class="total">Total</dt><dd class="total" data-total></dd></dl><a href="/tienda/carro/">Editar carro</a></aside>
+</section>}
+</Base>}
+<script>
+import {leer,guardar,total,unidades,clp} from '../../lib/carro';
+const VOL=10;
+const pintar=()=>{
+  const l=leer();
+  document.querySelectorAll('[data-total]').forEach(e=>e.textContent=clp(total()));
+  const sub=document.querySelector('[data-subtotal]');if(sub)sub.textContent=clp(total());
+  const lineas=document.querySelector('[data-lineas]');
+  if(lineas){
+    document.querySelector<HTMLElement>('[data-vacio]')!.hidden=l.length>0;
+    document.querySelector<HTMLElement>('[data-resumen]')!.hidden=l.length===0;
+    const vol=document.querySelector<HTMLElement>('[data-volumen]');if(vol){vol.hidden=unidades()<VOL;document.querySelector('[data-unidades]')!.textContent=String(unidades());}
+    lineas.replaceChildren(...l.map(x=>{const li=document.createElement('li');li.className='linea';
+      li.innerHTML=`<img src="${x.imagen}" alt="" width="800" height="860" loading="lazy"/><div><h3><a href="/mobiliario-de-oficina/${x.slug}/">${x.modelo}</a></h3><p class="muted">${clp(x.precio)} c/u · precio de ejemplo</p></div><div class="cant"><button type="button" data-menos aria-label="Quitar una unidad">−</button><span>${x.cantidad}</span><button type="button" data-mas aria-label="Agregar una unidad">+</button></div><p class="sub">${clp(x.precio*x.cantidad)}</p><button type="button" class="quitar" data-quitar>Quitar</button>`;
+      li.querySelector('[data-mas]')!.addEventListener('click',()=>{x.cantidad++;guardar(l);});
+      li.querySelector('[data-menos]')!.addEventListener('click',()=>{x.cantidad=Math.max(1,x.cantidad-1);guardar(l);});
+      li.querySelector('[data-quitar]')!.addEventListener('click',()=>guardar(l.filter(y=>y!==x)));
+      return li;}));
+  }
+  const mini=document.querySelector('[data-mini]');
+  if(mini)mini.replaceChildren(...l.map(x=>{const li=document.createElement('li');li.textContent=`${x.cantidad} × ${x.modelo} · ${clp(x.precio*x.cantidad)}`;return li;}));
+};
+pintar();document.addEventListener('carro',pintar);
+const form=document.querySelector<HTMLFormElement>('[data-pago]');
+form?.addEventListener('submit',ev=>{ev.preventDefault();if(!form.reportValidity())return;const fin=form.querySelector<HTMLElement>('[data-fin]');if(fin){fin.hidden=false;fin.scrollIntoView({behavior:'smooth',block:'center'});}});
+</script>
