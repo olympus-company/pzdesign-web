@@ -9,4 +9,5 @@
   --titulos:Jost,'Helvetica Neue',Arial,sans-serif;--cuerpo:'Source Sans 3','Helvetica Neue',Arial,sans-serif;
   --ancho:1320px;--margen:clamp(20px,5vw,72px);--seccion:clamp(88px,11vw,180px);
   --curva:cubic-bezier(.22,1,.36,1);
+  --r-foto:22px;--r-tarjeta:26px;--r-campo:14px;--r-pildora:999px;
 }

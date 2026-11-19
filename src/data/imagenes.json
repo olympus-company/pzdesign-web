@@ -142,5 +142,337 @@
   "/img/proyectos/universidad-de-chile.jpg": {
     "width": 1600,
     "height": 1015
+  },
+  "/img/proyectos/pesco-edificio-comercial/01.jpg": {
+    "width": 1276,
+    "height": 765
+  },
+  "/img/proyectos/pesco-edificio-comercial/02.jpg": {
+    "width": 1060,
+    "height": 886
+  },
+  "/img/proyectos/pesco-edificio-comercial/03.jpg": {
+    "width": 1107,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/04.jpg": {
+    "width": 1119,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/05.jpg": {
+    "width": 1162,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/06.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/07.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/08.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/09.jpg": {
+    "width": 719,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/10.jpg": {
+    "width": 737,
+    "height": 958
+  },
+  "/img/proyectos/pesco-edificio-comercial/11.jpg": {
+    "width": 743,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/12.jpg": {
+    "width": 832,
+    "height": 960
+  },
+  "/img/proyectos/pesco-edificio-comercial/13.jpg": {
+    "width": 845,
+    "height": 686
+  },
+  "/img/proyectos/pesco-edificio-comercial/14.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/img/proyectos/pesco-rrhh/01.jpg": {
+    "width": 1032,
+    "height": 581
+  },
+  "/img/proyectos/pesco-rrhh/02.jpg": {
+    "width": 1026,
+    "height": 532
+  },
+  "/img/proyectos/pesco-rrhh/03.jpg": {
+    "width": 1032,
+    "height": 581
+  },
+  "/img/proyectos/pesco-casino/01.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/img/proyectos/pesco-casino/02.jpg": {
+    "width": 1276,
+    "height": 756
+  },
+  "/img/proyectos/pesco-casino/03.jpg": {
+    "width": 1280,
+    "height": 821
+  },
+  "/img/proyectos/pesco-casino/04.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/img/proyectos/pesco-casino/05.jpg": {
+    "width": 744,
+    "height": 958
+  },
+  "/img/proyectos/pesco-casino/06.jpg": {
+    "width": 960,
+    "height": 1126
+  },
+  "/img/proyectos/pesco-casino/07.jpg": {
+    "width": 960,
+    "height": 934
+  },
+  "/img/proyectos/chile-food-oficinas/01.jpg": {
+    "width": 1081,
+    "height": 640
+  },
+  "/img/proyectos/chile-food-oficinas/02.jpg": {
+    "width": 1280,
+    "height": 527
+  },
+  "/img/proyectos/chile-food-oficinas/03.jpg": {
+    "width": 855,
+    "height": 633
+  },
+  "/img/proyectos/chile-food-casino/01.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/img/proyectos/chile-food-casino/02.jpg": {
+    "width": 1280,
+    "height": 794
+  },
+  "/img/proyectos/chile-food-casino/03.jpg": {
+    "width": 737,
+    "height": 960
+  },
+  "/img/proyectos/chile-food-casino/04.jpg": {
+    "width": 864,
+    "height": 960
+  },
+  "/img/proyectos/chile-food-casino/05.jpg": {
+    "width": 887,
+    "height": 960
+  },
+  "/img/proyectos/soclifar/01.jpg": {
+    "width": 1032,
+    "height": 471
+  },
+  "/img/proyectos/soclifar/02.jpg": {
+    "width": 726,
+    "height": 576
+  },
+  "/img/proyectos/universidad-de-chile/01.jpg": {
+    "width": 736,
+    "height": 552
+  },
+  "/img/proyectos/universidad-de-chile/02.jpg": {
+    "width": 736,
+    "height": 552
+  },
+  "/img/proyectos/universidad-de-chile/03.jpg": {
+    "width": 736,
+    "height": 552
+  },
+  "/img/proyectos/kupfer-1/01.jpg": {
+    "width": 981,
+    "height": 581
+  },
+  "/img/proyectos/kupfer-1/02.jpg": {
+    "width": 864,
+    "height": 1124
+  },
+  "/img/proyectos/kupfer-1/03.jpg": {
+    "width": 864,
+    "height": 1152
+  },
+  "/img/proyectos/kupfer-1/04.jpg": {
+    "width": 864,
+    "height": 1152
+  },
+  "/img/proyectos/kupfer-2/01.jpg": {
+    "width": 1264,
+    "height": 827
+  },
+  "/img/proyectos/kupfer-2/02.jpg": {
+    "width": 1280,
+    "height": 756
+  },
+  "/img/proyectos/kupfer-2/03.jpg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/img/proyectos/kupfer-2/04.jpg": {
+    "width": 744,
+    "height": 960
+  },
+  "/img/proyectos/kupfer-2/05.jpg": {
+    "width": 887,
+    "height": 760
+  },
+  "/img/proyectos/kupfer-2/06.jpg": {
+    "width": 897,
+    "height": 760
+  },
+  "/img/proyectos/kupfer-2/07.jpg": {
+    "width": 960,
+    "height": 1117
+  },
+  "/img/proyectos/panini/01.jpg": {
+    "width": 1765,
+    "height": 1319
+  },
+  "/img/proyectos/panini/02.jpg": {
+    "width": 1134,
+    "height": 847
+  },
+  "/img/proyectos/panini/03.jpg": {
+    "width": 1134,
+    "height": 847
+  },
+  "/img/proyectos/panini/04.jpg": {
+    "width": 1134,
+    "height": 847
+  },
+  "/img/proyectos/panini/05.jpg": {
+    "width": 1765,
+    "height": 1319
+  },
+  "/img/proyectos/panini/06.jpg": {
+    "width": 1854,
+    "height": 2406
+  },
+  "/img/proyectos/panini/07.jpg": {
+    "width": 2262,
+    "height": 1931
+  },
+  "/img/proyectos/panini/08.jpg": {
+    "width": 809,
+    "height": 1083
+  },
+  "/img/proyectos/panini/09.jpg": {
+    "width": 809,
+    "height": 1083
+  },
+  "/img/proyectos/monsanto-viluco/01.jpg": {
+    "width": 960,
+    "height": 651
+  },
+  "/img/proyectos/monsanto-viluco/02.jpg": {
+    "width": 788,
+    "height": 1051
+  },
+  "/img/proyectos/monsanto-viluco/03.jpg": {
+    "width": 848,
+    "height": 1100
+  },
+  "/img/proyectos/monsanto-viluco/04.jpg": {
+    "width": 953,
+    "height": 761
+  },
+  "/img/proyectos/monsanto-viluco/05.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/img/proyectos/monsanto-viluco/06.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/img/proyectos/monsanto-viluco/07.jpg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/img/proyectos/monsanto-viluco/08.jpg": {
+    "width": 960,
+    "height": 766
+  },
+  "/img/proyectos/monsanto-viluco/09.jpg": {
+    "width": 960,
+    "height": 772
+  },
+  "/img/proyectos/radio-40-principales/01.jpg": {
+    "width": 1040,
+    "height": 584
+  },
+  "/img/proyectos/radio-40-principales/02.jpg": {
+    "width": 1040,
+    "height": 557
+  },
+  "/img/proyectos/radio-40-principales/03.jpg": {
+    "width": 1040,
+    "height": 584
+  },
+  "/img/proyectos/ap-logistic/01.jpg": {
+    "width": 960,
+    "height": 1246
+  },
+  "/img/proyectos/sadia-brf/01.jpg": {
+    "width": 1736,
+    "height": 976
+  },
+  "/img/proyectos/sadia-brf/02.jpg": {
+    "width": 1714,
+    "height": 2224
+  },
+  "/img/proyectos/sadia-brf/03.jpg": {
+    "width": 1746,
+    "height": 982
+  },
+  "/img/proyectos/sadia-brf/04.jpg": {
+    "width": 1746,
+    "height": 982
+  },
+  "/img/proyectos/sadia-brf/05.jpg": {
+    "width": 1746,
+    "height": 982
+  },
+  "/img/proyectos/sadia-brf/06.jpg": {
+    "width": 3195,
+    "height": 2232
+  },
+  "/img/proyectos/la-folie/01.jpg": {
+    "width": 1200,
+    "height": 1600
+  },
+  "/img/proyectos/la-folie/02.jpg": {
+    "width": 1036,
+    "height": 1417
+  },
+  "/img/proyectos/la-folie/03.jpg": {
+    "width": 1200,
+    "height": 1600
+  },
+  "/img/proyectos/la-folie/04.jpg": {
+    "width": 1200,
+    "height": 1600
+  },
+  "/img/proyectos/la-folie/05.jpg": {
+    "width": 1200,
+    "height": 1600
+  },
+  "/img/catalogo/big-boss-negra-v2.jpg": {
+    "width": 800,
+    "height": 860
+  },
+  "/img/catalogo/big-boss-blanca-v2.jpg": {
+    "width": 800,
+    "height": 860
   }
 }

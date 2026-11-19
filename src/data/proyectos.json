@@ -7,12 +7,27 @@
     "m2": 360,
     "queSeHizo": "Remodelamos y habilitamos la arquitectura interior, con mobiliario especial, recepción y terminaciones de pisos, muros y cielos.",
     "resultado": null,
-    "imagen": "/img/proyectos/pesco-edificio-comercial.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/pesco-edificio-comercial/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 4
-    }
+    },
+    "galeria": [
+      "/img/proyectos/pesco-edificio-comercial/02.jpg",
+      "/img/proyectos/pesco-edificio-comercial/03.jpg",
+      "/img/proyectos/pesco-edificio-comercial/04.jpg",
+      "/img/proyectos/pesco-edificio-comercial/05.jpg",
+      "/img/proyectos/pesco-edificio-comercial/06.jpg",
+      "/img/proyectos/pesco-edificio-comercial/07.jpg",
+      "/img/proyectos/pesco-edificio-comercial/08.jpg",
+      "/img/proyectos/pesco-edificio-comercial/09.jpg",
+      "/img/proyectos/pesco-edificio-comercial/10.jpg",
+      "/img/proyectos/pesco-edificio-comercial/11.jpg",
+      "/img/proyectos/pesco-edificio-comercial/12.jpg",
+      "/img/proyectos/pesco-edificio-comercial/13.jpg",
+      "/img/proyectos/pesco-edificio-comercial/14.jpg"
+    ]
   },
   {
     "slug": "pesco-rrhh",
@@ -22,12 +37,16 @@
     "m2": null,
     "queSeHizo": "Remodelamos y habilitamos el área de recursos humanos con arquitectura interior, mobiliario especial y terminaciones.",
     "resultado": null,
-    "imagen": "/img/proyectos/pesco-rrhh.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/pesco-rrhh/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 6
-    }
+    },
+    "galeria": [
+      "/img/proyectos/pesco-rrhh/02.jpg",
+      "/img/proyectos/pesco-rrhh/03.jpg"
+    ]
   },
   {
     "slug": "pesco-casino",
@@ -40,12 +59,20 @@
       "cifra": "+40 %",
       "descripcion": "de dotación en el proyecto"
     },
-    "imagen": "/img/proyectos/pesco-casino.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/pesco-casino/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 12
-    }
+    },
+    "galeria": [
+      "/img/proyectos/pesco-casino/02.jpg",
+      "/img/proyectos/pesco-casino/03.jpg",
+      "/img/proyectos/pesco-casino/04.jpg",
+      "/img/proyectos/pesco-casino/05.jpg",
+      "/img/proyectos/pesco-casino/06.jpg",
+      "/img/proyectos/pesco-casino/07.jpg"
+    ]
   },
   {
     "slug": "chile-food-oficinas",
@@ -55,12 +82,16 @@
     "m2": 500,
     "queSeHizo": "Habilitamos oficinas con mobiliario especial y personalizado para los espacios de trabajo.",
     "resultado": null,
-    "imagen": "/img/proyectos/chile-food-oficinas.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/chile-food-oficinas/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 8
-    }
+    },
+    "galeria": [
+      "/img/proyectos/chile-food-oficinas/02.jpg",
+      "/img/proyectos/chile-food-oficinas/03.jpg"
+    ]
   },
   {
     "slug": "chile-food-casino",
@@ -70,12 +101,18 @@
     "m2": null,
     "queSeHizo": "Habilitamos mesas de comedor para el casino de la planta Chile Food en Requínoa.",
     "resultado": null,
-    "imagen": "/img/proyectos/chile-food-casino.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/chile-food-casino/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 13
-    }
+    },
+    "galeria": [
+      "/img/proyectos/chile-food-casino/02.jpg",
+      "/img/proyectos/chile-food-casino/03.jpg",
+      "/img/proyectos/chile-food-casino/04.jpg",
+      "/img/proyectos/chile-food-casino/05.jpg"
+    ]
   },
   {
     "slug": "soclifar",
@@ -85,12 +122,15 @@
     "m2": null,
     "queSeHizo": "Desarrollamos mobiliario personalizado para resolver una necesidad imprevista con una solución a la medida.",
     "resultado": null,
-    "imagen": "/img/proyectos/soclifar.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/soclifar/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 7
-    }
+    },
+    "galeria": [
+      "/img/proyectos/soclifar/02.jpg"
+    ]
   },
   {
     "slug": "universidad-de-chile",
@@ -100,12 +140,16 @@
     "m2": null,
     "queSeHizo": "Habilitamos estaciones de trabajo, puestos administrativos, jefaturas y almacenamiento, con cubos lacados en colores.",
     "resultado": null,
-    "imagen": "/img/proyectos/universidad-de-chile.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/universidad-de-chile/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 9
-    }
+    },
+    "galeria": [
+      "/img/proyectos/universidad-de-chile/02.jpg",
+      "/img/proyectos/universidad-de-chile/03.jpg"
+    ]
   },
   {
     "slug": "kupfer-1",
@@ -115,12 +159,17 @@
     "m2": 655,
     "queSeHizo": "Proyectamos y habilitamos puestos de trabajo para optimizar un área comercial, con paneles separadores de ambientes y estructuras link.",
     "resultado": null,
-    "imagen": "/img/proyectos/kupfer-1.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/kupfer-1/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 10
-    }
+    },
+    "galeria": [
+      "/img/proyectos/kupfer-1/02.jpg",
+      "/img/proyectos/kupfer-1/03.jpg",
+      "/img/proyectos/kupfer-1/04.jpg"
+    ]
   },
   {
     "slug": "kupfer-2",
@@ -133,12 +182,20 @@
       "cifra": "+120 %",
       "descripcion": "de dotación en el área intervenida"
     },
-    "imagen": "/img/proyectos/kupfer-2.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/kupfer-2/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 11
-    }
+    },
+    "galeria": [
+      "/img/proyectos/kupfer-2/02.jpg",
+      "/img/proyectos/kupfer-2/03.jpg",
+      "/img/proyectos/kupfer-2/04.jpg",
+      "/img/proyectos/kupfer-2/05.jpg",
+      "/img/proyectos/kupfer-2/06.jpg",
+      "/img/proyectos/kupfer-2/07.jpg"
+    ]
   },
   {
     "slug": "panini",
@@ -148,12 +205,22 @@
     "m2": null,
     "queSeHizo": "Habilitamos la sala de ventas y construimos mobiliario curvo personalizado: mesón, cajones, buzones y exhibidores de álbumes. Incluimos pintura e iluminación LED.",
     "resultado": null,
-    "imagen": "/img/proyectos/panini.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/panini/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 14
-    }
+    },
+    "galeria": [
+      "/img/proyectos/panini/02.jpg",
+      "/img/proyectos/panini/03.jpg",
+      "/img/proyectos/panini/04.jpg",
+      "/img/proyectos/panini/05.jpg",
+      "/img/proyectos/panini/06.jpg",
+      "/img/proyectos/panini/07.jpg",
+      "/img/proyectos/panini/08.jpg",
+      "/img/proyectos/panini/09.jpg"
+    ]
   },
   {
     "slug": "monsanto-viluco",
@@ -163,12 +230,22 @@
     "m2": null,
     "queSeHizo": "Desarrollamos mobiliario personalizado para resolver una necesidad imprevista con una solución ajustada al espacio.",
     "resultado": null,
-    "imagen": "/img/proyectos/monsanto-viluco.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/monsanto-viluco/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 15
-    }
+    },
+    "galeria": [
+      "/img/proyectos/monsanto-viluco/02.jpg",
+      "/img/proyectos/monsanto-viluco/03.jpg",
+      "/img/proyectos/monsanto-viluco/04.jpg",
+      "/img/proyectos/monsanto-viluco/05.jpg",
+      "/img/proyectos/monsanto-viluco/06.jpg",
+      "/img/proyectos/monsanto-viluco/07.jpg",
+      "/img/proyectos/monsanto-viluco/08.jpg",
+      "/img/proyectos/monsanto-viluco/09.jpg"
+    ]
   },
   {
     "slug": "radio-40-principales",
@@ -178,12 +255,16 @@
     "m2": null,
     "queSeHizo": "Habilitamos el estudio con mesas para consolas y racks, mediante un diseño específico que integra ergonomía y acústica para el trabajo de radio vía streaming.",
     "resultado": null,
-    "imagen": "/img/proyectos/radio-40-principales.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/radio-40-principales/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 16
-    }
+    },
+    "galeria": [
+      "/img/proyectos/radio-40-principales/02.jpg",
+      "/img/proyectos/radio-40-principales/03.jpg"
+    ]
   },
   {
     "slug": "ap-logistic",
@@ -193,12 +274,13 @@
     "m2": null,
     "queSeHizo": "Diseñamos y habilitamos mobiliario a medida, con separadores de ambientes y un mueble especial para el espacio de café.",
     "resultado": null,
-    "imagen": "/img/proyectos/ap-logistic.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/ap-logistic/01.jpg",
+    "posicionImagen": "50% 55%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 17
-    }
+    },
+    "galeria": []
   },
   {
     "slug": "sadia-brf",
@@ -208,12 +290,19 @@
     "m2": 400,
     "queSeHizo": "Proyectamos y habilitamos puestos de trabajo con tabiquería de aluminio, baños, kitchenette, piso flotante y cielo americano. Incorporamos cubos lacados en colores.",
     "resultado": null,
-    "imagen": "/img/proyectos/sadia-brf.jpg",
-    "posicionImagen": "50% 75%",
+    "imagen": "/img/proyectos/sadia-brf/01.jpg",
+    "posicionImagen": "50% 50%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 18
-    }
+    },
+    "galeria": [
+      "/img/proyectos/sadia-brf/02.jpg",
+      "/img/proyectos/sadia-brf/03.jpg",
+      "/img/proyectos/sadia-brf/04.jpg",
+      "/img/proyectos/sadia-brf/05.jpg",
+      "/img/proyectos/sadia-brf/06.jpg"
+    ]
   },
   {
     "slug": "rock-and-pop",
@@ -238,11 +327,17 @@
     "m2": null,
     "queSeHizo": "Construimos e implementamos el proyecto global de la heladería, con mobiliario especial, estanterías y letreros hechos a la medida.",
     "resultado": null,
-    "imagen": "/img/proyectos/la-folie.jpg",
-    "posicionImagen": "50% 60%",
+    "imagen": "/img/proyectos/la-folie/01.jpg",
+    "posicionImagen": "50% 55%",
     "fuente": {
       "documento": "Book PZ Design 2024 v2",
       "pagina": 20
-    }
+    },
+    "galeria": [
+      "/img/proyectos/la-folie/02.jpg",
+      "/img/proyectos/la-folie/03.jpg",
+      "/img/proyectos/la-folie/04.jpg",
+      "/img/proyectos/la-folie/05.jpg"
+    ]
   }
 ]
