@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/movil.css';
 import Marca from '../components/Marca.astro';
 import {negocio, telefonoE164, direccion, whatsapp, absoluto} from '../lib/negocio';
 import {lanzado} from '../lib/lanzamiento';
@@ -30,7 +31,7 @@ const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Pro
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="site-header" data-cabecera><div class="container header-inner"><Marca/><nav class="desktop-nav" aria-label="Principal">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav><div class="cabecera-acciones">{tienda&&<a href="/tienda/carro/" class="carro-boton" aria-label="Ver carro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.1 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2L21 8H6.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.3" fill="currentColor"/><circle cx="17.5" cy="20" r="1.3" fill="currentColor"/></svg><span data-carro-cuenta>0</span></a>}<details class="mobile-nav"><summary>Menú</summary><nav aria-label="Principal móvil">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav></details></div></div></header>
+<header class="site-header" data-cabecera><div class="container header-inner"><Marca/><nav class="desktop-nav" aria-label="Principal">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav><div class="cabecera-acciones">{tienda&&<a href="/tienda/carro/" class="carro-boton" aria-label="Ver carro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.1 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2L21 8H6.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.3" fill="currentColor"/><circle cx="17.5" cy="20" r="1.3" fill="currentColor"/></svg><span data-carro-cuenta>0</span></a>}<details class="mobile-nav"><summary><span class="m-abrir">Menú</span><span class="m-cerrar">Cerrar</span></summary><nav aria-label="Principal móvil">{nav.map((n,i)=><a href={n.ruta} style={`--i:${i}`} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}<span aria-hidden="true">↗</span></a>)}<div class="menu-pie" style={`--i:${nav.length}`}><a class="button" href={whatsapp()}>Escríbenos por WhatsApp <span class="flecha" aria-hidden="true">↗</span></a><p>{negocio.telefono} · {negocio.correo}</p></div></nav></details></div></div></header>
 {tienda&&<p class="maqueta-aviso">Maqueta de la tienda<span class="aviso-largo"> · los precios son de ejemplo y el pago aún no está conectado</span><span class="aviso-corto"> · precios de ejemplo</span></p>}
 <main id="contenido">
 {migas.length>0 && <nav class="container breadcrumbs" aria-label="Ruta de navegación"><ol>{crumbs.map((c,i)=><li>{i===crumbs.length-1?<span aria-current="page">{c.nombre}</span>:<a href={c.ruta}>{c.nombre}</a>}</li>)}</ol></nav>}
@@ -47,7 +48,8 @@ document.addEventListener('click',ev=>{const b=(ev.target as HTMLElement).closes
 // Cabecera compacta al bajar, aparición escalonada y cotas que se dibujan al entrar en pantalla.
 const cab=document.querySelector('[data-cabecera]');
 const marcar=()=>cab?.classList.toggle('baja',scrollY>24);marcar();addEventListener('scroll',marcar,{passive:true});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add(e.target.hasAttribute('data-cota')?'dibuja':'en');io.unobserve(e.target);}),{rootMargin:'0px 0px -12% 0px'});
+const contar=(el:HTMLElement)=>{const fin=Number(el.dataset.cuenta),suf=el.dataset.sufijo??'';if(!fin||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const t0=performance.now();const paso=(t:number)=>{const k=Math.min(1,(t-t0)/1600),v=Math.round(fin*(1-Math.pow(1-k,3)));el.textContent=v.toLocaleString('es-CL')+suf;if(k<1)requestAnimationFrame(paso);};requestAnimationFrame(paso);};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add(e.target.hasAttribute('data-cota')?'dibuja':'en');e.target.querySelectorAll<HTMLElement>('[data-cuenta]').forEach(contar);io.unobserve(e.target);}),{rootMargin:'0px 0px -12% 0px'});
 const observar=()=>document.querySelectorAll('[data-revela]:not(.en),[data-cota]:not(.dibuja)').forEach(el=>{if(el.hasAttribute('data-revela'))[...el.children].forEach((c,i)=>(c as HTMLElement).style.setProperty('--i',String(i)));io.observe(el);});
 observar();setTimeout(()=>document.querySelectorAll('[data-revela]').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight)el.classList.add('en')}),3500);
 </script>

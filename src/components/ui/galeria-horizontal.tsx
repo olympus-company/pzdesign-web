@@ -40,9 +40,12 @@ export function GaleriaHorizontal({ items }: { items: ItemGaleria[] }) {
                 <img src={it.src} alt={it.alt} width={it.width} height={it.height} loading="lazy" decoding="async" className="project-image" />
                 {it.m2 ? <div className="cota" aria-hidden="true"><svg viewBox="0 0 100 16" preserveAspectRatio="none"><line className="tope" x1="0" y1="2" x2="0" y2="14" /><line className="eje" pathLength={1} x1="0" y1="8" x2="100" y2="8" /><line className="tope" x1="100" y1="2" x2="100" y2="14" /></svg><span>{it.m2} m²</span></div> : null}
               </div>
-              <p className="gh-tipo">{it.tipo}</p>
-              <h3>{it.cliente}</h3>
-              <p className="gh-nombre">{it.nombre}</p>
+              <span className="gh-texto">
+                <span className="gh-tipo">{it.tipo}</span>
+                <h3>{it.cliente}</h3>
+                <span className="gh-nombre">{it.nombre}</span>
+              </span>
+              <span className="ir-redondo" aria-hidden="true">↗</span>
             </a>
           ))}
         </motion.div>

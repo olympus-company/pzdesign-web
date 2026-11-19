@@ -17,6 +17,7 @@ export function PanelesExpandibles({ paneles }: { paneles: Panel[] }) {
             <span className="pe-detalle">{p.texto}</span>
             <span className="pe-ir">Ver servicio <span className="flecha" aria-hidden="true">↗</span></span>
           </span>
+          <span className="ir-redondo" aria-hidden="true">↗</span>
         </a>
       ))}
     </div>
