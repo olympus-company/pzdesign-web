@@ -9,92 +9,200 @@
     ],
     "categoria": "Sillas de visita",
     "descripcionTecnica": [
-      "Silla con asiento y respaldo de espuma de alta densidad tapizado en tela color a elección.",
-      "Estructura cuatro patas de perfil redondo cromado o negro.",
-      "Asiento de espuma de alta densidad tapizado con Elasticity o Verona color a elección.",
-      "Brazos fijos adicionales.",
-      "V I S I T A"
+      "Silla con asiento y respaldo de espuma de alta densidad, tapizados en tela de color a elección.",
+      "Estructura de cuatro patas de perfil redondo, cromada o negra.",
+      "Asiento tapizado en Elasticity o Verona, color a elección.",
+      "Brazos fijos adicionales."
     ],
     "garantia": 5,
-    "certificaciones": [],
-    "imagen": "/img/catalogo/logan-tapizada.jpg",
+    "certificaciones": [
+      "CATAS"
+    ],
+    "imagen": "/img/catalogo/logan-tapizada-1.jpg",
+    "imagenes": [
+      "/img/catalogo/logan-tapizada-1.jpg",
+      "/img/catalogo/logan-tapizada-2.jpg",
+      "/img/catalogo/logan-tapizada-3.jpg"
+    ],
+    "fichaPdf": "/fichas/logan-tapizada.pdf",
+    "medidas": [
+      "Ancho: 67 cm",
+      "Alto: 79 cm",
+      "Altura de asiento: 48 cm"
+    ],
+    "marca": "Contatto Office",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 2
+      "pagina": 2,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/visita/alto-trafico-visita/logan-4-patas-tapizada/",
+      "complemento": "Medidas de la ficha del proveedor",
+      "fichasProveedor": [
+        "Ficha-Logan-Tapizada.pdf",
+        "Brochure-Logan-office.pdf"
+      ]
     }
   },
   {
     "slug": "logan-malla",
     "modelo": "Logan malla",
     "variantes": [
-      "Respaldo en malla"
+      "Respaldo en malla, color a elección",
+      "Brazos fijos adicionales"
     ],
     "categoria": "Sillas de visita",
     "descripcionTecnica": [
-      "Silla de visita Logan de cuatro patas con respaldo en malla.",
-      "Tapices Elasticity, Verona y C-Soft indicados en la ficha; confirma la configuración al cotizar."
+      "Silla de respaldo medio en malla, color a elección.",
+      "Bastidor del respaldo y carcasa del asiento en polipropileno inyectado de alta resistencia.",
+      "Estructura de cuatro patas de perfil redondo, cromada o negra.",
+      "Asiento de espuma de alta densidad tapizado en Elasticity o Verona, color a elección.",
+      "Brazos fijos adicionales."
     ],
     "garantia": 5,
-    "certificaciones": [],
-    "imagen": "/img/catalogo/logan-malla.jpg",
+    "certificaciones": [
+      "CATAS"
+    ],
+    "imagen": "/img/catalogo/logan-malla-1.jpg",
+    "imagenes": [
+      "/img/catalogo/logan-malla-1.jpg",
+      "/img/catalogo/logan-malla-2.jpg",
+      "/img/catalogo/logan-malla-3.jpg"
+    ],
+    "fichaPdf": "/fichas/logan-malla.pdf",
+    "medidas": [
+      "Ancho: 67 cm",
+      "Alto: 79 cm",
+      "Altura de asiento: 48 cm"
+    ],
+    "marca": "Contatto Office",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 3
+      "pagina": 3,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/visita/alto-trafico-visita/logan-4-patas/",
+      "complemento": "Materiales de la ficha del proveedor",
+      "fichasProveedor": [
+        "180_Ficha-Logan-4-patas-respaldo-malla.pdf",
+        "Brochure-Logan-office.pdf"
+      ]
     }
   },
   {
     "slug": "logan-respaldo-pp",
     "modelo": "Logan respaldo PP",
     "variantes": [
-      "Respaldo de polipropileno"
+      "Respaldo de polipropileno perforado",
+      "Brazos fijos adicionales"
     ],
     "categoria": "Sillas de visita",
     "descripcionTecnica": [
-      "Silla de visita Logan de cuatro patas con respaldo de polipropileno.",
-      "Tapices Elasticity, Verona y C-Soft indicados en la ficha; confirma la configuración al cotizar."
+      "Silla de respaldo en polipropileno perforado, color negro, gris o blanco.",
+      "Estructura de cuatro patas de perfil redondo, cromada o negra.",
+      "Asiento de espuma de alta densidad tapizado en Elasticity o Verona, color a elección.",
+      "Brazos fijos adicionales."
     ],
     "garantia": 5,
-    "certificaciones": [],
-    "imagen": "/img/catalogo/logan-respaldo-pp.jpg",
+    "certificaciones": [
+      "CATAS"
+    ],
+    "imagen": "/img/catalogo/logan-respaldo-pp-1.jpg",
+    "imagenes": [
+      "/img/catalogo/logan-respaldo-pp-1.jpg",
+      "/img/catalogo/logan-respaldo-pp-2.jpg",
+      "/img/catalogo/logan-respaldo-pp-3.jpg"
+    ],
+    "fichaPdf": "/fichas/logan-respaldo-pp.pdf",
+    "medidas": [
+      "Ancho: 67 cm",
+      "Alto: 79 cm",
+      "Altura de asiento: 48 cm"
+    ],
+    "marca": "Contatto Office",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 4
+      "pagina": 4,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/visita/alto-trafico-visita/logan-4-patas-respaldo-pp/",
+      "fichasProveedor": [
+        "Brochure-Logan-office.pdf"
+      ]
     }
   },
   {
     "slug": "logan-100-pp",
     "modelo": "Logan 100 % PP",
     "variantes": [
-      "Asiento y respaldo de polipropileno"
+      "Asiento y respaldo de polipropileno",
+      "Brazos fijos adicionales"
     ],
     "categoria": "Sillas de visita",
     "descripcionTecnica": [
-      "Silla de visita Logan de cuatro patas, versión 100 % polipropileno.",
-      "Consulta los colores disponibles para tu proyecto."
+      "Silla de respaldo en polipropileno perforado, color negro, gris o blanco.",
+      "Estructura de cuatro patas de perfil redondo, cromada o negra.",
+      "Asiento en polipropileno.",
+      "Brazos fijos adicionales."
     ],
     "garantia": 5,
-    "certificaciones": [],
-    "imagen": "/img/catalogo/logan-100-pp.jpg",
+    "certificaciones": [
+      "CATAS"
+    ],
+    "imagen": "/img/catalogo/logan-100-pp-1.jpg",
+    "imagenes": [
+      "/img/catalogo/logan-100-pp-1.jpg",
+      "/img/catalogo/logan-100-pp-2.jpg",
+      "/img/catalogo/logan-100-pp-3.jpg"
+    ],
+    "fichaPdf": "/fichas/logan-100-pp.pdf",
+    "medidas": [
+      "Ancho: 67 cm",
+      "Alto: 79 cm",
+      "Altura de asiento: 48 cm"
+    ],
+    "marca": "Contatto Office",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 5
+      "pagina": 5,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/visita/4-patas/logan-pp/",
+      "fichasProveedor": [
+        "Brochure-Logan-office.pdf"
+      ]
     }
   },
   {
     "slug": "yes",
     "modelo": "Yes",
     "variantes": [
-      "Malla y asiento negros"
+      "Malla y asiento negros",
+      "Plásticos negros o blancos",
+      "Estructura cromada o pintada negra"
     ],
     "categoria": "Sillas de visita",
     "descripcionTecnica": [
       "Silla de respaldo medio, posterior en polipropileno perforado tapizado en malla negra.",
       "Estructura cuatro patas metálicas de perfil redondo cromado.",
       "Asiento tapizado en tela color negro.",
+      "Brazos fijos.",
       "Apilable hasta 4 piezas.",
       "Medidas caja (alto x ancho x largo): 61 x 75 x 106 cm.",
       "Peso: 32,3 kg.",
@@ -102,11 +210,29 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/yes.jpg",
+    "imagen": "/img/catalogo/yes-1.jpg",
+    "imagenes": [
+      "/img/catalogo/yes-1.jpg",
+      "/img/catalogo/yes-2.jpg",
+      "/img/catalogo/yes-3.jpg"
+    ],
+    "fichaPdf": "/fichas/yes.pdf",
+    "medidas": null,
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 6
+      "pagina": 6,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/visita/base-4-patas/yes/",
+      "complemento": "Brazos y opciones de color de la ficha del proveedor",
+      "fichasProveedor": [
+        "Ficha-Yes-4-Patas.pdf"
+      ]
     }
   },
   {
@@ -120,6 +246,7 @@
       "Silla de respaldo medio en malla negra.",
       "Mecanismo reclinable con regulación de tensión manual.",
       "Asiento de espuma de alta densidad tapizado en tela negra.",
+      "Regulación de altura del asiento.",
       "Brazos regulables en altura con cubierta en PU.",
       "Base nylon.",
       "Ruedas desmopan.",
@@ -128,11 +255,30 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/cuba-rr.jpg",
+    "imagen": "/img/catalogo/cuba-rr-1.jpg",
+    "imagenes": [
+      "/img/catalogo/cuba-rr-1.jpg",
+      "/img/catalogo/cuba-rr-2.jpg",
+      "/img/catalogo/cuba-rr-3.jpg"
+    ],
+    "fichaPdf": "/fichas/cuba-rr.pdf",
+    "medidas": null,
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 7
+      "pagina": 7,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/oficina/base-giratoria/cuba-rr/",
+      "complemento": "Regulación de altura de la ficha del proveedor",
+      "fichasProveedor": [
+        "Ficha-Cuba-fija.pdf",
+        "1300028-Ficha-Cuba-Max.pdf"
+      ]
     }
   },
   {
@@ -154,12 +300,24 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/cuba-rf.jpg",
+    "imagen": "/img/catalogo/cuba-rf-1.jpg",
+    "imagenes": [
+      "/img/catalogo/cuba-rf-1.jpg"
+    ],
+    "fichaPdf": "/fichas/cuba-rf.pdf",
+    "medidas": null,
+    "marca": null,
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
       "pagina": 8
-    }
+    },
+    "nota": "No aparece por nombre en el catálogo del proveedor; datos y foto de las fichas de Paola."
   },
   {
     "slug": "cuba-ff",
@@ -172,6 +330,7 @@
       "Silla de respaldo medio en malla negra.",
       "Mecanismo fijo.",
       "Asiento de espuma de alta densidad tapizado en tela negra.",
+      "Regulación de altura del asiento.",
       "Brazos fijos.",
       "Base nylon.",
       "Ruedas nylon.",
@@ -180,11 +339,29 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/cuba-ff.jpg",
+    "imagen": "/img/catalogo/cuba-ff-1.jpg",
+    "imagenes": [
+      "/img/catalogo/cuba-ff-1.jpg",
+      "/img/catalogo/cuba-ff-2.jpg",
+      "/img/catalogo/cuba-ff-3.jpg"
+    ],
+    "fichaPdf": "/fichas/cuba-ff.pdf",
+    "medidas": null,
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 9
+      "pagina": 9,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/oficina/base-giratoria/cuba-ff/",
+      "complemento": "Regulación de altura de la ficha del proveedor",
+      "fichasProveedor": [
+        "Ficha-Cuba-fija.pdf"
+      ]
     }
   },
   {
@@ -209,11 +386,28 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/tossy-blanca.jpg",
+    "imagen": "/img/catalogo/tossy-blanca-1.jpg",
+    "imagenes": [
+      "/img/catalogo/tossy-blanca-1.jpg",
+      "/img/catalogo/tossy-blanca-2.jpg",
+      "/img/catalogo/tossy-blanca-3.jpg"
+    ],
+    "fichaPdf": "/fichas/tossy-blanca.pdf",
+    "medidas": null,
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 10
+      "pagina": 10,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/reunion/base-giratoria-reunion/tossy-blanca/",
+      "fichasProveedor": [
+        "Ficha-Tossy-Blanca.pdf"
+      ]
     }
   },
   {
@@ -238,11 +432,28 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/tossy-negra.jpg",
+    "imagen": "/img/catalogo/tossy-negra-1.jpg",
+    "imagenes": [
+      "/img/catalogo/tossy-negra-1.jpg",
+      "/img/catalogo/tossy-negra-2.jpg",
+      "/img/catalogo/tossy-negra-3.jpg"
+    ],
+    "fichaPdf": "/fichas/tossy-negra.pdf",
+    "medidas": null,
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 11
+      "pagina": 11,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/reunion/base-giratoria-reunion/tossy/",
+      "fichasProveedor": [
+        "Ficha-Tossy.pdf"
+      ]
     }
   },
   {
@@ -267,33 +478,77 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/tossy-full.jpg",
+    "imagen": "/img/catalogo/tossy-full-1.jpg",
+    "imagenes": [
+      "/img/catalogo/tossy-full-1.jpg"
+    ],
+    "fichaPdf": "/fichas/tossy-full.pdf",
+    "medidas": null,
+    "marca": null,
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
       "pagina": 12
-    }
+    },
+    "nota": "No aparece por nombre en el catálogo del proveedor; datos y foto de las fichas de Paola."
   },
   {
     "slug": "big-boss-negra",
     "modelo": "Big Boss negra",
     "variantes": [
-      "Negra con desplazador"
+      "Negra con desplazador de asiento",
+      "Cabecero regulable en altura (adicional)"
     ],
     "categoria": "Sillas ejecutivas",
     "descripcionTecnica": [
-      "Silla ejecutiva Big Boss negra con desplazador de asiento.",
-      "Confirma con nosotros los ajustes y accesorios de la configuración disponible."
+      "Silla de respaldo alto en malla color negro.",
+      "Apoyo lumbar en polipropileno regulable en altura.",
+      "Mecanismo sincrónico autopesante multiblock.",
+      "Asiento de espuma de alta densidad tapizado en tela color negro.",
+      "Desplazador de asiento.",
+      "Brazos regulables en 2D con cubierta en polipropileno de gran resistencia.",
+      "Base poliamida.",
+      "Ruedas desmopan.",
+      "Cabecero regulable en altura (adicional).",
+      "Medidas caja (alto x ancho x largo): 64 x 30 x 68 cm.",
+      "Peso: 16,9 kg."
     ],
     "garantia": 5,
     "certificaciones": [
-      "BIFMA"
+      "BIFMA",
+      "Greenguard"
     ],
-    "imagen": "/img/catalogo/big-boss-negra-v2.jpg",
+    "imagen": "/img/catalogo/big-boss-negra-1.jpg",
+    "imagenes": [
+      "/img/catalogo/big-boss-negra-1.jpg",
+      "/img/catalogo/big-boss-negra-2.jpg",
+      "/img/catalogo/big-boss-negra-3.jpg"
+    ],
+    "fichaPdf": "/fichas/big-boss-negra.pdf",
+    "medidas": [
+      "Ancho: 65 cm",
+      "Fondo: 58 cm",
+      "Alto total: 94 a 104 cm",
+      "Altura de asiento: 43 a 53 cm",
+      "Pueden variar según el gas utilizado"
+    ],
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 13
+      "pagina": 13,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/home-office/con-certificacion-home-office/big-boss-2/",
+      "complemento": "Medidas de la ficha de Paola (imagen del diagrama)"
     }
   },
   {
@@ -316,13 +571,37 @@
     ],
     "garantia": 5,
     "certificaciones": [
-      "BIFMA"
+      "BIFMA",
+      "Greenguard"
     ],
-    "imagen": "/img/catalogo/big-boss-blanca-v2.jpg",
+    "imagen": "/img/catalogo/big-boss-blanca-1.jpg",
+    "imagenes": [
+      "/img/catalogo/big-boss-blanca-1.jpg",
+      "/img/catalogo/big-boss-blanca-2.jpg",
+      "/img/catalogo/big-boss-blanca-3.jpg"
+    ],
+    "fichaPdf": "/fichas/big-boss-blanca.pdf",
+    "medidas": [
+      "Ancho: 65 cm",
+      "Fondo: 58 cm",
+      "Alto total: 94 a 104 cm",
+      "Altura de asiento: 43 a 53 cm",
+      "Pueden variar según el gas utilizado"
+    ],
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 14
+      "pagina": 14,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/oficina/alto-trafico/big-boss-blanca/",
+      "fichasProveedor": [
+        "BIG-BOSS-Brochure-onesit.pdf"
+      ]
     }
   },
   {
@@ -347,12 +626,28 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/oxford-gris.jpg",
+    "imagen": "/img/catalogo/oxford-gris-1.jpg",
+    "imagenes": [
+      "/img/catalogo/oxford-gris-1.jpg"
+    ],
+    "fichaPdf": "/fichas/oxford-gris.pdf",
+    "medidas": [
+      "Alto total: 1000 a 1100 mm",
+      "Altura de asiento: 430 a 530 mm",
+      "Tolerancia: ±10 mm"
+    ],
+    "marca": null,
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
       "pagina": 15
-    }
+    },
+    "nota": "No aparece en el catálogo del proveedor (se buscó por nombre y con el buscador del sitio); datos y foto de las fichas de Paola."
   },
   {
     "slug": "oxford-negra",
@@ -378,12 +673,28 @@
     "certificaciones": [
       "BIFMA"
     ],
-    "imagen": "/img/catalogo/oxford-negra.jpg",
+    "imagen": "/img/catalogo/oxford-negra-1.jpg",
+    "imagenes": [
+      "/img/catalogo/oxford-negra-1.jpg"
+    ],
+    "fichaPdf": "/fichas/oxford-negra.pdf",
+    "medidas": [
+      "Alto total: 1000 a 1100 mm",
+      "Altura de asiento: 430 a 530 mm",
+      "Tolerancia: ±10 mm"
+    ],
+    "marca": null,
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
       "pagina": 16
-    }
+    },
+    "nota": "No aparece en el catálogo del proveedor (se buscó por nombre y con el buscador del sitio); datos y foto de las fichas de Paola."
   },
   {
     "slug": "ergohuman",
@@ -403,18 +714,39 @@
       "Base aluminio.",
       "Ruedas desmopan.",
       "Malla y asiento en color negro.",
+      "Peso soportado: 140 kg.",
       "Medidas caja (alto x ancho x largo): 65 x 56 x 82 cm.",
       "Peso: 31,2 kg."
     ],
     "garantia": 5,
     "certificaciones": [
-      "BIFMA"
+      "BIFMA",
+      "Greenguard"
     ],
-    "imagen": "/img/catalogo/ergohuman.jpg",
+    "imagen": "/img/catalogo/ergohuman-1.jpg",
+    "imagenes": [
+      "/img/catalogo/ergohuman-1.jpg",
+      "/img/catalogo/ergohuman-2.jpg",
+      "/img/catalogo/ergohuman-3.jpg"
+    ],
+    "fichaPdf": "/fichas/ergohuman.pdf",
+    "medidas": null,
+    "marca": "Contatto",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 17
+      "pagina": 17,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/home-office/alto-trafico-home-office/ergohuman-malla-original/",
+      "complemento": "Certificación Greenguard y peso soportado de la ficha de Paola (imagen)",
+      "fichasProveedor": [
+        "brochure2.pdf",
+        "Ergohuman-Original-Ultra-Ficha-Tecnica-1.pdf"
+      ]
     }
   },
   {
@@ -425,17 +757,50 @@
     ],
     "categoria": "Sillas de alta gama",
     "descripcionTecnica": [
-      "Silla ergonómica Ergoplus en versión negra.",
+      "Respaldo en malla color negro.",
+      "Estructura negra.",
+      "Mecanismo sincrónico autopesante multiblock con 4 posiciones de bloqueo.",
+      "Asiento en malla color negro.",
+      "Brazo regulable en 3D en PU.",
+      "Cabecero 100 % malla.",
+      "Pistón de gas clase 3.",
+      "Base giratoria de poliamida.",
+      "Ruedas desmopan.",
       "Peso soportado: 140 kg.",
-      "Altura total indicada: 1170–1270 mm; altura de asiento: 460–560 mm."
+      "Medidas caja (alto x ancho x largo): 38 x 64 x 77 cm.",
+      "Peso: 21 kg."
     ],
     "garantia": 5,
-    "certificaciones": [],
-    "imagen": "/img/catalogo/ergoplus-negra.jpg",
+    "certificaciones": [
+      "BIFMA",
+      "Greenguard"
+    ],
+    "imagen": "/img/catalogo/ergoplus-negra-1.jpg",
+    "imagenes": [
+      "/img/catalogo/ergoplus-negra-1.jpg",
+      "/img/catalogo/ergoplus-negra-2.jpg",
+      "/img/catalogo/ergoplus-negra-3.jpg"
+    ],
+    "fichaPdf": "/fichas/ergoplus-negra.pdf",
+    "medidas": [
+      "Alto total: 1170 a 1270 mm",
+      "Altura de asiento: 460 a 560 mm"
+    ],
+    "marca": "Contatto",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 18
+      "pagina": 18,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/reunion/base-giratoria-reunion/ergoplus-negra/",
+      "complemento": "Viñetas completas de la ficha de Paola (imagen)",
+      "fichasProveedor": [
+        "Ficha-Tecnica-Ergoplus.pdf"
+      ]
     }
   },
   {
@@ -446,18 +811,51 @@
     ],
     "categoria": "Sillas de alta gama",
     "descripcionTecnica": [
-      "Silla ergonómica Ergoplus en versión blanca.",
+      "Respaldo y asiento en malla de poliéster 100 %, color gris claro.",
+      "Estructura en polipropileno inyectado color blanco.",
+      "Mecanismo sincrónico autopesante multiblock con 4 posiciones de bloqueo.",
+      "Brazo regulable en 3D en PU.",
+      "Cabecero 100 % malla.",
+      "Pistón de gas clase 3.",
+      "Base giratoria de poliamida.",
+      "Ruedas desmopan.",
       "Peso soportado: 140 kg.",
-      "Altura total indicada: 1170–1270 mm; altura de asiento: 460–560 mm."
+      "Medidas caja (alto x ancho x largo): 38 x 64 x 77 cm.",
+      "Peso: 21 kg."
     ],
     "garantia": 5,
-    "certificaciones": [],
-    "imagen": "/img/catalogo/ergoplus-blanca.jpg",
+    "certificaciones": [
+      "BIFMA",
+      "Greenguard"
+    ],
+    "imagen": "/img/catalogo/ergoplus-blanca-1.jpg",
+    "imagenes": [
+      "/img/catalogo/ergoplus-blanca-1.jpg",
+      "/img/catalogo/ergoplus-blanca-2.jpg",
+      "/img/catalogo/ergoplus-blanca-3.jpg"
+    ],
+    "fichaPdf": "/fichas/ergoplus-blanca.pdf",
+    "medidas": [
+      "Alto total: 1170 a 1270 mm",
+      "Altura de asiento: 460 a 560 mm"
+    ],
+    "marca": "Contatto",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 19
-    }
+      "pagina": 19,
+      "url": "https://catalogo.contatto.cl/tienda/sillas/home-office/alto-trafico-home-office/ergoplus-blanca/",
+      "complemento": "Viñetas de la ficha de Paola (imagen) y color de la malla de la ficha del proveedor",
+      "fichasProveedor": [
+        "FICHA-TECNICA-ERGOPLUS-BLANCA.pdf"
+      ]
+    },
+    "nota": "La ficha del proveedor indica garantía de 2 años y capacidad de 136 kg para la versión blanca; se mantiene lo de Paola (5 años y 140 kg)."
   },
   {
     "slug": "max-plus",
@@ -483,11 +881,32 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/max-plus.jpg",
+    "imagen": "/img/catalogo/max-plus-1.jpg",
+    "imagenes": [
+      "/img/catalogo/max-plus-1.jpg",
+      "/img/catalogo/max-plus-2.jpg",
+      "/img/catalogo/max-plus-3.jpg"
+    ],
+    "fichaPdf": "/fichas/max-plus.pdf",
+    "medidas": [
+      "Rango de altura: 62 a 128 cm",
+      "Rango de ancho de la base: 100 a 170 cm",
+      "Cubierta admitida (no incluida): 1100-2200 x 700-1000 mm"
+    ],
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 21
+      "pagina": 21,
+      "url": "https://catalogo.contatto.cl/tienda/espacios-de-trabajo/bases-regulables/base/base-regulable-max-plus/",
+      "fichasProveedor": [
+        "Ficha-Base-Max-Plus.pdf"
+      ]
     }
   },
   {
@@ -512,55 +931,615 @@
     ],
     "garantia": 2,
     "certificaciones": [],
-    "imagen": "/img/catalogo/gold-up.jpg",
+    "imagen": "/img/catalogo/gold-up-1.jpg",
+    "imagenes": [
+      "/img/catalogo/gold-up-1.jpg",
+      "/img/catalogo/gold-up-2.jpg",
+      "/img/catalogo/gold-up-3.jpg"
+    ],
+    "fichaPdf": "/fichas/gold-up.pdf",
+    "medidas": [
+      "Cubierta: 1200 x 600 x 15 mm",
+      "Rango de altura: 710 a 1160 mm"
+    ],
+    "marca": "One Sit",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
     "pendiente": false,
     "fuente": {
       "documento": "Fichas PZ Design, noviembre de 2026",
-      "pagina": 22
+      "pagina": 22,
+      "url": "https://catalogo.contatto.cl/tienda/espacios-de-trabajo/bases-regulables/escritorio-regulable-gold-up/",
+      "fichasProveedor": [
+        "FICHA-TECNICA-ESCRITORIO-REGULABLE-GOLD-UP.pdf"
+      ]
     }
   },
   {
     "slug": "tintoretto",
     "modelo": "Tintoretto",
-    "variantes": [],
-    "categoria": "Butacas",
-    "descripcionTecnica": [],
+    "variantes": [
+      "Modular, se arma según el espacio"
+    ],
+    "categoria": "Butacas y poufs",
+    "descripcionTecnica": [
+      "Modular nacional con respaldo curvo, configurable según el espacio.",
+      "Estructura de madera de pino secada en cámara y plancha MDF.",
+      "Patas de acero inoxidable.",
+      "Cojines de espuma de densidad 30.",
+      "Costura cargada y simple.",
+      "Tapices disponibles: Aqua Clean (Nordic, Mystic), Ecol e Iseo."
+    ],
     "garantia": null,
     "certificaciones": [],
-    "imagen": null,
-    "pendiente": true
+    "imagen": "/img/catalogo/tintoretto-1.jpg",
+    "imagenes": [
+      "/img/catalogo/tintoretto-1.jpg",
+      "/img/catalogo/tintoretto-2.jpg"
+    ],
+    "fichaPdf": null,
+    "medidas": null,
+    "marca": "Contatto Soft",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": true,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/soft-seating/sofas/tintoretto/",
+      "fichasProveedor": [
+        "Tintoretto-contatto.pdf"
+      ]
+    },
+    "nota": "Pendiente: Paola no lo confirmó. Datos del proveedor, sin ficha PDF."
   },
   {
     "slug": "kyoto-s",
     "modelo": "Kyoto S",
-    "variantes": [],
-    "categoria": "Butacas",
-    "descripcionTecnica": [],
+    "variantes": [
+      "Tamaño S"
+    ],
+    "categoria": "Butacas y poufs",
+    "descripcionTecnica": [
+      "Pouf redondo 100 % tapizado en tela de poliéster.",
+      "Cuerpo de espuma de alta densidad.",
+      "Base de poliuretano.",
+      "Combinación de dos colores entre el cuerpo y la base.",
+      "Familia de tres tamaños: S, M y L."
+    ],
     "garantia": null,
     "certificaciones": [],
-    "imagen": null,
-    "pendiente": true
+    "imagen": "/img/catalogo/kyoto-s-1.jpg",
+    "imagenes": [
+      "/img/catalogo/kyoto-s-1.jpg"
+    ],
+    "fichaPdf": "/fichas/kyoto-s.pdf",
+    "medidas": null,
+    "marca": "Contatto Soft",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/soft-seating/pouf/kyoto-s/"
+    },
+    "nota": "Sin garantía ni medidas en el proveedor."
   },
   {
     "slug": "kyoto-m",
     "modelo": "Kyoto M",
-    "variantes": [],
-    "categoria": "Butacas",
-    "descripcionTecnica": [],
+    "variantes": [
+      "Tamaño M"
+    ],
+    "categoria": "Butacas y poufs",
+    "descripcionTecnica": [
+      "Pouf redondo 100 % tapizado en tela de poliéster.",
+      "Cuerpo de espuma de alta densidad.",
+      "Base de poliuretano.",
+      "Combinación de dos colores entre el cuerpo y la base.",
+      "Familia de tres tamaños: S, M y L."
+    ],
     "garantia": null,
     "certificaciones": [],
-    "imagen": null,
-    "pendiente": true
+    "imagen": "/img/catalogo/kyoto-m-1.jpg",
+    "imagenes": [
+      "/img/catalogo/kyoto-m-1.jpg"
+    ],
+    "fichaPdf": "/fichas/kyoto-m.pdf",
+    "medidas": null,
+    "marca": "Contatto Soft",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/soft-seating/pouf/kyoto-m/"
+    },
+    "nota": "Sin garantía ni medidas en el proveedor."
   },
   {
     "slug": "kyoto-l",
     "modelo": "Kyoto L",
-    "variantes": [],
-    "categoria": "Butacas",
-    "descripcionTecnica": [],
+    "variantes": [
+      "Tamaño L"
+    ],
+    "categoria": "Butacas y poufs",
+    "descripcionTecnica": [
+      "Pouf redondo 100 % tapizado en tela de poliéster.",
+      "Cuerpo de espuma de alta densidad.",
+      "Base de poliuretano.",
+      "Combinación de dos colores entre el cuerpo y la base.",
+      "Familia de tres tamaños: S, M y L."
+    ],
     "garantia": null,
     "certificaciones": [],
-    "imagen": null,
-    "pendiente": true
+    "imagen": "/img/catalogo/kyoto-l-1.jpg",
+    "imagenes": [
+      "/img/catalogo/kyoto-l-1.jpg"
+    ],
+    "fichaPdf": "/fichas/kyoto-l.pdf",
+    "medidas": null,
+    "marca": "Contatto Soft",
+    "modalidad": [
+      "venta"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/soft-seating/pouf/kyoto-l/"
+    },
+    "nota": "Sin garantía ni medidas en el proveedor."
+  },
+  {
+    "slug": "silen-space-1",
+    "modelo": "Silen Space 1",
+    "variantes": [
+      "Para 1 persona"
+    ],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada, para 1 persona.",
+      "Reducción del sonido de 41 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 27 l/s y filtro HEPA.",
+      "Iluminación LED de bajo consumo (6,7 W, 4.000 K, 900 lm) con dimmer para luz y ventilación.",
+      "Enchufes: 1 de 110-240 V y 1 USB 5 V.",
+      "Panel exterior y perfiles en laminado HPL antibacterial.",
+      "Vidrio acústico reforzado de 13 mm, de seguridad.",
+      "Piso de alfombra antiestática y antimancha.",
+      "Ruedas ocultas y patines ajustables para mover y nivelar la cabina.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar.",
+      "Colores externos: negro, blanco o gris; interior gris oscuro, gris claro o negro.",
+      "Origen: Estonia."
+    ],
+    "garantia": 2,
+    "certificaciones": [
+      "ASTM E84 Clase A",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/silen-space-1-1.jpg",
+    "imagenes": [
+      "/img/catalogo/silen-space-1-1.jpg",
+      "/img/catalogo/silen-space-1-2.jpg",
+      "/img/catalogo/silen-space-1-3.jpg"
+    ],
+    "fichaPdf": "/fichas/silen-space-1.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 110 x 110 x 229 cm",
+      "Internas (largo x ancho x alto): 90 x 101 x 205 cm",
+      "Peso: 370 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/silen-space/silen-space-1/",
+      "fichasProveedor": [
+        "Ficha-Tecnica-Space-1-Contatto.pdf"
+      ]
+    }
+  },
+  {
+    "slug": "silen-space-1-5",
+    "modelo": "Silen Space 1.5",
+    "variantes": [
+      "Para 1 persona"
+    ],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada, para 1 persona.",
+      "Reducción del sonido de 41 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 50 l/s y filtro HEPA.",
+      "Iluminación LED de bajo consumo (13,4 W, 4.000 K, 1800 lm) con dimmer para luz y ventilación.",
+      "Enchufes: 1 de 100-240 V y 1 USB.",
+      "Panel exterior y perfiles en laminado HPL antibacterial.",
+      "Vidrio acústico reforzado de 13 mm, de seguridad.",
+      "Piso de alfombra antiestática y antimancha.",
+      "Ruedas ocultas y patines ajustables para mover y nivelar la cabina.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar.",
+      "Colores externos: negro, blanco o gris; interior gris oscuro, gris claro o negro.",
+      "Origen: Estonia."
+    ],
+    "garantia": 2,
+    "certificaciones": [
+      "ASTM E84 Clase A",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/silen-space-1-5-1.jpg",
+    "imagenes": [
+      "/img/catalogo/silen-space-1-5-1.jpg",
+      "/img/catalogo/silen-space-1-5-2.jpg",
+      "/img/catalogo/silen-space-1-5-3.jpg"
+    ],
+    "fichaPdf": "/fichas/silen-space-1-5.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 110 x 145 x 229 cm",
+      "Internas (largo x ancho x alto): 101 x 125 x 205 cm",
+      "Peso: 428 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/silen-space/silen-space-1-5/",
+      "fichasProveedor": [
+        "Ficha-Tecnica-Space-15-Contatto.pdf"
+      ]
+    }
+  },
+  {
+    "slug": "silen-space-2",
+    "modelo": "Silen Space 2",
+    "variantes": [
+      "Para hasta 4 personas"
+    ],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada, para hasta 4 personas.",
+      "Reducción del sonido de 43 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 85 l/s y filtro HEPA.",
+      "Iluminación LED de bajo consumo (20 W, 4.000 K, 900 lm, con sensor de movimiento) con dimmer para luz y ventilación.",
+      "Enchufes: 1 de 110-240 V y 1 USB 5 V.",
+      "Panel exterior y perfiles en laminado HPL antibacterial.",
+      "Vidrio acústico reforzado de 13 mm, de seguridad.",
+      "Piso de alfombra antiestática y antimancha.",
+      "Ruedas ocultas y patines ajustables para mover y nivelar la cabina.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar.",
+      "Colores externos: negro, blanco o gris; interior gris oscuro, gris claro o negro.",
+      "Origen: Estonia."
+    ],
+    "garantia": 2,
+    "certificaciones": [
+      "ASTM E84 Clase A",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/silen-space-2-1.jpg",
+    "imagenes": [
+      "/img/catalogo/silen-space-2-1.jpg",
+      "/img/catalogo/silen-space-2-2.jpg",
+      "/img/catalogo/silen-space-2-3.jpg"
+    ],
+    "fichaPdf": "/fichas/silen-space-2.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 240 x 122 x 229 cm",
+      "Internas (largo x ancho x alto): 220 x 116 x 205 cm",
+      "Peso: 670 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/silen-space/space-2/",
+      "fichasProveedor": [
+        "Ficha-Tecnica-Space-2-Contatto.pdf"
+      ]
+    }
+  },
+  {
+    "slug": "silen-space-4",
+    "modelo": "Silen Space 4",
+    "variantes": [
+      "Para hasta 8 personas"
+    ],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada, para hasta 8 personas.",
+      "Reducción del sonido de 41 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 125 l/s y filtro HEPA.",
+      "Iluminación LED de bajo consumo (40 W, 4.000 K, 900 lm, con sensor de movimiento) con dimmer para luz y ventilación.",
+      "Enchufes: 1 de 110-240 V y 1 USB A opcional.",
+      "Panel exterior y perfiles en laminado HPL antibacterial.",
+      "Vidrio acústico reforzado de 13 mm, de seguridad.",
+      "Piso de alfombra antiestática y antimancha.",
+      "Ruedas ocultas y patines ajustables para mover y nivelar la cabina.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar.",
+      "Colores externos: negro, blanco o gris; interior gris oscuro, gris claro o negro.",
+      "Origen: Estonia."
+    ],
+    "garantia": 2,
+    "certificaciones": [
+      "ASTM E84 Clase A",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/silen-space-4-1.jpg",
+    "imagenes": [
+      "/img/catalogo/silen-space-4-1.jpg",
+      "/img/catalogo/silen-space-4-2.jpg",
+      "/img/catalogo/silen-space-4-3.jpg"
+    ],
+    "fichaPdf": "/fichas/silen-space-4.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 240 x 242 x 229 cm",
+      "Internas (largo x ancho x alto): 220 x 236 x 205 cm",
+      "Peso: 1200 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/silen-space/silen-space-4/",
+      "fichasProveedor": [
+        "Ficha-Tecnica-Space-4-Contatto.pdf"
+      ]
+    }
+  },
+  {
+    "slug": "chatbox-single",
+    "modelo": "Chatbox Single",
+    "variantes": [],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada para 1 persona.",
+      "Reducción del sonido de 34 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 22 l/s (79 m3/h).",
+      "Iluminación LED de bajo consumo (6,7 W, 4.000 K, 900 lm) con panel de control de luz y ventilación.",
+      "Enchufes: 1 de 110-240 V y 1 USB 5 V. Cable eléctrico de 3 m.",
+      "Panel exterior metálico electropintado.",
+      "Vidrio acústico reforzado, de seguridad.",
+      "Piso de alfombra antiestática y antimancha, paneles acústicos EchoFree.",
+      "Kit de ruedas desmontables y patines ajustables.",
+      "Mesa integrada en laminado antibacterial, altura 1050 mm.",
+      "Colores externos: negro (RAL 9011) y blanco (RAL 9003); interior gris oscuro.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar."
+    ],
+    "garantia": null,
+    "certificaciones": [
+      "SCS Indoor Air Quality",
+      "GS",
+      "UL Listed",
+      "CE",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/chatbox-single-1.jpg",
+    "imagenes": [
+      "/img/catalogo/chatbox-single-1.jpg",
+      "/img/catalogo/chatbox-single-2.jpg",
+      "/img/catalogo/chatbox-single-3.jpg"
+    ],
+    "fichaPdf": "/fichas/chatbox-single.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 100 x 100 x 222 cm",
+      "Internas (largo x ancho x alto): 87 x 98 x 204 cm",
+      "Peso: 330 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/chatbox/chatbox-single/",
+      "fichasProveedor": [
+        "NUEVAS-FICHAS-TECNICAS-SILEN-SINGLE.pdf"
+      ]
+    },
+    "nota": "El proveedor no indica garantía para este modelo."
+  },
+  {
+    "slug": "chatbox-solo",
+    "modelo": "Chatbox Solo",
+    "variantes": [],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada para 1 persona.",
+      "Reducción del sonido de 34 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 55 l/s (198 m3/h).",
+      "Iluminación LED de bajo consumo (28 W, 4.000 K, 2240 lm) con panel de control de luz y ventilación.",
+      "Enchufes: 1 de 110-230 V y 1 USB. Cable eléctrico de 3 m.",
+      "Panel exterior metálico electropintado.",
+      "Vidrio acústico reforzado, de seguridad.",
+      "Piso de alfombra antiestática y antimancha, paneles acústicos EchoFree.",
+      "Kit de ruedas desmontables y patines ajustables.",
+      "Mesa integrada en laminado antibacterial.",
+      "Colores externos: negro (RAL 9011) y blanco (RAL 9003); interior gris oscuro.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar."
+    ],
+    "garantia": null,
+    "certificaciones": [
+      "SCS Indoor Air Quality",
+      "GS",
+      "UL Listed",
+      "CE",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/chatbox-solo-1.jpg",
+    "imagenes": [
+      "/img/catalogo/chatbox-solo-1.jpg",
+      "/img/catalogo/chatbox-solo-2.jpg",
+      "/img/catalogo/chatbox-solo-3.jpg"
+    ],
+    "fichaPdf": "/fichas/chatbox-solo.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 125 x 98 x 222 cm",
+      "Internas (largo x ancho x alto): 113 x 91 x 204 cm",
+      "Peso: 380 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/chatbox/chatbox-solo/",
+      "fichasProveedor": [
+        "NUEVAS-FICHAS-TECNICAS-SILEN-SOLO-1.pdf"
+      ]
+    },
+    "nota": "El proveedor no indica garantía para este modelo."
+  },
+  {
+    "slug": "chatbox-duo",
+    "modelo": "Chatbox Duo",
+    "variantes": [],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada.",
+      "Reducción del sonido de 34 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 55 l/s (198 m3/h).",
+      "Iluminación LED de bajo consumo (28 W, 4.000 K, 2240 lm, con sensor de movimiento) con panel de control de luz y ventilación.",
+      "Enchufes: 2 de 110-240 V y 2 USB 5 V. Cable eléctrico de 3 m.",
+      "Panel exterior metálico electropintado.",
+      "Vidrio acústico reforzado, de seguridad.",
+      "Piso de alfombra antiestática y antimancha, paneles acústicos EchoFree.",
+      "Kit de ruedas desmontables y patines ajustables.",
+      "Se entrega sin asientos ni mesa.",
+      "Colores externos: negro (RAL 9011) y blanco (RAL 9003); interior gris oscuro.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar."
+    ],
+    "garantia": null,
+    "certificaciones": [
+      "SCS Indoor Air Quality",
+      "GS",
+      "UL Listed",
+      "CE",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/chatbox-duo-1.jpg",
+    "imagenes": [
+      "/img/catalogo/chatbox-duo-1.jpg",
+      "/img/catalogo/chatbox-duo-2.jpg"
+    ],
+    "fichaPdf": "/fichas/chatbox-duo.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 213 x 103 x 222 cm",
+      "Internas (largo x ancho x alto): 200 x 93 x 204 cm",
+      "Peso: 550 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/chatbox/chatbox-duo/",
+      "fichasProveedor": [
+        "NUEVAS-FICHAS-TECNICAS-SILEN-DUO.pdf"
+      ]
+    },
+    "nota": "El proveedor no indica garantía para este modelo."
+  },
+  {
+    "slug": "chatbox-cuattro",
+    "modelo": "Chatbox Cuattro",
+    "variantes": [],
+    "categoria": "Cabinas acústicas",
+    "descripcionTecnica": [
+      "Cabina acústica insonorizada.",
+      "Reducción del sonido de 34 dB (medición en terreno, ISO 16283-1).",
+      "Ventilación silenciosa de bajo consumo, flujo de aire superior a 85 l/s (306 m3/h).",
+      "Iluminación LED de bajo consumo (56 W, 4.000 K, 4480 lm, con sensor de movimiento) con panel de control de luz y ventilación.",
+      "Enchufes: 4 de 110-230 V, o 2 de 110-230 V y 2 USB. Cable eléctrico de 3 m.",
+      "Panel exterior metálico electropintado.",
+      "Vidrio acústico reforzado, de seguridad.",
+      "Piso de alfombra antiestática y antimancha, paneles acústicos EchoFree.",
+      "Kit de ruedas desmontables y patines ajustables.",
+      "Se entrega sin asientos ni mesa.",
+      "Colores externos: negro (RAL 9011) y blanco (RAL 9003); interior gris oscuro.",
+      "Puerta con manija a la derecha o a la izquierda, a especificar."
+    ],
+    "garantia": null,
+    "certificaciones": [
+      "SCS Indoor Air Quality",
+      "GS",
+      "UL Listed",
+      "CE",
+      "Carbono neutral"
+    ],
+    "imagen": "/img/catalogo/chatbox-cuattro-1.jpg",
+    "imagenes": [
+      "/img/catalogo/chatbox-cuattro-1.jpg",
+      "/img/catalogo/chatbox-cuattro-2.jpg",
+      "/img/catalogo/chatbox-cuattro-3.jpg"
+    ],
+    "fichaPdf": "/fichas/chatbox-cuattro.pdf",
+    "medidas": [
+      "Externas (largo x ancho x alto): 213 x 194 x 222 cm",
+      "Internas (largo x ancho x alto): 200 x 186 x 203 cm",
+      "Peso: 980 kg"
+    ],
+    "marca": "Silen",
+    "modalidad": [
+      "venta",
+      "arriendo"
+    ],
+    "visible": true,
+    "destacado": false,
+    "pendiente": false,
+    "fuente": {
+      "documento": "Catálogo del proveedor, consultado el 19 de noviembre de 2026",
+      "url": "https://catalogo.contatto.cl/tienda/cabinas-acusticas/chatbox/chatbox-cuattro/",
+      "fichasProveedor": [
+        "NUEVAS-FICHAS-TECNICAS-SILEN-CUATTRO.pdf"
+      ]
+    },
+    "nota": "El proveedor no indica garantía para este modelo."
   }
 ]

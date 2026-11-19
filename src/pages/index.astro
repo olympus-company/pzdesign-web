@@ -10,7 +10,7 @@ import {TextoRevela} from '../components/ui/texto-revela';
 import {PanelesExpandibles} from '../components/ui/paneles-expandibles';
 import servicios from '../data/servicios.json';
 import proyectos from '../data/proyectos.json';
-import catalogo from '../data/catalogo.json';
+import {publicados, porSlug} from '../lib/catalogo';
 import imagenes from '../data/imagenes.json';
 import firma from '../../public/img/marca/firma-pz.svg?raw';
 import {negocio, aniosExperiencia} from '../lib/negocio';
@@ -46,7 +46,7 @@ const manifiesto='Tu empresa cambia. Diseñamos el espacio para lo que viene. Es
 
 <section class="container section paola"><div class="paola-firma" aria-hidden="true" data-revela><span set:html={firma}/></div><div data-revela><p class="eyebrow">Diseño y ejecución</p><h2>Lo que acordamos guía lo que entregamos</h2><p>Escuchamos lo que necesita tu empresa y lo traducimos en un proyecto integrado. Coordinamos diseño, presupuesto, obra y equipamiento con equipo propio y contratistas supervisados por Paola.</p><p>Buscamos que cada decisión se refleje en una solución útil, con muebles de calidad y atención durante el proceso.</p><div class="actions"><a href="/paola-zaid/">Conoce a Paola Zaid</a></div></div></section>
 
-<section class="container section"><div class="section-heading" data-revela><h2>Mobiliario para tu forma de trabajar</h2><a href="/mobiliario-de-oficina/">Explora el catálogo <span class="flecha" aria-hidden="true">↗</span></a></div><p class="text-column muted">Te ayudamos a elegir según el espacio y la cantidad que necesitas. Entregamos las sillas armadas en 3 a 7 días hábiles; el mobiliario tiene un plazo de 7 a 20 días hábiles, sujeto a la confirmación de tu cotización.</p><div class="grid" data-revela>{['tossy-negra','ergohuman','gold-up'].map(slug=><ProductoCard producto={catalogo.find(p=>p.slug===slug)}/>)}</div></section>
+<section class="container section"><div class="section-heading" data-revela><h2>Mobiliario para tu forma de trabajar</h2><a href="/mobiliario-de-oficina/">Explora el catálogo <span class="flecha" aria-hidden="true">↗</span></a></div><p class="text-column muted">Te ayudamos a elegir según el espacio y la cantidad que necesitas. Entregamos las sillas armadas en 3 a 7 días hábiles; el mobiliario tiene un plazo de 7 a 20 días hábiles, sujeto a la confirmación de tu cotización.</p><div class="grid" data-revela>{['tossy-negra','ergohuman','gold-up'].map(slug=>porSlug(slug)).filter(p=>p&&publicados.includes(p)).map(p=><ProductoCard producto={p}/>)}</div></section>
 
 <section class="clientes"><div class="container"><p class="eyebrow">Clientes de nuestro book</p><h2>Experiencia en distintos sectores</h2></div><div class="cinta" aria-hidden="true"><div class="cinta-pista">{[0,1].map(()=><span class="cinta-grupo">{negocio.clientes.map(c=><span>{c}</span>)}</span>)}</div></div><ul class="container client-list solo-lectores">{negocio.clientes.map(c=><li>{c}</li>)}</ul></section>
 <CTA/>

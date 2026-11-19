@@ -11,7 +11,7 @@ const fileFor = (ruta) => ruta === '/404/' ? '404.html' : ruta.replace(/^\//, ''
 export function verificarDist(lanzado = false) {
   const negocio = json('src/data/negocio.json');
   const catalogo = json('src/data/catalogo.json');
-  const publicados = catalogo.filter(p => !p.pendiente);
+  const publicados = catalogo.filter(p => !p.pendiente && p.visible !== false);
   const proyectos = json('src/data/proyectos.json');
   const servicios = json('src/data/servicios.json');
   const redirects = json('src/data/redirecciones.json');
@@ -22,7 +22,7 @@ export function verificarDist(lanzado = false) {
   const check = (grupo, condition, detail) => { if (!condition) errors[grupo].push(detail); };
   const stats = {html:archivos.length,paginas:rutas.length,modelos:publicados.length,proyectos:proyectos.length,redirecciones:Object.keys(redirects).length,titulos:[],descripciones:[],respuestas:[],imagenes:0};
   for (const ruta of rutas) check('rutas', fs.existsSync(path.join('dist', fileFor(ruta))), ruta);
-  for (const p of catalogo.filter(p=>p.pendiente)) check('rutas', !fs.existsSync(`dist/mobiliario-de-oficina/${p.slug}/index.html`), `Pendiente publicado: ${p.slug}`);
+  for (const p of catalogo.filter(p=>p.pendiente||p.visible===false)) check('rutas', !fs.existsSync(`dist/mobiliario-de-oficina/${p.slug}/index.html`), `Pendiente publicado: ${p.slug}`);
   for (const file of archivos) {
     const h = read(path.join('dist', file));
     const title = text(h.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? '');
