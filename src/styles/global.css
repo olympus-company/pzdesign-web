@@ -374,7 +374,7 @@ button.button{cursor:pointer}
 .cara:hover img{transform:scale(1.04)}
 .cara .velo{position:absolute;inset:0;background:linear-gradient(to top,rgb(20 18 16 / .82),rgb(20 18 16 / .1) 60%)}
 .cara.producto .velo{display:none}
-.cara>span{position:relative;display:grid;gap:12px;max-width:26em}
+.cara>span:not(.velo){position:relative;display:grid;gap:12px;max-width:26em}
 .cara .cara-nombre{font-family:var(--titulos);font-weight:300;font-size:clamp(1.9rem,3.6vw,3.2rem);line-height:1.05}
 .cara .cara-texto{opacity:.85}
 .cara .cara-ir{font-weight:600}
@@ -412,5 +412,8 @@ input,select,textarea{border-radius:var(--r-campo)}
 .foto-grande .marco,.heroe-foto .marco{width:fit-content;max-width:100%;margin-inline:auto}
 .foto-grande .project-image,.heroe-foto .project-image{width:auto}
 .heroe-foto figcaption{max-width:100%}
-.pe{height:clamp(460px,58vh,580px)}
+@media(min-width:861px){.pe{height:clamp(460px,58vh,580px)}}
 .cifras-grid strong{font-size:clamp(2.6rem,5.4vw,5.2rem);white-space:nowrap}
+.aviso-corto{display:none}
+@media(max-width:860px){.maqueta-aviso{white-space:nowrap;font-size:.74rem;padding:6px 14px;bottom:12px}.aviso-largo{display:none}.aviso-corto{display:inline}}
+@media(max-width:380px){.header-inner{gap:10px}.cabecera-acciones{gap:8px}.brand{gap:8px}.brand-word{letter-spacing:.28em}.mobile-nav summary{padding:9px 13px}}
