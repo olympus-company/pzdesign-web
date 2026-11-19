@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import Intro from '../components/Intro.astro';
+import CTA from '../components/CTA.astro';
+import ProyectoCard from '../components/ProyectoCard.astro';
+import servicios from '../data/servicios.json';
+import proyectos from '../data/proyectos.json';
+import {absoluto} from '../lib/negocio';
+export function getStaticPaths(){return servicios.map(s=>({params:{servicio:s.slug},props:{s}}));}
+const {s}=Astro.props;
+const ruta=`/${s.slug}/`;
+const schema=[{'@type':'Service','@id':absoluto(`${ruta}#servicio`),name:s.titulo,description:s.respuesta,url:absoluto(ruta),provider:{'@id':absoluto('/#organizacion')},areaServed:{'@type':'City',name:'Santiago'}}];
+---
+<Base title={s.title} description={s.description} migas={[{nombre:s.titulo,ruta}]} schema={schema}>
+<Intro titulo={s.titulo} respuesta={s.respuesta} etiqueta="Servicios para tu empresa"><div class="actions"><a class="button" href="/contacto/">Cuéntanos qué necesitas ↗</a><a href="/como-trabajamos/">Nuestro proceso</a></div></Intro>
+<section class="container section"><div class="split"><div><h2>{s.intro}</h2><p>{s.texto}</p></div><div><h2>Qué podemos integrar</h2><ul>{s.incluye.map(x=><li>{x}</li>)}</ul></div></div></section>
+<section class="container section"><div class="section-heading"><h2>Proyectos relacionados</h2><a href="/proyectos/">Ver todos ↗</a></div><div class:list={['grid',s.proyectos.length===2&&'two']}>{s.proyectos.map(slug=><ProyectoCard proyecto={proyectos.find(p=>p.slug===slug)}/>)}</div></section>
+<section class="container section faq"><h2>Antes de comenzar</h2>{s.faq.map(f=><details><summary>{f.pregunta}</summary><p>{f.respuesta}</p></details>)}</section><CTA/>
+</Base>

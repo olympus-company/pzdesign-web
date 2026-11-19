@@ -1,0 +1,167 @@
+{
+  "criterios": [
+    {
+      "id": 1,
+      "estado": "PASS",
+      "evidencia": [
+        {
+          "lanzado": true,
+          "exitCode": 0,
+          "advertencias": false
+        },
+        {
+          "lanzado": false,
+          "exitCode": 0,
+          "advertencias": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "estado": "PASS",
+      "evidencia": {
+        "paginas": 48,
+        "modelos": 20,
+        "proyectos": 16,
+        "errores": []
+      }
+    },
+    {
+      "id": 3,
+      "estado": "PASS",
+      "evidencia": {
+        "html": 97,
+        "titulos": {
+          "min": 25,
+          "max": 56
+        },
+        "descripciones": {
+          "min": 120,
+          "max": 154
+        },
+        "errores": []
+      }
+    },
+    {
+      "id": 4,
+      "estado": "PASS",
+      "evidencia": {
+        "html": 97,
+        "respuestas": {
+          "min": 45,
+          "max": 58
+        },
+        "errores": []
+      }
+    },
+    {
+      "id": 5,
+      "estado": "PASS",
+      "evidencia": {
+        "estados": [
+          {
+            "PUBLIC_LANZADO": true,
+            "html": 97,
+            "errores": []
+          },
+          {
+            "PUBLIC_LANZADO": false,
+            "html": 97,
+            "errores": []
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "estado": "PASS",
+      "evidencia": {
+        "redirecciones": 48,
+        "errores": []
+      }
+    },
+    {
+      "id": 7,
+      "estado": "PASS",
+      "evidencia": {
+        "html": 97,
+        "errores": []
+      }
+    },
+    {
+      "id": 8,
+      "estado": "PASS",
+      "evidencia": {
+        "fuente": "src/data/negocio.json",
+        "errores": []
+      }
+    },
+    {
+      "id": 9,
+      "estado": "PASS",
+      "evidencia": {
+        "pass": true,
+        "anchos": [
+          375,
+          1440
+        ],
+        "rutas": 47,
+        "fallas": []
+      }
+    }
+  ],
+  "extras": {
+    "estado": "PASS",
+    "errores": []
+  },
+  "rutas": [
+    "/",
+    "/habilitacion-de-oficinas/",
+    "/diseno-y-arquitectura-interior/",
+    "/proyectos-especiales/",
+    "/locales-comerciales/",
+    "/proyectos/",
+    "/mobiliario-de-oficina/",
+    "/como-trabajamos/",
+    "/paola-zaid/",
+    "/contacto/",
+    "/privacidad/",
+    "/404/",
+    "/mobiliario-de-oficina/logan-tapizada/",
+    "/mobiliario-de-oficina/logan-malla/",
+    "/mobiliario-de-oficina/logan-respaldo-pp/",
+    "/mobiliario-de-oficina/logan-100-pp/",
+    "/mobiliario-de-oficina/yes/",
+    "/mobiliario-de-oficina/cuba-rr/",
+    "/mobiliario-de-oficina/cuba-rf/",
+    "/mobiliario-de-oficina/cuba-ff/",
+    "/mobiliario-de-oficina/tossy-blanca/",
+    "/mobiliario-de-oficina/tossy-negra/",
+    "/mobiliario-de-oficina/tossy-full/",
+    "/mobiliario-de-oficina/big-boss-negra/",
+    "/mobiliario-de-oficina/big-boss-blanca/",
+    "/mobiliario-de-oficina/oxford-gris/",
+    "/mobiliario-de-oficina/oxford-negra/",
+    "/mobiliario-de-oficina/ergohuman/",
+    "/mobiliario-de-oficina/ergoplus-negra/",
+    "/mobiliario-de-oficina/ergoplus-blanca/",
+    "/mobiliario-de-oficina/max-plus/",
+    "/mobiliario-de-oficina/gold-up/",
+    "/proyectos/pesco-edificio-comercial/",
+    "/proyectos/pesco-rrhh/",
+    "/proyectos/pesco-casino/",
+    "/proyectos/chile-food-oficinas/",
+    "/proyectos/chile-food-casino/",
+    "/proyectos/soclifar/",
+    "/proyectos/universidad-de-chile/",
+    "/proyectos/kupfer-1/",
+    "/proyectos/kupfer-2/",
+    "/proyectos/panini/",
+    "/proyectos/monsanto-viluco/",
+    "/proyectos/radio-40-principales/",
+    "/proyectos/ap-logistic/",
+    "/proyectos/sadia-brf/",
+    "/proyectos/rock-and-pop/",
+    "/proyectos/la-folie/"
+  ]
+}

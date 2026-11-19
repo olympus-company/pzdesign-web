@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import Intro from '../components/Intro.astro';
+const {to='/',delay}=Astro.props;
+const ruta=new URL(to,'https://pzdesign.cl').pathname;
+---
+<Base title="Esta página cambió de dirección | PZ Design" description="La página que buscas tiene una nueva dirección. Continúa para conocer nuestros servicios de diseño, proyectos y mobiliario de oficina para tu empresa." ruta={ruta} redireccion={{to,delay}}>
+<Intro titulo="Esta página cambió de dirección" respuesta="Actualizamos nuestro sitio para que encuentres los servicios, proyectos y muebles que necesita tu empresa. La información que buscabas tiene una nueva dirección y te llevaremos a ella automáticamente. Si la navegación no continúa, usa el enlace de esta página para seguir explorando nuestra propuesta."><a class="button" href={to}>Continuar</a></Intro>
+</Base>

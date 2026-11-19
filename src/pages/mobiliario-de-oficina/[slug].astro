@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';import Intro from '../../components/Intro.astro';import Imagen from '../../components/Imagen.astro';import ProductoCard from '../../components/ProductoCard.astro';import catalogo from '../../data/catalogo.json';import {cotizar,absoluto} from '../../lib/negocio';
+export function getStaticPaths(){return catalogo.filter(p=>!p.pendiente).map(p=>({params:{slug:p.slug},props:{p}}));}
+const {p}=Astro.props;const ruta=`/mobiliario-de-oficina/${p.slug}/`;const esSilla=p.categoria.startsWith('Sillas');
+const respuesta=`${p.modelo} es parte de nuestra selección de ${p.categoria.toLowerCase()} para equipar tu oficina. ${p.descripcionTecnica[0]} Tiene una garantía de ${p.garantia} años. Te ayudamos a revisar la configuración, la cantidad y la disponibilidad para preparar una cotización de acuerdo con lo que necesitas.`;
+const description=`Cotiza ${p.modelo} para tu oficina. Revisa sus características, variantes y garantía de ${p.garantia} años con asesoría y entrega coordinada por PZ Design.`;
+const schema=[{'@type':'Product','@id':absoluto(`${ruta}#producto`),name:p.modelo,description:p.descripcionTecnica.join(' '),image:absoluto(p.imagen),category:p.categoria,url:absoluto(ruta),additionalProperty:[{'@type':'PropertyValue',name:'Garantía',value:`${p.garantia} años`},...p.certificaciones.map(c=>({'@type':'PropertyValue',name:'Certificación',value:c}))]}];
+const relacionados=catalogo.filter(x=>!x.pendiente&&x.categoria===p.categoria&&x.slug!==p.slug).slice(0,3);
+---
+<Base title={`${p.modelo}: ficha y cotización | PZ Design`} description={description} migas={[{nombre:'Mobiliario de oficina',ruta:'/mobiliario-de-oficina/'},{nombre:p.modelo,ruta}]} schema={schema}>
+<Intro titulo={p.modelo} respuesta={respuesta} etiqueta={p.categoria}/>
+<section class="container section product-detail"><div class="split"><div><div class="product-visual"><Imagen src={p.imagen} tipo="producto" alt={`${p.modelo}, ${p.variantes[0].toLowerCase()}`}/></div><p class="small muted">Imagen de referencia de la ficha del modelo. Confirma la configuración disponible al cotizar.</p></div><div><h2>Características técnicas</h2><ul class="specs">{p.descripcionTecnica.map(x=><li>{x}</li>)}</ul><h2>Variantes y configuración</h2><ul>{p.variantes.map(x=><li>{x}</li>)}</ul><p><strong>Garantía:</strong> {p.garantia} años</p>{p.certificaciones.length>0&&<p><strong>Certificaciones:</strong> {p.certificaciones.join(', ')}</p>}<p>{esSilla?'Entrega armada en 3 a 7 días hábiles.':'Entrega de mobiliario en 7 a 20 días hábiles.'} Confirmamos disponibilidad y condiciones en tu cotización.</p><div class="quote-panel" data-cotizador><label for="cantidad">Cantidad de unidades</label><input id="cantidad" name="cantidad" type="number" min="1" step="1" value="1" required inputmode="numeric" aria-describedby="ayuda-cantidad"/><a class="button" data-cotizar data-modelo={p.modelo} href={cotizar(p.modelo)}>Cotizar por WhatsApp ↗</a><p id="ayuda-cantidad" class="small">Enviaremos el modelo y la cantidad seleccionada. Si no puedes cambiar la cantidad, puedes indicarla en la conversación.</p><p class="status" data-error role="status" hidden>Ingresa una cantidad entera mayor que cero.</p></div></div></div></section>
+{relacionados.length>0&&<section class="container section"><h2>Otros modelos de esta categoría</h2><div class="grid">{relacionados.map(x=><ProductoCard producto={x}/>)}</div></section>}
+</Base>
+<script>
+import {cotizar} from '../../lib/negocio';
+const panel=document.querySelector('[data-cotizador]');
+const input=panel?.querySelector<HTMLInputElement>('input');
+const link=panel?.querySelector<HTMLAnchorElement>('[data-cotizar]');
+const error=panel?.querySelector<HTMLElement>('[data-error]');
+function actualizar(){if(!input||!link||!error)return false;const n=Number(input.value);const valid=input.checkValidity()&&Number.isSafeInteger(n)&&n>0;error.hidden=valid;input.setAttribute('aria-invalid',String(!valid));if(valid)link.href=cotizar(link.dataset.modelo!,n);return valid;}
+input?.addEventListener('input',actualizar);
+link?.addEventListener('click',event=>{if(!actualizar()){event.preventDefault();input?.reportValidity();input?.focus();}});
+</script>

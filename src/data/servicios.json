@@ -1,0 +1,124 @@
+[
+  {
+    "slug": "habilitacion-de-oficinas",
+    "titulo": "Habilitación y remodelación de oficinas",
+    "title": "Habilitación de oficinas en Santiago | PZ Design",
+    "description": "Habilitamos y remodelamos tu oficina en Santiago. Integramos diseño, obra y mobiliario con un responsable desde el levantamiento hasta la entrega.",
+    "respuesta": "Habilitamos y remodelamos oficinas en Santiago para que el espacio acompañe el crecimiento de tu empresa. Integramos diseño, arquitectura interior, obra y mobiliario en un proceso a la medida. Desde el levantamiento hasta la entrega, coordinamos las especialidades con un solo responsable y un alcance acordado contigo.",
+    "intro": "Una oficina que responda a tu equipo",
+    "texto": "Si tu oficina se ve antigua, los puestos ya no alcanzan o la distribución dificulta el trabajo, partimos por entender cómo la usas. Diseñamos una solución que considere tu operación actual y los cambios que vienen.",
+    "incluye": [
+      "Levantamiento y layout para organizar puestos, circulaciones y áreas de apoyo",
+      "Arquitectura interior, materiales, iluminación, acústica y redes según el proyecto",
+      "Coordinación de obra, terminaciones y mobiliario a medida",
+      "Entrega y gestión de permisos y regularizaciones cuando corresponda"
+    ],
+    "proyectos": [
+      "kupfer-2",
+      "pesco-edificio-comercial",
+      "sadia-brf"
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Cuánto demora habilitar una oficina?",
+        "respuesta": "El plazo depende de los metros cuadrados, las especialidades y el estado del espacio. Lo definimos después del levantamiento y del alcance, junto con las etapas y el presupuesto."
+      },
+      {
+        "pregunta": "¿Podemos partir solo por el diseño?",
+        "respuesta": "Sí. Podemos comenzar con el proyecto y el layout, y luego avanzar a la remodelación y al mobiliario que necesites."
+      },
+      {
+        "pregunta": "¿Trabajan con empresas grandes?",
+        "respuesta": "Trabajamos con empresas de servicios, proveedores de minería y compañías químicas, entre otros sectores. Nuestra propuesta considera equipos de más de 100 personas y necesidades particulares de cada operación."
+      }
+    ]
+  },
+  {
+    "slug": "diseno-y-arquitectura-interior",
+    "titulo": "Diseño y arquitectura interior",
+    "title": "Diseño y arquitectura interior de oficinas | PZ Design",
+    "description": "Diseñamos espacios de trabajo a tu medida: layout, renders 3D, iluminación, acústica y ergonomía, con una propuesta integrada para tu empresa.",
+    "respuesta": "Diseñamos la arquitectura interior de tu oficina a partir de cómo trabaja tu equipo. Traducimos tus necesidades en un layout, una propuesta de materiales y una visualización 3D. Integramos iluminación, acústica, ergonomía y redes según el proyecto, para que puedas evaluar la solución antes de avanzar a la obra.",
+    "intro": "Primero entendemos el espacio",
+    "texto": "La distribución es el punto de partida. Revisamos los recorridos, la relación entre equipos y las áreas que requieren concentración, encuentro o atención. Así definimos una propuesta que tenga sentido para tu empresa.",
+    "incluye": [
+      "Visita y levantamiento de requerimientos",
+      "Layout espacial y propuesta de optimización",
+      "Renders 3D, acabados y materiales",
+      "Coordinación de iluminación, acústica, ergonomía e instalaciones"
+    ],
+    "proyectos": [
+      "chile-food-oficinas",
+      "universidad-de-chile",
+      "ap-logistic"
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué puedes revisar antes de construir?",
+        "respuesta": "El layout y los renders permiten conversar sobre distribución, terminaciones y mobiliario. Revisamos contigo las decisiones que definen el alcance y el presupuesto."
+      },
+      {
+        "pregunta": "¿El diseño incluye mobiliario a medida?",
+        "respuesta": "Podemos integrar mobiliario diseñado para el proyecto y combinarlo con productos del catálogo, según las medidas y el uso de cada espacio."
+      }
+    ]
+  },
+  {
+    "slug": "proyectos-especiales",
+    "titulo": "Proyectos especiales para radios y estudios",
+    "title": "Proyectos especiales: radios y estudios | PZ Design",
+    "description": "Diseñamos y habilitamos radios y estudios. Integramos mobiliario para equipos, ergonomía, acústica e iluminación según las necesidades de tu proyecto.",
+    "respuesta": "Diseñamos y habilitamos radios y estudios donde el espacio, los equipos y las personas necesitan funcionar en conjunto. Desarrollamos mobiliario para consolas y racks e integramos ergonomía, acústica, iluminación, audio, aire acondicionado y redes según el alcance. Coordinamos cada especialidad con la arquitectura y las necesidades de tu operación.",
+    "intro": "El diseño también resuelve lo técnico",
+    "texto": "Un estudio requiere más que ubicar equipos. Trabajamos la relación entre mobiliario, instalaciones y uso diario para que cada decisión forme parte de una propuesta integrada.",
+    "incluye": [
+      "Levantamiento de necesidades de operación y equipos",
+      "Mobiliario especial para consolas y racks",
+      "Coordinación de acústica, audio, iluminación y climatización",
+      "Construcción e implementación del espacio según el proyecto"
+    ],
+    "proyectos": [
+      "radio-40-principales",
+      "rock-and-pop"
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Tienen proyectos de radio realizados?",
+        "respuesta": "En nuestro book puedes conocer la habilitación de Radio 40 Principales para streaming y la construcción e implementación global del estudio Rock & Pop."
+      },
+      {
+        "pregunta": "¿Cómo se define el equipamiento técnico?",
+        "respuesta": "Lo revisamos durante el levantamiento con tu equipo y las especialidades involucradas. El alcance y las responsabilidades quedan definidos en la propuesta."
+      }
+    ]
+  },
+  {
+    "slug": "locales-comerciales",
+    "titulo": "Diseño y habilitación de locales comerciales",
+    "title": "Diseño y habilitación de locales comerciales | PZ Design",
+    "description": "Diseñamos y habilitamos tu local comercial con mobiliario a medida, exhibidores e iluminación. Conoce nuestros proyectos para Panini y La Folie.",
+    "respuesta": "Diseñamos y habilitamos locales comerciales para que tu marca se exprese en el espacio y en la atención. Integramos distribución, mobiliario a medida, exhibición, iluminación y terminaciones según lo que necesita tu negocio. Acompañamos el proceso desde la propuesta hasta la implementación, con coordinación de obra y especialidades.",
+    "intro": "Tu identidad, llevada al espacio",
+    "texto": "Proyectamos salas de ventas, tiendas y locales de servicios considerando cómo recibes a tus clientes, exhibes tus productos y organizas el trabajo. Cada mueble y terminación responde a esa experiencia.",
+    "incluye": [
+      "Layout y organización de atención, exhibición y circulación",
+      "Mesones, estanterías y exhibidores a medida",
+      "Iluminación y terminaciones coordinadas con la identidad del local",
+      "Construcción, implementación y revisión de requisitos del espacio"
+    ],
+    "proyectos": [
+      "panini",
+      "la-folie"
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Diseñan el mobiliario del local?",
+        "respuesta": "Sí. Desarrollamos mobiliario a medida para mesones, estanterías y exhibidores, integrado a la propuesta general del espacio."
+      },
+      {
+        "pregunta": "¿Trabajan en centros comerciales?",
+        "respuesta": "El proyecto de La Folie en MUT forma parte de nuestro book. Revisamos las condiciones y requisitos del recinto antes de definir la intervención."
+      }
+    ]
+  }
+]

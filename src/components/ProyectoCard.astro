@@ -1,0 +1,5 @@
+---
+import Imagen from './Imagen.astro';
+const {proyecto:p}=Astro.props;
+---
+<article class="project-card"><a href={`/proyectos/${p.slug}/`} aria-label={`Ver proyecto ${p.cliente}: ${p.nombre}`}><Imagen src={p.imagen} alt={`${p.nombre} de ${p.cliente}, proyecto de ${p.tipo.toLowerCase()} realizado por PZ Design`} posicion={p.posicionImagen}/></a><p class="eyebrow">{p.tipo}{p.m2 && ` · ${p.m2} m²`}</p><h3 class="card-title"><a href={`/proyectos/${p.slug}/`}>{p.cliente}</a></h3><p>{p.nombre}{p.resultado && ` · ${p.resultado.cifra} ${p.resultado.descripcion}`}</p></article>

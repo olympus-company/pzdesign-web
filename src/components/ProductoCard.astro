@@ -1,0 +1,6 @@
+---
+import Imagen from './Imagen.astro';
+import {cotizar} from '../lib/negocio';
+const {producto:p}=Astro.props;
+---
+<article class="product-card"><a class="product-visual" href={`/mobiliario-de-oficina/${p.slug}/`} aria-label={`Ver ficha de ${p.modelo}`}><Imagen src={p.imagen} tipo="producto" alt={`${p.modelo}, ${p.variantes[0].toLowerCase()}`}/></a><h3><a href={`/mobiliario-de-oficina/${p.slug}/`}>{p.modelo}</a></h3><p>{p.categoria} · Garantía de {p.garantia} años</p><div class="actions"><a class="button secondary" href={`/mobiliario-de-oficina/${p.slug}/`}>Ver ficha</a><a class="button" href={cotizar(p.modelo)}>Cotizar</a></div></article>

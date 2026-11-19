@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';import Intro from '../../components/Intro.astro';import CTA from '../../components/CTA.astro';import ProductoCard from '../../components/ProductoCard.astro';import catalogo from '../../data/catalogo.json';
+const publicados=catalogo.filter(p=>!p.pendiente);const categorias=[...new Set(publicados.map(p=>p.categoria))];
+---
+<Base title="Mobiliario de oficina: sillas y escritorios | PZ Design" description="Cotiza sillas y escritorios para tu oficina con asesoría de PZ Design. Revisa modelos, variantes y garantías; recibe tus sillas armadas en Santiago." migas={[{nombre:'Mobiliario de oficina',ruta:'/mobiliario-de-oficina/'}]}>
+<Intro titulo="Mobiliario para tu espacio de trabajo" respuesta="Te ayudamos a elegir sillas y escritorios según tu espacio, el uso y la cantidad que necesitas. Cotizamos cada solicitud con asesoría para tu oficina. Las sillas se entregan armadas en 3 a 7 días hábiles, con garantía según modelo; para mobiliario, el plazo es de 7 a 20 días hábiles."/>
+<div class="container category-links" aria-label="Categorías del catálogo">{categorias.map((c,i)=><a href={`#categoria-${i}`}>{c}</a>)}</div>
+{categorias.map((c,i)=><section class="container section" id={`categoria-${i}`}><h2>{c}</h2><div class="grid">{publicados.filter(p=>p.categoria===c).map(p=><ProductoCard producto={p}/>)}</div></section>)}
+<section class="container section"><div class="split"><div><h2>Una elección acompañada</h2><p>Revisamos contigo las medidas y la distribución. Puedes cotizar una unidad o equipar varios puestos; también diseñamos mobiliario a medida como parte de tu proyecto.</p></div><div><h2>Entrega y garantía</h2><p>Confirmamos disponibilidad y plazo al cotizar. La garantía de las sillas varía según el modelo y se detalla en cada ficha. El mobiliario cuenta con garantía de instalación y un año; las bases y escritorios regulables de este catálogo tienen dos años según sus fichas.</p></div></div></section><CTA titulo="¿Necesitas equipar varios puestos?" texto="Cuéntanos cuántas personas usarán el espacio y qué modelos te interesan. Preparamos una cotización para tu empresa."/>
+</Base>

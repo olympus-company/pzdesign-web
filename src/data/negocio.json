@@ -1,0 +1,43 @@
+{
+  "nombre": "PZ Design",
+  "razonSocial": "Paola Zaid Design SpA",
+  "rut": "77.107.165-1",
+  "fundacion": 2006,
+  "direccion": {
+    "calle": "General Holley 2294",
+    "comuna": "Providencia",
+    "ciudad": "Santiago",
+    "region": "Región Metropolitana",
+    "pais": "CL"
+  },
+  "telefono": "+56 9 9345 6136",
+  "correo": "pzaid@pzdesign.cl",
+  "web": "https://pzdesign.cl",
+  "horarios": null,
+  "redes": [],
+  "clientes": [
+    "Sadia",
+    "BRF",
+    "Colún",
+    "Pesco",
+    "U. de Chile",
+    "Ibero Americana Radio Chile",
+    "Panini",
+    "Archroma",
+    "Clariant",
+    "Stantec",
+    "CIPP",
+    "MWH",
+    "Bayer",
+    "Monsanto",
+    "Chile Food",
+    "Soclifar",
+    "Cofar",
+    "Vadell",
+    "Küpfer",
+    "Pipesa",
+    "Grupo PHR",
+    "Nutrien",
+    "APL Logistics"
+  ]
+}

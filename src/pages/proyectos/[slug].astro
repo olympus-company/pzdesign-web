@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';import Intro from '../../components/Intro.astro';import CTA from '../../components/CTA.astro';import Imagen from '../../components/Imagen.astro';import ProyectoCard from '../../components/ProyectoCard.astro';import proyectos from '../../data/proyectos.json';
+export function getStaticPaths(){return proyectos.map(p=>({params:{slug:p.slug},props:{p}}));}
+const {p}=Astro.props;
+const ruta=`/proyectos/${p.slug}/`;
+const respuesta=`Desarrollamos el proyecto de ${p.nombre.toLowerCase()} para ${p.cliente}, con una solución a la medida de su equipo y del espacio. ${p.queSeHizo} Conoce el alcance de esta intervención y conversemos sobre lo que necesita tu empresa.`;
+// Keep the direct answer within 40–60 words; long factual scope is expanded below.
+const breve=`Desarrollamos el proyecto de ${p.nombre.toLowerCase()} para ${p.cliente}, con una solución a la medida de su equipo y del espacio. Integramos las necesidades del cliente en una intervención de ${p.tipo.toLowerCase()}. Aquí puedes conocer el trabajo realizado y conversar con nosotros sobre tu próximo proyecto.`;
+const answer=respuesta.split(/\s+/).length<=60?respuesta:breve;
+const description=`Conoce el proyecto de ${p.cliente}: ${p.nombre.toLowerCase()}. Descubre la intervención de PZ Design y conversemos sobre el espacio de tu empresa.`;
+const related=proyectos.filter(x=>x.tipo===p.tipo&&x.slug!==p.slug).slice(0,3);
+---
+<Base title={`${p.cliente}: ${p.nombre} | PZ Design`} description={description} migas={[{nombre:'Proyectos',ruta:'/proyectos/'},{nombre:p.cliente+' · '+p.nombre,ruta}]}>
+<Intro titulo={`${p.cliente} · ${p.nombre}`} respuesta={answer} etiqueta={p.tipo}/>
+<figure class="container"><Imagen src={p.imagen} posicion={p.posicionImagen} alt={`${p.nombre} de ${p.cliente}: intervención de ${p.tipo.toLowerCase()}`}/><figcaption>{p.cliente} · {p.nombre}</figcaption></figure>
+<section class="container section"><div class="split"><div><h2>Qué hicimos</h2><p>{p.queSeHizo}</p><p class="small muted">Proyecto documentado en el book PZ Design 2024.</p></div><div><h2>El proyecto en detalle</h2><div class="facts">{p.m2&&<div><strong>{p.m2} m²</strong><span>de superficie intervenida</span></div>}{p.resultado&&<div><strong>{p.resultado.cifra}</strong><span>{p.resultado.descripcion}</span></div>}<div><strong>{p.tipo}</strong><span>Tipo de intervención</span></div></div><a href="/como-trabajamos/">Conoce cómo trabajamos ↗</a></div></div></section>
+{related.length>0&&<section class="container section"><h2>Más proyectos de {p.tipo.toLowerCase()}</h2><div class="grid">{related.map(x=><ProyectoCard proyecto={x}/>)}</div></section>}<CTA/>
+</Base>
