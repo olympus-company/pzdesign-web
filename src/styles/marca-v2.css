@@ -11,13 +11,6 @@ h1,h2,h3{font-weight:400;letter-spacing:-.02em}
 .grano{position:fixed;inset:-50%;z-index:80;pointer-events:none;opacity:.35;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .18 0 0 0 0 .14 0 0 0 0 .12 0 0 0 .16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grano 1.2s steps(4) infinite}
 @keyframes grano{0%{transform:translate(0,0)}25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-1%)}100%{transform:translate(1%,3%)}}
 
-/* Cursor punto + aro (solo mouse) */
-.cursor{position:fixed;left:0;top:0;z-index:90;pointer-events:none;width:38px;height:38px;margin:-19px 0 0 -19px;border:1px solid var(--arcilla-clara);border-radius:50%;opacity:0;transition:width .3s var(--curva),height .3s var(--curva),margin .3s var(--curva),background-color .3s,opacity .3s;display:none}
-.cursor i{position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:var(--arcilla-clara)}
-.cursor.vivo{opacity:1}
-.cursor.grande{width:74px;height:74px;margin:-37px 0 0 -37px;background-color:rgb(168 79 46 / .14)}
-@media (hover:hover) and (pointer:fine){.cursor{display:block}}
-
 /* Cabecera espresso con la firma */
 .site-header,.site-header.baja{background:var(--espresso);color:var(--hueso);-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none}
 .site-header.baja{box-shadow:0 1px 0 var(--linea-noche)}
@@ -57,17 +50,22 @@ h1,h2,h3{font-weight:400;letter-spacing:-.02em}
 .v2-heroe .intro{color:#D8CABD;font-size:clamp(1rem,1.15vw,1.15rem);max-width:34em;margin:0}
 .v2-heroe .actions{margin-top:clamp(28px,3vw,44px);gap:16px 30px}
 .v2-heroe .actions>a:not(.button){color:var(--hueso);border-color:var(--arcilla-clara)}
-.v2-galeria{position:absolute;z-index:1;top:-6%;right:calc(-1*var(--margen) - 4vw);width:58%;height:130%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)}
-.v2-inclina{display:flex;gap:clamp(12px,1.6vw,24px);height:100%;transform:perspective(2200px) rotateX(18deg) rotateZ(-11deg) translateY(-6%)}
-.v2-col{flex:1;min-width:0;overflow:hidden;height:130%}
-.v2-pista{display:flex;flex-direction:column;gap:clamp(12px,1.6vw,24px);animation:v2-corre 46s linear infinite}
-.v2-col-1 .v2-pista{animation-duration:58s;animation-direction:reverse}
-.v2-col-2 .v2-pista{animation-duration:52s}
-.v2-galeria:hover .v2-pista{animation-play-state:paused}
+/* Galería inclinada: el bloque sangra más allá del héroe (arriba, abajo y a los lados) y el borde del héroe lo recorta;
+   una máscara vertical y otra lateral desvanecen las fotos, así ninguna queda cortada en seco. Sin pausa al pasar el mouse. */
+.v2-galeria{position:absolute;z-index:1;top:0;bottom:0;right:calc(-1*var(--margen) - 4vw);width:62%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 20%,#000 80%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 20%,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+.v2-inclina{--hueco:clamp(12px,1.6vw,24px);position:absolute;left:-14%;top:-32%;width:142%;height:164%;display:flex;align-items:flex-start;gap:var(--hueco);transform:perspective(2200px) rotateX(18deg) rotateZ(-11deg)}
+.v2-col{flex:1;min-width:0}
+.v2-pista{display:flex;flex-direction:column;gap:var(--hueco);animation:v2-corre 70s linear infinite}
+.v2-col-0{margin-top:-6%}.v2-col-1{margin-top:-30%}.v2-col-2{margin-top:-14%}.v2-col-3{margin-top:-38%}
+.v2-col-0 .v2-pista{animation-delay:-8s}
+.v2-col-1 .v2-pista{animation-duration:84s;animation-direction:reverse;animation-delay:-31s}
+.v2-col-2 .v2-pista{animation-duration:76s;animation-delay:-52s}
+.v2-col-3 .v2-pista{animation-duration:92s;animation-direction:reverse;animation-delay:-17s}
 .v2-col figure{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;border-radius:8px;background:var(--noche-2)}
 .v2-col img{width:100%;height:100%;object-fit:cover}
 .v2-col figcaption{position:absolute;left:10px;bottom:10px;margin:0;padding:6px 9px;border-radius:4px;background:var(--hueso);color:var(--espresso);font:500 .68rem/1 var(--titulos);letter-spacing:.12em;text-transform:uppercase}
-@keyframes v2-corre{to{transform:translateY(calc(-50% - clamp(6px,.8vw,12px)))}}
+/* El bucle avanza justo un juego de fotos (la mitad de la pista menos medio hueco): el salto no se nota */
+@keyframes v2-corre{to{transform:translateY(calc(-50% - var(--hueco)/2))}}
 
 /* Marquesina de clientes sobre arena */
 .v2-clientes{background:var(--arena);color:var(--espresso);overflow:hidden;padding-block:clamp(18px,1.6vw,26px)}
@@ -127,23 +125,6 @@ input:focus,select:focus,textarea:focus{border-color:var(--arcilla)}
 }
 @keyframes v2-aparece{from{opacity:.35;translate:0 40px}to{opacity:1;translate:0 0}}
 
-/* Pie arcilla con la firma que se dibuja (trazo y luego relleno, 3,6 s) */
-.site-footer{background:var(--arcilla);color:var(--hueso);padding-top:clamp(88px,10vw,150px)}
-.site-footer h2,.site-footer p,.site-footer address,.footer-bottom{color:#F6E6DC}
-.footer-bottom{border-top-color:rgb(243 239 233 / .3)}
-.pie-firma{color:var(--hueso);display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:clamp(64px,8vw,110px);padding-inline:var(--margen)}
-.pie-firma>span:first-child{display:block;width:min(56vw,320px)}
-.pie-firma svg{width:100%;height:auto;fill:var(--hueso);fill-opacity:1;overflow:visible}
-.pie-firma path{stroke:var(--hueso);stroke-width:1.2;vector-effect:non-scaling-stroke}
-.js .pie-firma svg{fill-opacity:0}
-.js .pie-firma path{stroke-dasharray:1;stroke-dashoffset:1}
-.js .pie-firma.dibuja path{animation:pie-trazo 2.4s cubic-bezier(.5,0,.3,1) both}
-.js .pie-firma.dibuja svg{animation:pie-relleno 1.2s ease 2.4s both}
-@keyframes pie-trazo{to{stroke-dashoffset:0}}
-@keyframes pie-relleno{to{fill-opacity:1}}
-.pie-nombre{margin-top:28px;margin-right:-.42em;font:300 clamp(1.3rem,2.6vw,2.2rem)/1 var(--titulos);letter-spacing:.42em}
-.pie-design{margin-top:14px;margin-right:-.62em;font:300 clamp(.8rem,1.2vw,1rem)/1 var(--titulos);letter-spacing:.62em}
-
 /* ===== Celular ===== */
 @media(max-width:860px){
   .v2-heroe{padding-top:68px}
@@ -154,8 +135,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--arcilla)}
   .v2-heroe .actions{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
   .v2-heroe .actions>a:not(.button){display:inline-block}
   .v2-heroe .actions .button{width:auto}
-  .v2-galeria{position:relative;top:auto;right:auto;width:calc(100% + 2*var(--margen) + 16%);margin-left:calc(-1*var(--margen) - 8%);height:clamp(360px,100vw,520px);margin-top:16px;-webkit-mask-image:none;mask-image:none}
-  .v2-inclina{transform:perspective(1200px) rotateX(14deg) rotateZ(-9deg) translateY(-8%)}
+  .v2-galeria{position:relative;top:auto;bottom:auto;right:auto;width:calc(100% + 2*var(--margen) + 16%);margin-left:calc(-1*var(--margen) - 8%);height:clamp(380px,104vw,540px);margin-top:12px;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 18%,#000 82%,transparent 100%);-webkit-mask-composite:source-over;mask-composite:add}
+  .v2-inclina{left:-14%;top:-30%;width:132%;height:160%;transform:perspective(1200px) rotateX(14deg) rotateZ(-9deg)}
   .v2-col figcaption{font-size:.6rem;left:6px;bottom:6px;padding:5px 7px}
   .v2-tarjetas{flex-direction:column;height:auto}
   .v2-tarjeta{flex:none;height:auto;aspect-ratio:6/5}
@@ -180,10 +161,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--arcilla)}
 @media(prefers-reduced-motion:reduce){
   .grano{display:none}
   .v2-palabra>span{animation:none}
-  .v2-pista,.v2-cinta-pista{animation:none}
-  .js .pie-firma svg{fill-opacity:1}
-  .js .pie-firma path{stroke-dashoffset:0}
-}
+  .v2-pista,.v2-cinta-pista,.mos-item img{animation:none}
+  }
 @media(max-width:420px){.bento strong{font-size:clamp(1.7rem,8.4vw,2.3rem)}}
 .bento strong{line-height:1;padding-block:.24em .2em;margin-block:-.12em 0}
 /* Texto chico sobre arena: arcilla y taupe no llegan a 4,5:1 ahí; se oscurecen solo en ese fondo */

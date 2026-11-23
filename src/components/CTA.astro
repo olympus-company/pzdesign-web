@@ -1,5 +1,6 @@
 ---
 import firma from '../../public/img/marca/firma-pz.svg?raw';
-const {titulo='Conversemos sobre tu espacio',texto='Cuéntanos qué necesita tu equipo. Revisamos contigo el alcance y el siguiente paso.'}=Astro.props;
+const {titulo,texto='Cuéntanos qué necesita tu equipo. Revisamos contigo el alcance y el siguiente paso.'}=Astro.props;
 ---
-<section class="container section"><div class="cta" data-revela><span class="firma-fondo" aria-hidden="true" set:html={firma}/><div><h2>{titulo}</h2><p>{texto}</p></div><a class="button" href="/contacto/">Cuéntanos tu proyecto <span class="flecha" aria-hidden="true">↗</span></a></div></section>
+{/* Sin título propio, el llamado «Conversemos sobre tu espacio» vive en el pie de todas las páginas: aquí no se repite. */}
+{titulo!==undefined&&<section class="container section"><div class="cta" data-revela><span class="firma-fondo" aria-hidden="true" set:html={firma}/><div><h2>{titulo}</h2><p>{texto}</p></div><a class="button" href="/contacto/">Cuéntanos tu proyecto <span class="flecha" aria-hidden="true">↗</span></a></div></section>}

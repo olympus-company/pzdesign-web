@@ -2,11 +2,15 @@
 import '../styles/global.css';
 import '../styles/movil.css';
 import '../styles/marca-v2.css';
+import '../styles/relieve.css';
 import Marca from '../components/Marca.astro';
 import firma from '../../public/img/marca/firma-pz.svg?raw';
 import {negocio, telefonoE164, direccion, whatsapp, absoluto} from '../lib/negocio';
 import {lanzado} from '../lib/lanzamiento';
 import {tienda} from '../lib/tienda';
+import servicios from '../data/servicios.json';
+import proyectos from '../data/proyectos.json';
+import {porSlug,publicados} from '../lib/catalogo';
 const {title, description, ruta = Astro.url.pathname, migas = [], schema = [], redireccion} = Astro.props;
 const canonical = absoluto(ruta);
 const crumbs = [{nombre:'Inicio',ruta:'/'}, ...migas];
@@ -19,6 +23,9 @@ const graph = {
     ...schema
   ]
 };
+// Pie: cuatro columnas (Servicios · Proyectos · Tienda · Contacto). Los proyectos y modelos salen de los datos, no a mano.
+const pieProyectos = ['kupfer-2','pesco-edificio-comercial','chile-food-oficinas','sadia-brf','panini'].map(sl=>proyectos.find(p=>p.slug===sl)).filter((p):p is NonNullable<typeof p>=>!!p);
+const pieModelos = ['tossy-negra','ergohuman','gold-up'].map(sl=>porSlug(sl)).filter((p):p is NonNullable<typeof p>=>!!p&&publicados.includes(p));
 const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Proyectos',ruta:'/proyectos/'},{nombre:tienda?'Tienda':'Mobiliario',ruta:'/mobiliario-de-oficina/'},{nombre:'Cómo trabajamos',ruta:'/como-trabajamos/'},{nombre:'Paola Zaid',ruta:'/paola-zaid/'},{nombre:'Conversemos',ruta:'/contacto/'}];
 ---
 <!doctype html>
@@ -35,14 +42,25 @@ const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Pro
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 <header class="site-header" data-cabecera><div class="container header-inner"><Marca/><nav class="desktop-nav" aria-label="Principal">{nav.map(n=><a href={n.ruta} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}</a>)}</nav><div class="cabecera-acciones">{tienda&&<a href="/tienda/carro/" class="carro-boton" aria-label="Ver carro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.1 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2L21 8H6.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.3" fill="currentColor"/><circle cx="17.5" cy="20" r="1.3" fill="currentColor"/></svg><span data-carro-cuenta>0</span></a>}<details class="mobile-nav"><summary><span class="m-abrir">Menú</span><span class="m-cerrar">Cerrar</span></summary><nav aria-label="Principal móvil">{nav.map((n,i)=><a href={n.ruta} style={`--i:${i}`} aria-current={ruta===n.ruta?'page':undefined}>{n.nombre}<span aria-hidden="true">↗</span></a>)}<div class="menu-pie" style={`--i:${nav.length}`}><a class="button" href={whatsapp()}>Escríbenos por WhatsApp <span class="flecha" aria-hidden="true">↗</span></a><p>{negocio.telefono} · {negocio.correo}</p></div></nav></details></div></div></header>
-{tienda&&<p class="maqueta-aviso">Maqueta de la tienda<span class="aviso-largo"> · los precios son de ejemplo y el pago aún no está conectado</span><span class="aviso-corto"> · precios de ejemplo</span></p>}
+{tienda&&<p class="maqueta-aviso" data-aviso>Maqueta de la tienda<span class="aviso-largo"> · los precios son de ejemplo y el pago aún no está conectado</span><span class="aviso-corto"> · precios de ejemplo</span></p>}
 <main id="contenido">
 {migas.length>0 && <nav class="container breadcrumbs" aria-label="Ruta de navegación"><ol>{crumbs.map((c,i)=><li>{i===crumbs.length-1?<span aria-current="page">{c.nombre}</span>:<a href={c.ruta}>{c.nombre}</a>}</li>)}</ol></nav>}
 <slot/>
 </main>
-<footer class="site-footer"><div class="pie-firma" aria-hidden="true" data-firma><span set:html={firma.replaceAll("<path ","<path pathLength=\"1\" ")}/><span class="pie-nombre">PAOLA ZAID</span><span class="pie-design">DESIGN</span></div><div class="container"><div class="footer-grid"><div><p>Arquitectura interior y habilitación de oficinas y espacios comerciales<br/>PZ Design desde {negocio.fundacion}</p><address>{direccion}</address></div><div><h2>Explora</h2><ul><li><a href="/habilitacion-de-oficinas/">Habilitación de oficinas</a></li><li><a href="/diseno-y-arquitectura-interior/">Diseño y arquitectura interior</a></li><li><a href="/proyectos-especiales/">Radios y estudios</a></li><li><a href="/locales-comerciales/">Locales comerciales</a></li><li><a href="/proyectos/">Proyectos</a></li><li><a href="/mobiliario-de-oficina/">Mobiliario de oficina</a></li></ul></div><div><h2>Conversemos</h2><ul><li><a href={whatsapp()}>WhatsApp</a></li><li><a href={`tel:${telefonoE164}`}>{negocio.telefono}</a></li><li><a href={`mailto:${negocio.correo}`}>{negocio.correo}</a></li><li><a href="/contacto/">Cuéntanos tu proyecto</a></li></ul></div></div><div class="footer-bottom"><span>© {new Date().getFullYear()} {negocio.razonSocial}</span><a href="/privacidad/">Privacidad</a></div></div></footer>
+<footer class="site-footer"><div class="pie-plano" aria-hidden="true"></div>
+<div class="container pie-cta"><div><p class="eyebrow">Hablemos</p><h2 class="pie-titular">Conversemos sobre tu espacio</h2><p>Cuéntanos qué necesita tu equipo. Revisamos contigo el alcance y el siguiente paso.</p></div><a class="button" href="/contacto/">Cuéntanos tu proyecto <span class="flecha" aria-hidden="true">↗</span></a></div>
+<div class="pie-firma" aria-hidden="true" data-firma><span set:html={firma.replaceAll("<path ","<path pathLength=\"1\" ")}/><span class="pie-nombre">PAOLA ZAID</span><span class="pie-design">DESIGN</span></div><p class="pie-frase">Espacios de trabajo diseñados a la medida</p>
+<div class="container"><nav class="pie-grid" aria-label="Pie de página">
+<div><h3>Servicios</h3><ul>{servicios.map(sv=><li><a href={`/${sv.slug}/`}>{sv.titulo}</a></li>)}<li><a href="/como-trabajamos/">Cómo trabajamos</a></li></ul></div>
+<div><h3>Proyectos</h3><ul><li><a href="/proyectos/">Los {proyectos.length} proyectos</a></li>{pieProyectos.map(p=><li><a href={`/proyectos/${p.slug}/`}>{p.cliente}</a></li>)}<li><a href="/paola-zaid/">Paola Zaid</a></li></ul></div>
+<div><h3>{tienda?'Tienda':'Mobiliario'}</h3><ul><li><a href="/mobiliario-de-oficina/">{tienda?'Toda la tienda':'Ver el catálogo'}</a></li>{pieModelos.map(p=><li><a href={`/mobiliario-de-oficina/${p.slug}/`}>{p.modelo}</a></li>)}{tienda&&<li><a href="/tienda/carro/">Carro de compras</a></li>}</ul></div>
+<div><h3>Contacto</h3><ul><li><a href={whatsapp()}>Escríbenos por WhatsApp</a></li><li><a href="/contacto/">Cuéntanos tu proyecto</a></li><li><a href="/contacto/">Agenda una visita</a></li></ul></div>
+</nav>
+<div class="pie-franja"><address>{direccion}</address><a href={`tel:${telefonoE164}`}>{negocio.telefono}</a><a href={`mailto:${negocio.correo}`}>{negocio.correo}</a></div>
+{tienda&&<p class="pie-aviso">Maqueta de la tienda · los precios son de ejemplo y el pago aún no está conectado</p>}
+<div class="footer-bottom"><span>© {new Date().getFullYear()} {negocio.razonSocial}</span><span>Arquitectura interior y habilitación de oficinas y espacios comerciales · PZ Design desde {negocio.fundacion}</span><a href="/privacidad/">Privacidad</a></div></div></footer>
 <p class="toast" data-toast role="status" hidden></p>
-<div class="grano" aria-hidden="true"></div><div class="cursor" aria-hidden="true" data-cursor><i></i></div>
+<div class="grano" aria-hidden="true"></div>
 <script>
 import {agregar,unidades} from '../lib/carro';
 // Carro de la maqueta: contador y botones «Agregar al carro».
@@ -52,23 +70,26 @@ document.addEventListener('click',ev=>{const b=(ev.target as HTMLElement).closes
 // Cabecera compacta al bajar, aparición escalonada y cotas que se dibujan al entrar en pantalla.
 const cab=document.querySelector('[data-cabecera]');
 const marcar=()=>cab?.classList.toggle('baja',scrollY>24);marcar();addEventListener('scroll',marcar,{passive:true});
-const contar=(el:HTMLElement)=>{const fin=Number(el.dataset.cuenta),suf=el.dataset.sufijo??'';if(!fin||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const t0=performance.now();const paso=(t:number)=>{const k=Math.min(1,(t-t0)/1600),v=Math.round(fin*(1-Math.pow(1-k,3)));el.textContent=v.toLocaleString('es-CL')+suf;if(k<1)requestAnimationFrame(paso);};requestAnimationFrame(paso);};
+const contar=(el:HTMLElement)=>{const fin=Number(el.dataset.cuenta),suf=el.dataset.sufijo??'',pre=el.dataset.prefijo??'';if(!fin||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const t0=performance.now();const paso=(t:number)=>{const k=Math.min(1,(t-t0)/1600),v=Math.round(fin*(1-Math.pow(1-k,3)));el.textContent=pre+v.toLocaleString('es-CL')+suf;if(k<1)requestAnimationFrame(paso);};requestAnimationFrame(paso);};
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add(e.target.hasAttribute('data-cota')?'dibuja':'en');e.target.querySelectorAll<HTMLElement>('[data-cuenta]').forEach(contar);io.unobserve(e.target);}),{rootMargin:'0px 0px -12% 0px'});
 const observar=()=>document.querySelectorAll('[data-revela]:not(.en),[data-cota]:not(.dibuja)').forEach(el=>{if(el.hasAttribute('data-revela'))[...el.children].forEach((c,i)=>(c as HTMLElement).style.setProperty('--i',String(i)));io.observe(el);});
-// Marca v2: firma del pie que se dibuja, cursor punto + aro y botones magnéticos (solo con mouse y sin movimiento reducido).
+// Marca v2: firma del pie que se dibuja, botones magnéticos, cifras que se inclinan y aviso de la maqueta (solo con mouse y sin movimiento reducido donde corresponde).
 const quieto=matchMedia('(prefers-reduced-motion: reduce)').matches,fino=matchMedia('(hover:hover) and (pointer:fine)').matches;
 const pie=document.querySelector('[data-firma]');
 if(pie){if(quieto)pie.classList.add('dibuja');else new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){pie.classList.add('dibuja');o.disconnect();}}),{threshold:.3}).observe(pie);}
 if(fino&&!quieto){
-  const cur=document.querySelector<HTMLElement>('[data-cursor]');let mx=-99,my=-99,cx=-99,cy=-99;
-  addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;cur?.classList.add('vivo');});
-  document.addEventListener('pointerover',e=>cur?.classList.toggle('grande',!!(e.target as HTMLElement).closest('a,button,summary,[data-servicio]')));
-  const mover=()=>{cx+=(mx-cx)*.2;cy+=(my-cy)*.2;if(cur)cur.style.transform=`translate(${cx}px,${cy}px)`;requestAnimationFrame(mover);};requestAnimationFrame(mover);
   document.querySelectorAll<HTMLElement>('.button,.desktop-nav a:last-child').forEach(el=>{
     el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.translate=`${((e.clientX-r.left-r.width/2)*.25).toFixed(1)}px ${((e.clientY-r.top-r.height/2)*.35).toFixed(1)}px`;});
     el.addEventListener('pointerleave',()=>{el.style.translate='';});
   });
+  document.querySelectorAll<HTMLElement>('.bento>div').forEach(el=>{
+    el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.setProperty('--ax',String(-y||.001));el.style.setProperty('--ay',String(x||.001));el.style.setProperty('--ang',`${(Math.hypot(x,y)*9).toFixed(2)}deg`);});
+    el.addEventListener('pointerleave',()=>el.style.setProperty('--ang','0deg'));
+  });
 }
+// El aviso de la maqueta se ve al cargar y se esconde en cuanto la persona baja o a los 6 s, para no tapar texto (también va escrito en el pie).
+const aviso=document.querySelector('[data-aviso]');
+if(aviso){const ocultar=()=>aviso.classList.remove('visible');setTimeout(()=>aviso.classList.add('visible'),500);setTimeout(ocultar,6000);addEventListener('scroll',()=>{if(scrollY>40)ocultar();},{passive:true});}
 observar();setTimeout(()=>document.querySelectorAll('[data-revela]').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight)el.classList.add('en')}),3500);
 </script>
 </body></html>

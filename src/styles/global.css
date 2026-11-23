@@ -149,15 +149,12 @@ a:hover>.marco img,.marco:hover img{transform:scale(1.04)}
 
 /* Pie */
 .site-footer{background:var(--noche);color:var(--sobre-noche);padding-block:clamp(72px,9vw,128px) 28px}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px}
 .site-footer h2{font-size:1rem;font-weight:500;letter-spacing:0;color:var(--sobre-noche-suave);margin-bottom:18px}
 .site-footer ul{list-style:none;margin:0;padding:0}
 .site-footer li+li{margin-top:8px}
 .site-footer a{text-decoration:none}
 .site-footer a:hover{text-decoration:underline}
 .site-footer p,.site-footer address{color:var(--sobre-noche-suave);font-style:normal}
-.site-footer .brand{margin-bottom:24px}
-.site-footer .brand svg{width:84px;height:64px}
 .footer-bottom{border-top:1px solid var(--linea-noche);margin-top:64px;padding-top:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.85rem;color:var(--sobre-noche-suave)}
 
 /* Catálogo */
@@ -198,7 +195,7 @@ textarea{resize:vertical;min-height:150px}
 .js [data-revela]>*{opacity:0;transform:translateY(28px);transition:opacity 1s var(--curva),transform 1s var(--curva);transition-delay:calc(var(--i,0)*90ms)}
 .js [data-revela].en>*{opacity:1;transform:none}
 
-@media(max-width:1000px){.desktop-nav{gap:18px;font-size:.85rem}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cta{display:block}.cta .button{margin-top:30px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:1000px){.desktop-nav{gap:18px;font-size:.85rem}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cta{display:block}.cta .button{margin-top:30px}}
 @media(max-width:860px){
   .desktop-nav{display:none}
   .mobile-nav{display:block}
@@ -210,7 +207,7 @@ textarea{resize:vertical;min-height:150px}
   .site-header:has(.mobile-nav[open]){background:var(--lino);color:var(--tinta)}
   .header-inner,.baja .header-inner{min-height:68px}
   .brand svg,.baja .brand svg{width:46px;height:36px}
-  .grid,.grid.two,.split,.footer-grid{grid-template-columns:1fr}
+  .grid,.grid.two,.split{grid-template-columns:1fr}
   .grid{gap:48px}
   .breadcrumbs{padding-top:100px}
   .steps li{grid-template-columns:56px 1fr;gap:14px}

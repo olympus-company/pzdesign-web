@@ -1,9 +1,9 @@
 // 21st.dev · Scroll Horizontal Gallery (motiondotdev, id 24623). Adaptado: la galería avanza de lado mientras se baja;
 // en celular o con movimiento reducido queda como carrusel que se desliza con el dedo.
 import { motion, useScroll, useTransform, useReducedMotion } from 'motion/react';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 
-export interface ItemGaleria { href: string; src: string; alt: string; width: number; height: number; cliente: string; nombre: string; tipo: string; m2?: number | null }
+export interface ItemGaleria { href: string; src: string; alt: string; width: number; height: number; cliente: string; nombre: string; tipo: string; m2?: number | null; logo?: { slug: string; ratio: number } | null }
 
 export function GaleriaHorizontal({ items }: { items: ItemGaleria[] }) {
   const target = useRef<HTMLDivElement>(null);
@@ -41,6 +41,7 @@ export function GaleriaHorizontal({ items }: { items: ItemGaleria[] }) {
                 {it.m2 ? <div className="cota" aria-hidden="true"><svg viewBox="0 0 100 16" preserveAspectRatio="none"><line className="tope" x1="0" y1="2" x2="0" y2="14" /><line className="eje" pathLength={1} x1="0" y1="8" x2="100" y2="8" /><line className="tope" x1="100" y1="2" x2="100" y2="14" /></svg><span>{it.m2} m²</span></div> : null}
               </div>
               <span className="gh-texto">
+                {it.logo ? <span className="gh-logo" aria-hidden="true" style={{ '--u': `url(/img/clientes/${it.logo.slug}.png)`, '--r': it.logo.ratio } as CSSProperties} /> : null}
                 <span className="gh-tipo">{it.tipo}</span>
                 <h3>{it.cliente}</h3>
                 <span className="gh-nombre">{it.nombre}</span>

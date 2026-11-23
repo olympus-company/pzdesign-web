@@ -1,0 +1,82 @@
+{
+ "Sadia": {
+  "slug": "sadia",
+  "ratio": 2.167
+ },
+ "BRF": {
+  "slug": "brf",
+  "ratio": 2.104
+ },
+ "Colún": {
+  "slug": "colun",
+  "ratio": 1
+ },
+ "Pesco": {
+  "slug": "pesco",
+  "ratio": 2.819
+ },
+ "U. de Chile": {
+  "slug": "u-de-chile",
+  "ratio": 1.26
+ },
+ "Ibero Americana Radio Chile": {
+  "slug": "ibero-americana-radio-chile",
+  "ratio": 8.5
+ },
+ "Panini": {
+  "slug": "panini",
+  "ratio": 4.188
+ },
+ "Archroma": {
+  "slug": "archroma",
+  "ratio": 3.458
+ },
+ "Clariant": {
+  "slug": "clariant",
+  "ratio": 4.188
+ },
+ "Stantec": {
+  "slug": "stantec",
+  "ratio": 3.745
+ },
+ "CIPP": {
+  "slug": "cipp",
+  "ratio": 4.159
+ },
+ "MWH": {
+  "slug": "mwh",
+  "ratio": 3.298
+ },
+ "Bayer": {
+  "slug": "bayer",
+  "ratio": 1
+ },
+ "Monsanto": {
+  "slug": "monsanto",
+  "ratio": 3.125
+ },
+ "Chile Food": {
+  "slug": "chile-food",
+  "ratio": 4.083
+ },
+ "Soclifar": {
+  "slug": "soclifar",
+  "ratio": 3.948
+ },
+ "Cofar": {
+  "slug": "cofar",
+  "ratio": 3.896
+ },
+ "Küpfer": {
+  "slug": "kupfer",
+  "ratio": 4.552
+ },
+ "Pipesa": {
+  "slug": "pipesa",
+  "ratio": 1.552
+ },
+ "Nutrien": {
+  "slug": "nutrien",
+  "ratio": 2.553
+ }
+}
