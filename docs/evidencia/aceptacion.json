@@ -20,8 +20,8 @@
       "id": 2,
       "estado": "PASS",
       "evidencia": {
-        "paginas": 48,
-        "modelos": 20,
+        "paginas": 59,
+        "modelos": 31,
         "proyectos": 16,
         "errores": []
       }
@@ -30,14 +30,14 @@
       "id": 3,
       "estado": "PASS",
       "evidencia": {
-        "html": 97,
+        "html": 108,
         "titulos": {
           "min": 25,
           "max": 56
         },
         "descripciones": {
           "min": 120,
-          "max": 154
+          "max": 157
         },
         "errores": []
       }
@@ -46,10 +46,10 @@
       "id": 4,
       "estado": "PASS",
       "evidencia": {
-        "html": 97,
+        "html": 108,
         "respuestas": {
-          "min": 45,
-          "max": 58
+          "min": 44,
+          "max": 59
         },
         "errores": []
       }
@@ -61,12 +61,12 @@
         "estados": [
           {
             "PUBLIC_LANZADO": true,
-            "html": 97,
+            "html": 108,
             "errores": []
           },
           {
             "PUBLIC_LANZADO": false,
-            "html": 97,
+            "html": 108,
             "errores": []
           }
         ]
@@ -84,7 +84,7 @@
       "id": 7,
       "estado": "PASS",
       "evidencia": {
-        "html": 97,
+        "html": 108,
         "errores": []
       }
     },
@@ -147,6 +147,17 @@
     "/mobiliario-de-oficina/ergoplus-blanca/",
     "/mobiliario-de-oficina/max-plus/",
     "/mobiliario-de-oficina/gold-up/",
+    "/mobiliario-de-oficina/kyoto-s/",
+    "/mobiliario-de-oficina/kyoto-m/",
+    "/mobiliario-de-oficina/kyoto-l/",
+    "/mobiliario-de-oficina/silen-space-1/",
+    "/mobiliario-de-oficina/silen-space-1-5/",
+    "/mobiliario-de-oficina/silen-space-2/",
+    "/mobiliario-de-oficina/silen-space-4/",
+    "/mobiliario-de-oficina/chatbox-single/",
+    "/mobiliario-de-oficina/chatbox-solo/",
+    "/mobiliario-de-oficina/chatbox-duo/",
+    "/mobiliario-de-oficina/chatbox-cuattro/",
     "/proyectos/pesco-edificio-comercial/",
     "/proyectos/pesco-rrhh/",
     "/proyectos/pesco-casino/",

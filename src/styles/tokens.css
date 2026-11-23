@@ -1,13 +1,15 @@
 @font-face{font-family:Jost;src:url('/fonts/jost-variable.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:swap}
 @font-face{font-family:'Source Sans 3';src:url('/fonts/source-sans-3-variable.woff2') format('woff2');font-style:normal;font-weight:200 900;font-display:swap}
-/* Marca: camino A (firma) + paleta 2 «grafito y roble» del brandbook v0. Para cambiar a otro camino o paleta, se cambian solo estos tokens. */
+/* Marca v2 (23-nov, manual aprobado por Patricio): hueso 60 % · espresso 30 % · arcilla 10 % (solo chispa).
+   Los nombres viejos de variables se mantienen para no tocar cada regla: tinta = espresso, lino = hueso, roble = arcilla. */
 :root{
   color-scheme:light;
-  --tinta:#1C1A18;--lino:#EDE8E0;--roble:#A27B52;--piedra:#B5ADA2;
-  --papel:#F5F2EC;--suave:#5A534B;--roble-texto:#7A5A39;--linea:rgb(28 26 24 / .14);
-  --noche:#1C1A18;--noche-2:#26231F;--sobre-noche:#EDE8E0;--sobre-noche-suave:#B5ADA2;--linea-noche:rgb(237 232 224 / .16);
-  --titulos:Jost,'Helvetica Neue',Arial,sans-serif;--cuerpo:'Source Sans 3','Helvetica Neue',Arial,sans-serif;
+  --hueso:#F3EFE9;--espresso:#2E2420;--arcilla:#A84F2E;--arcilla-hover:#8E4025;--arena:#E8D3C4;--taupe:#6E6058;--arcilla-clara:#D98A66;
+  --tinta:var(--espresso);--lino:var(--hueso);--roble:var(--arcilla);--piedra:#CDBDB0;
+  --papel:#FAF7F3;--suave:var(--taupe);--roble-texto:var(--arcilla);--linea:rgb(46 36 32 / .14);
+  --noche:var(--espresso);--noche-2:#241C19;--sobre-noche:var(--hueso);--sobre-noche-suave:#D8CABD;--linea-noche:rgb(243 239 233 / .16);
+  --titulos:Jost,Futura,'Century Gothic',Arial,sans-serif;--cuerpo:'Source Sans 3','Segoe UI',Arial,sans-serif;
   --ancho:1320px;--margen:clamp(20px,5vw,72px);--seccion:clamp(88px,11vw,180px);
-  --curva:cubic-bezier(.22,1,.36,1);
-  --r-foto:22px;--r-tarjeta:26px;--r-campo:14px;--r-pildora:999px;
+  --curva:cubic-bezier(.2,.75,.15,1);
+  --r-foto:10px;--r-tarjeta:10px;--r-campo:8px;--r-pildora:999px;
 }
