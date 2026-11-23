@@ -5,5 +5,4 @@ export const direccion = `${negocio.direccion.calle}, ${negocio.direccion.comuna
 export const whatsapp = (mensaje = 'Hola, quiero conversar sobre un proyecto para mi empresa.') =>
   `https://wa.me/${telefonoE164.slice(1)}?text=${encodeURIComponent(mensaje)}`;
 export const cotizar = (modelo: string, cantidad = 1) => whatsapp(`Hola, quiero cotizar el modelo ${modelo}. Cantidad: ${cantidad}. ¿Me ayudas con disponibilidad y entrega?`);
-export const aniosExperiencia = new Date().getFullYear() - negocio.experienciaDesde;
 export const absoluto = (ruta: string) => new URL(ruta, negocio.web).href;

@@ -194,3 +194,10 @@ input:focus,select:focus,textarea:focus{border-color:var(--arcilla)}
 @media(max-width:860px){.gh-texto{background:rgb(46 36 32 / .78);padding-top:20px}}
 .carro-boton{border-color:var(--linea-noche)}
 .carro-boton:hover{background:var(--arcilla);color:var(--hueso)}
+/* Héroe en una frase (como la maqueta); el resto del párrafo answer-first sigue en el HTML y se abre con «Leer más» */
+.v2-heroe .intro-resto{display:none}
+.v2-heroe .intro-resto.abierto{display:inline}
+.no-js .v2-heroe .intro-resto,html:not(.js) .v2-heroe .intro-resto{display:inline}
+html:not(.js) .intro-mas{display:none}
+.intro-mas{margin-top:12px;padding:0;border:0;background:none;color:#D8CABD;font:500 .92rem/1.4 var(--titulos);border-bottom:1px solid rgb(243 239 233 / .35);cursor:pointer}
+.intro-mas:hover{color:var(--hueso)}
