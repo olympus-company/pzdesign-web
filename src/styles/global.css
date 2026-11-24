@@ -269,7 +269,10 @@ textarea{resize:vertical;min-height:150px}
 .banda-noche .section-heading>a:hover{border-color:var(--sobre-noche)}
 .gh{position:relative}
 .gh-pegado{position:relative}
-.gh-activa .gh-pegado{position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden}
+.gh-activa .gh-pegado{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;gap:clamp(24px,3vh,40px);overflow:hidden}
+.gh-activa .gh-pegado>astro-slot,.gh-activa .gh-pegado>astro-static-slot{display:block;width:100%}
+.gh-activa .galeria-cabeza{margin-bottom:0}
+.banda-noche:has(.gh-activa){padding-block:0}
 .gh-pista{display:flex;gap:28px;padding-inline:var(--margen);width:max-content}
 .gh:not(.gh-activa) .gh-pista{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--margen);padding-bottom:12px;scrollbar-width:none}
 .gh:not(.gh-activa) .gh-pista::-webkit-scrollbar{display:none}

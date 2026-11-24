@@ -1,11 +1,12 @@
 // 21st.dev · Scroll Horizontal Gallery (motiondotdev, id 24623). Adaptado: la galería avanza de lado mientras se baja;
 // en celular o con movimiento reducido queda como carrusel que se desliza con el dedo.
 import { motion, useScroll, useTransform, useReducedMotion } from 'motion/react';
-import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 
 export interface ItemGaleria { href: string; src: string; alt: string; width: number; height: number; cliente: string; nombre: string; tipo: string; m2?: number | null; logo?: { slug: string; ratio: number } | null }
 
-export function GaleriaHorizontal({ items }: { items: ItemGaleria[] }) {
+// El título va dentro del bloque fijo para que quede pegado a las tarjetas (ronda 3: sobraba aire arriba y abajo).
+export function GaleriaHorizontal({ items, children }: { items: ItemGaleria[]; children?: ReactNode }) {
   const target = useRef<HTMLDivElement>(null);
   const pista = useRef<HTMLDivElement>(null);
   const quieto = useReducedMotion();
@@ -33,6 +34,7 @@ export function GaleriaHorizontal({ items }: { items: ItemGaleria[] }) {
   return (
     <div ref={target} className={`gh ${activo ? 'gh-activa' : ''}`} style={activo ? { height: `calc(100vh + ${distancia}px)` } : undefined}>
       <div className="gh-pegado">
+        {children}
         <motion.div ref={pista} className="gh-pista" style={activo ? { x } : undefined}>
           {items.map((it) => (
             <a key={it.href} href={it.href} className="gh-item">
