@@ -47,7 +47,7 @@ const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Pro
 {migas.length>0 && <nav class="container breadcrumbs" aria-label="Ruta de navegación"><ol>{crumbs.map((c,i)=><li>{i===crumbs.length-1?<span aria-current="page">{c.nombre}</span>:<a href={c.ruta}>{c.nombre}</a>}</li>)}</ol></nav>}
 <slot/>
 </main>
-<footer class="site-footer"><div class="pie-plano" aria-hidden="true"></div>
+<footer class="site-footer">
 <div class="container pie-cta"><div><p class="eyebrow">Hablemos</p><h2 class="pie-titular">Conversemos sobre tu espacio</h2><p>Cuéntanos qué necesita tu equipo. Revisamos contigo el alcance y el siguiente paso.</p></div><a class="button" href="/contacto/">Cuéntanos tu proyecto <span class="flecha" aria-hidden="true">↗</span></a></div>
 <div class="pie-firma" aria-hidden="true" data-firma><span set:html={firma.replaceAll("<path ","<path pathLength=\"1\" ")}/><span class="pie-nombre">PAOLA ZAID</span><span class="pie-design">DESIGN</span></div><p class="pie-frase">Espacios de trabajo diseñados a la medida</p>
 <div class="container"><nav class="pie-grid" aria-label="Pie de página">
@@ -60,7 +60,6 @@ const nav = [{nombre:'Servicios',ruta:'/habilitacion-de-oficinas/'},{nombre:'Pro
 {tienda&&<p class="pie-aviso">Maqueta de la tienda · los precios son de ejemplo y el pago aún no está conectado</p>}
 <div class="footer-bottom"><span>© {new Date().getFullYear()} {negocio.razonSocial}</span><span>Arquitectura interior y habilitación de oficinas y espacios comerciales · PZ Design desde {negocio.fundacion}</span><a href="/privacidad/">Privacidad</a></div></div></footer>
 <p class="toast" data-toast role="status" hidden></p>
-<div class="grano" aria-hidden="true"></div>
 <script>
 import {agregar,unidades} from '../lib/carro';
 // Carro de la maqueta: contador y botones «Agregar al carro».
@@ -73,7 +72,7 @@ const marcar=()=>cab?.classList.toggle('baja',scrollY>24);marcar();addEventListe
 const contar=(el:HTMLElement)=>{const fin=Number(el.dataset.cuenta),suf=el.dataset.sufijo??'',pre=el.dataset.prefijo??'';if(!fin||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const t0=performance.now();const paso=(t:number)=>{const k=Math.min(1,(t-t0)/1600),v=Math.round(fin*(1-Math.pow(1-k,3)));el.textContent=pre+v.toLocaleString('es-CL')+suf;if(k<1)requestAnimationFrame(paso);};requestAnimationFrame(paso);};
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add(e.target.hasAttribute('data-cota')?'dibuja':'en');e.target.querySelectorAll<HTMLElement>('[data-cuenta]').forEach(contar);io.unobserve(e.target);}),{rootMargin:'0px 0px -12% 0px'});
 const observar=()=>document.querySelectorAll('[data-revela]:not(.en),[data-cota]:not(.dibuja)').forEach(el=>{if(el.hasAttribute('data-revela'))[...el.children].forEach((c,i)=>(c as HTMLElement).style.setProperty('--i',String(i)));io.observe(el);});
-// Marca v2: firma del pie que se dibuja, botones magnéticos, cifras que se inclinan y aviso de la maqueta (solo con mouse y sin movimiento reducido donde corresponde).
+// Marca v2: firma del pie que se dibuja, botones magnéticos y aviso de la maqueta (solo con mouse y sin movimiento reducido donde corresponde).
 const quieto=matchMedia('(prefers-reduced-motion: reduce)').matches,fino=matchMedia('(hover:hover) and (pointer:fine)').matches;
 const pie=document.querySelector('[data-firma]');
 if(pie){if(quieto)pie.classList.add('dibuja');else new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){pie.classList.add('dibuja');o.disconnect();}}),{threshold:.3}).observe(pie);}
@@ -81,10 +80,6 @@ if(fino&&!quieto){
   document.querySelectorAll<HTMLElement>('.button,.desktop-nav a:last-child').forEach(el=>{
     el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.translate=`${((e.clientX-r.left-r.width/2)*.25).toFixed(1)}px ${((e.clientY-r.top-r.height/2)*.35).toFixed(1)}px`;});
     el.addEventListener('pointerleave',()=>{el.style.translate='';});
-  });
-  document.querySelectorAll<HTMLElement>('.bento>div').forEach(el=>{
-    el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.setProperty('--ax',String(-y||.001));el.style.setProperty('--ay',String(x||.001));el.style.setProperty('--ang',`${(Math.hypot(x,y)*9).toFixed(2)}deg`);});
-    el.addEventListener('pointerleave',()=>el.style.setProperty('--ang','0deg'));
   });
 }
 // El aviso de la maqueta se ve al cargar y se esconde en cuanto la persona baja o a los 6 s, para no tapar texto (también va escrito en el pie).

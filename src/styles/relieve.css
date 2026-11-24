@@ -1,31 +1,20 @@
-/* Ronda 2 de la marca v2 (23-nov, feedback de Patricio: «todo se ve plano»).
-   Relieve, peso, textura y volumen. Sombras siempre de color arcilla o espresso, nunca grises genéricas.
+/* Marca v2 · opción D (24-nov, Patricio): café y hueso con botones con relieve. Sin texturas de fondo (el grano y los planos se leían como collage).
+   Relieve solo en botones; tarjetas con una sombra suave. Sombras siempre de color arcilla o espresso, nunca grises genéricas.
    Va después de marca-v2.css. Solo transform/opacity se animan; el box-shadow es fijo (el botón se mueve con transform). */
 
 :root{
-  /* Texto de apoyo y rótulos: más oscuros que el taupe del manual para que lean sobre el papel con textura (4,5:1 medido sobre los píxeles reales) */
+  /* Texto de apoyo y rótulos: más oscuros que el taupe del manual para que lean sobre el hueso (4,5:1 medido sobre los píxeles reales) */
   --suave:#5A4B44;
   --sombra-a:96 38 18;      /* arcilla oscuro (rgb) para sombras bajo botones */
   --sombra-e:46 36 32;      /* espresso (rgb) para sombras bajo tarjetas */
-  --papel-grano:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .22 0 0 0 0 .15 0 0 0 0 .12 0 0 0 .42 -.16'/%3E%3C/filter%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.035 .05' numOctaves='4' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .15 0 0 0 .3 -.11'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E");
-  --grano-arcilla:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .15 0 0 0 0 .08 0 0 0 0 .05 0 0 0 .5 -.18'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  --grano-oscuro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .95 0 0 0 0 .92 0 0 0 0 .88 0 0 0 .6 -.22'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  --planta-fina:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%232E2420' stroke-opacity='.1' stroke-width='1.1'%3E%3Cpath d='M20 20h60v36H20z'/%3E%3Cpath d='M38 56a10 10 0 0 0 20 0'/%3E%3Cpath d='M120 20v50a50 50 0 0 1 50-50'/%3E%3Cpath d='M120 20h50'/%3E%3Cpath d='M150 130h70M150 125v10M220 125v10'/%3E%3Cpath d='M20 150h70v40H20z'/%3E%3Ccircle cx='190' cy='200' r='16'/%3E%3Cpath d='M100 100l12 12M112 100l-12 12'/%3E%3C/g%3E%3C/svg%3E");
-  --planta-arcilla:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%232E2420' stroke-opacity='.2' stroke-width='1.2'%3E%3Cpath d='M20 20h60v36H20z'/%3E%3Cpath d='M38 56a10 10 0 0 0 20 0'/%3E%3Cpath d='M120 20v50a50 50 0 0 1 50-50'/%3E%3Cpath d='M120 20h50'/%3E%3Cpath d='M150 130h70M150 125v10M220 125v10'/%3E%3Cpath d='M20 150h70v40H20z'/%3E%3Ccircle cx='190' cy='200' r='16'/%3E%3Cpath d='M100 100l12 12M112 100l-12 12'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Rótulos arcilla sobre papel: el tono oscuro de la familia arcilla para que lean sobre el grano */
+/* Rótulos arcilla sobre hueso: el tono oscuro de la familia arcilla para que lean bien */
 .eyebrow{color:var(--arcilla-hover)}
 .precio-ejemplo{color:#7A3519}
 
-/* ===== Textura en las secciones claras: papel con fibra en todo el fondo hueso, planta en línea fina en bandas ===== */
-body{background-color:var(--hueso);background-image:var(--papel-grano);background-size:300px 300px}
-.grano{opacity:.5}
-.v2-servicios{background-image:var(--planta-fina);background-size:clamp(200px,19vw,280px);background-position:right top;position:relative}
-.v2-servicios::before,.banda-arena::before,.v2-clientes::before{content:'';position:absolute;left:var(--margen);right:var(--margen);top:10px;height:1px;background:repeating-linear-gradient(90deg,rgb(var(--sombra-e) / .3) 0 6px,transparent 6px 14px);pointer-events:none}
-.v2-clientes,.banda-arena{position:relative;background-color:var(--arena);background-image:var(--papel-grano);background-size:300px 300px;box-shadow:inset 0 16px 20px -16px rgb(var(--sombra-e) / .28),inset 0 -16px 20px -16px rgb(var(--sombra-e) / .28),0 -1px 0 rgb(var(--sombra-e) / .16)}
-.banda-arena{background-image:var(--planta-fina),var(--papel-grano);background-size:clamp(200px,19vw,280px),300px 300px;background-position:left bottom,0 0}
-.banda-noche{box-shadow:inset 0 18px 24px -18px rgb(0 0 0 / .55),0 -1px 0 rgb(var(--sombra-e) / .6)}
+/* ===== Dos tonos: hueso liso en el cuerpo (arena solo en la cinta de clientes, marca-v2.css), espresso en héroe, proyectos y pie ===== */
+body{background-color:var(--hueso)}
 
 /* ===== Botones con relieve: luz arriba, borde oscuro abajo, degradé de arcilla a arcilla oscuro y sombra de color ===== */
 .button,.desktop-nav a:last-child{background:linear-gradient(180deg,var(--arcilla) 0,var(--arcilla-hover) 100%);border:1px solid #7A3519;color:var(--hueso);text-shadow:0 1px 0 rgb(60 22 8 / .4);box-shadow:inset 0 1px 0 rgb(255 214 190 / .5),inset 0 -2px 0 rgb(60 22 8 / .3),0 3px 0 #6E2F16,0 14px 20px -9px rgb(var(--sombra-a) / .68);transition:transform .35s var(--curva),translate .5s var(--curva),color .35s}
@@ -39,7 +28,7 @@ body{background-color:var(--hueso);background-image:var(--papel-grano);backgroun
 @media(prefers-reduced-motion:reduce){.button:hover,.button:active,.desktop-nav a:last-child:hover,.desktop-nav a:last-child:active{transform:none}}
 
 /* ===== Tarjetas de servicios y de las dos caras: sombra de color espresso ===== */
-.v2-tarjeta,.cara{box-shadow:0 28px 38px -26px rgb(var(--sombra-e) / .65),inset 0 1px 0 rgb(255 255 255 / .22)}
+.v2-tarjeta,.cara{box-shadow:0 18px 30px -24px rgb(var(--sombra-e) / .55)}
 
 /* ===== Marquesina con logos reales en un solo color (espresso) ===== */
 .v2-clientes{padding-block:clamp(22px,2vw,34px)}
@@ -54,24 +43,17 @@ body{background-color:var(--hueso);background-image:var(--papel-grano);backgroun
 .gh-logo{display:block;height:30px;width:calc(var(--r)*30px);margin-top:18px;background:var(--hueso);-webkit-mask:var(--u) left center/contain no-repeat;mask:var(--u) left center/contain no-repeat}
 .gh-logo+.gh-tipo{margin-top:12px}
 
-/* ===== Cifras con peso: relieve, marco fino, textura propia, inclinación 3D y cota de plano ===== */
-.bento{perspective:1100px}
-.bento>div{position:relative;overflow:hidden;box-shadow:inset 0 1px 0 rgb(255 255 255 / .6),inset 0 -2px 0 rgb(var(--sombra-e) / .1),0 1px 0 rgb(var(--sombra-e) / .14),0 26px 34px -20px rgb(var(--sombra-e) / .6);rotate:var(--ax,1) var(--ay,0) 0 var(--ang,0deg);transition:rotate .6s var(--curva)}
-.bento>div::before{content:'';position:absolute;inset:9px;border:1px solid rgb(var(--sombra-e) / .16);border-radius:calc(var(--r-tarjeta) - 3px);pointer-events:none}
+/* ===== Cifras: arena lisa y la cifra principal en espresso ===== */
+.bento>div{position:relative;overflow:hidden;background:var(--arena)}
 .bento>div>*{position:relative}
-.bento>.b-grande{background:var(--grano-oscuro),radial-gradient(120% 90% at 0 0,#3B2E29 0,var(--espresso) 62%)!important;box-shadow:inset 0 1px 0 rgb(255 255 255 / .16),inset 0 -2px 0 rgb(0 0 0 / .35),0 28px 36px -20px rgb(var(--sombra-e) / .75)}
-.bento>.b-grande::before{border-color:rgb(243 239 233 / .2)}
-.bento>.b-roble{background:var(--planta-arcilla),linear-gradient(160deg,var(--arcilla) 0,#97472A 100%)!important;background-size:clamp(150px,14vw,220px),auto;box-shadow:inset 0 1px 0 rgb(255 214 190 / .5),inset 0 -2px 0 rgb(60 22 8 / .3),0 28px 36px -20px rgb(var(--sombra-a) / .75)}
-.bento>.b-roble::before{border-color:rgb(243 239 233 / .3)}
-.bento>.b-roble span,.bento>.b-roble .b-rotulo,.bento>.b-roble strong{color:var(--hueso)}
-.bento>.b-papel{background:var(--papel-grano),linear-gradient(180deg,#F6EEE6 0,var(--arena) 100%)}
-.bento>.b-linea{background:var(--planta-fina),var(--papel-grano),var(--arena);background-size:clamp(150px,14vw,220px),300px 300px,auto}
+.bento>.b-grande{background:var(--espresso)!important}
+.bento>.b-roble{background:var(--arena)!important}
+.bento>.b-roble span,.bento>.b-roble .b-rotulo{color:var(--espresso)}
+.bento>.b-roble strong{color:var(--arcilla)}
 .b-cota{stroke:var(--arcilla-clara);stroke-width:1.8}
-.b-grande::after{content:'';position:absolute;left:clamp(22px,2.6vw,36px);right:clamp(22px,2.6vw,36px);top:calc(clamp(26px,3vw,40px) + 14px);height:7px;background:repeating-linear-gradient(90deg,rgb(217 138 102 / .75) 0 1px,transparent 1px 14px);pointer-events:none}
-@media(prefers-reduced-motion:reduce){.bento>div{rotate:none}}
 
-/* ===== «Mobiliario para tu forma de trabajar»: luz de estudio, sombra de contacto y producto que sube y gira ===== */
-.product-card .product-visual{background:radial-gradient(90% 72% at 50% 26%,#fff 0,var(--papel) 50%,#E9DACB 100%);box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgb(255 255 255 / .75),0 1px 0 rgb(var(--sombra-e) / .14),0 28px 32px -22px rgb(var(--sombra-e) / .6)}
+/* ===== «Mobiliario para tu forma de trabajar»: fondo papel, sombra de contacto y producto que sube y gira ===== */
+.product-card .product-visual{background:var(--papel)}
 .product-card .product-visual::after{content:'';position:absolute;left:25%;right:25%;bottom:8%;height:18px;border-radius:50%;background:radial-gradient(ellipse at center,rgb(var(--sombra-e) / .38) 0,rgb(var(--sombra-e) / .14) 52%,transparent 74%);transition:transform .9s var(--curva),opacity .9s}
 .product-card .product-image{position:relative;z-index:1;max-height:270px!important}
 @media(hover:hover){
@@ -81,8 +63,8 @@ body{background-color:var(--hueso);background-image:var(--papel-grano);backgroun
 @media(prefers-reduced-motion:reduce){.product-card:hover .product-image{transform:none}.product-card:hover .product-visual::after{transform:none;opacity:1}}
 
 /* ===== Tarjeta «Tienda de mobiliario»: abanico de productos del catálogo, cada uno con su escala y su sombra de contacto ===== */
-.cara.producto{background:var(--papel);box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgb(255 255 255 / .75),0 28px 38px -26px rgb(var(--sombra-e) / .6)}
-.cara.producto>span.mosaico{position:absolute;left:0;right:0;top:0;height:66%;display:block;max-width:none;padding:0;container-type:size;background:radial-gradient(95% 80% at 50% 20%,#fff 0,#F6F0E9 50%,var(--papel) 100%)}
+.cara.producto{background:var(--papel);box-shadow:0 18px 30px -24px rgb(var(--sombra-e) / .55)}
+.cara.producto>span.mosaico{position:absolute;left:0;right:0;top:0;height:66%;display:block;max-width:none;padding:0;container-type:size;background:var(--papel)}
 .mos-item{position:absolute;aspect-ratio:1;width:min(var(--w)*1cqw,52cqh);transition:transform 1s var(--curva)}
 .mos-item::after{content:'';position:absolute;left:20%;right:20%;bottom:3%;height:9%;border-radius:50%;background:radial-gradient(ellipse at center,rgb(var(--sombra-e) / .4) 0,rgb(var(--sombra-e) / .12) 55%,transparent 75%)}
 .cara.producto .mosaico .mos-item img{position:relative;z-index:1;inset:auto;width:100%;height:100%;padding:0;object-fit:contain;mix-blend-mode:multiply;transition:none;animation:mos-flota 6.5s ease-in-out infinite;animation-delay:calc(var(--d)*-1.3s)}
@@ -103,18 +85,14 @@ body{background-color:var(--hueso);background-image:var(--papel-grano);backgroun
 .maqueta-aviso.visible{visibility:visible;opacity:1;transform:translate(-50%,0);transition-delay:0s}
 html:not(.js) .maqueta-aviso{visibility:visible;opacity:1;transform:translateX(-50%)}
 
-/* ===== Pie: arcilla con el plano de fondo, llamado grande, firma que se dibuja y grilla de cuatro columnas ===== */
-.site-footer{position:relative;overflow:hidden;color:var(--hueso);padding-block:clamp(72px,8vw,120px) 24px;background:var(--grano-arcilla),linear-gradient(180deg,#A24A2A 0,#97462A 100%);box-shadow:inset 0 1px 0 rgb(255 214 190 / .45),inset 0 22px 28px -22px rgb(60 22 8 / .6)}
-.site-footer::before{content:'';position:absolute;left:0;right:0;top:0;height:6px;background:var(--espresso)}
-.pie-plano{position:absolute;inset:0;background-image:var(--planta-arcilla);background-size:clamp(200px,20vw,300px);pointer-events:none}
-.site-footer>:not(.pie-plano){position:relative}
+/* ===== Pie: espresso liso, llamado grande con botón arcilla, firma que se dibuja y grilla de cuatro columnas ===== */
+.site-footer{position:relative;overflow:hidden;color:var(--hueso);padding-block:clamp(72px,8vw,120px) 24px;background:var(--espresso)}
+.site-footer>*{position:relative}
 .site-footer .eyebrow{color:var(--hueso)}
 .site-footer .eyebrow::before{background:var(--hueso)}
 .site-footer h2.pie-titular{font-size:clamp(2.4rem,5.4vw,5rem);font-weight:400;line-height:1.02;letter-spacing:-.02em;margin:0 0 16px;max-width:11em;color:var(--hueso)}
 .pie-cta{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
 .site-footer .pie-cta p{max-width:34em;color:var(--hueso)}
-.site-footer .button{background:linear-gradient(180deg,#43342D 0,var(--espresso) 100%);border-color:#1B1411;color:var(--hueso);box-shadow:inset 0 1px 0 rgb(255 255 255 / .22),inset 0 -2px 0 rgb(0 0 0 / .35),0 3px 0 #1B1411,0 16px 22px -9px rgb(40 14 6 / .75)}
-.site-footer .button:hover{background:linear-gradient(180deg,#43342D 0,var(--espresso) 100%);border-color:#1B1411}
 .pie-firma{color:var(--hueso);display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:clamp(56px,7vw,104px);padding-inline:var(--margen)}
 .pie-firma>span:first-child{display:block;width:min(56vw,330px)}
 .pie-firma svg{width:100%;height:auto;fill:var(--hueso);fill-opacity:1;overflow:visible}
@@ -147,7 +125,7 @@ html:not(.js) .maqueta-aviso{visibility:visible;opacity:1;transform:translateX(-
   .pie-cta{align-items:start}
 }
 
-/* Rótulos de las cifras sobre arena con textura: arcilla oscuro */
+/* Rótulos de las cifras sobre arena: arcilla oscuro */
 .bento>div:not(.b-grande):not(.b-roble) .b-rotulo{color:#7A3519}
 .bento>.b-grande .b-rotulo{color:#EADFD3}
 
