@@ -49,8 +49,11 @@ h1,h2,h3{font-weight:400;letter-spacing:-.02em}
 .v2-heroe .actions>a:not(.button){color:var(--hueso);border-color:var(--arcilla-clara)}
 /* Galería inclinada: el bloque sangra más allá del héroe (arriba, abajo y a los lados) y el borde del héroe lo recorta;
    una máscara vertical y otra lateral desvanecen las fotos, así ninguna queda cortada en seco. Sin pausa al pasar el mouse. */
-.v2-galeria{position:absolute;z-index:1;top:0;bottom:0;right:calc(-1*var(--margen) - 4vw);width:62%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 20%,#000 80%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 20%,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+/* La galería llega siempre al borde derecho de la pantalla: en pantallas anchas el contenedor (1320 px) queda centrado y el espacio sobrante a la derecha es max(margen, (100vw - ancho)/2). */
+.v2-galeria{--sobra:max(var(--margen),(100vw - var(--ancho))/2);position:absolute;z-index:1;top:0;bottom:0;right:calc(-1*var(--sobra) - 2vw);width:calc(58% + var(--sobra) + 2vw);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 20%,#000 80%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,transparent 0,#000 20%,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
 .v2-inclina{--hueco:clamp(12px,1.6vw,24px);position:absolute;left:-14%;top:-32%;width:142%;height:164%;display:flex;align-items:flex-start;gap:var(--hueco);transform:perspective(2200px) rotateX(18deg) rotateZ(-11deg)}
+/* Pantallas anchas: la galería crece hasta el borde, pero las fotos mantienen el tamaño de 1440 px (si no, se ven gigantes y pixeladas) */
+@media(min-width:1600px){.v2-inclina{left:auto;right:-240px;width:1500px}}
 .v2-col{flex:1;min-width:0}
 .v2-pista{display:flex;flex-direction:column;gap:var(--hueco);animation:v2-corre 70s linear infinite}
 .v2-col-0{margin-top:-6%}.v2-col-1{margin-top:-30%}.v2-col-2{margin-top:-14%}.v2-col-3{margin-top:-38%}
